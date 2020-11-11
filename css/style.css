@@ -276,7 +276,7 @@ html {
       height: 50%;
       width: 50%;
       border-radius: 50%;
-      background-image: url("/ecommerce-project/img/sorin-sirbu-ifYt0sKdJYk-unsplash.jpg");
+      background-image: url("../images/dami-adebayo-k6aQzmIbR1s-unsplash.jpg");
       background-size: cover; }
       @media only screen and (max-width: 1100px) {
         .about__left--image {
