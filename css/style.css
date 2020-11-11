@@ -478,6 +478,11 @@ button {
   border: .1rem solid black;
   font-family: inherit; }
 
+.projects-text {
+  padding: 4rem 10rem;
+  font-size: 2.5rem;
+  color: #373b44; }
+
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
