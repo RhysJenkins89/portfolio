@@ -444,7 +444,7 @@ html {
         grid-row: 1 / 2; } }
     .projects__left--nexter {
       height: 75%;
-      background-image: url(/portfolio-project/images/nexterOne.png);
+      background-image: url(../images/nexterOne.png);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center; }
@@ -462,7 +462,7 @@ html {
         grid-row: 2 / 3; } }
     .projects__right--ecom {
       height: 75%;
-      background-image: url(/portfolio-project/images/ecommerceOne.png);
+      background-image: url(../images/ecommerceOne.png);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center; }
