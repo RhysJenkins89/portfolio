@@ -332,7 +332,7 @@ html {
       .skills__leftTop--html {
         height: 15rem;
         width: 15rem;
-        background-image: url(/portfolio-project/images/HTML5_Logo_512.png);
+        background-image: url(../images/HTML5_Logo_512.png);
         background-size: cover; }
         @media only screen and (max-width: 1100px) {
           .skills__leftTop--html {
@@ -349,7 +349,7 @@ html {
       .skills__leftTop--css {
         height: 15rem;
         width: 15rem;
-        background-image: url(/portfolio-project/images/css-logo.png);
+        background-image: url(../images/css-logo.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center; }
@@ -373,7 +373,7 @@ html {
       .skills__leftBottom--javascript {
         height: 15rem;
         width: 15rem;
-        background-image: url(/portfolio-project/images/javascript-js-seeklogo.com.svg);
+        background-image: url(../images/javascript-js-seeklogo.com.svg);
         background-size: cover; }
         @media only screen and (max-width: 1100px) {
           .skills__leftBottom--javascript {
@@ -390,7 +390,7 @@ html {
       .skills__leftBottom--bootstrap {
         height: 15rem;
         width: 15rem;
-        background-image: url(/portfolio-project/images/bootstrap-4.svg);
+        background-image: url(../images/bootstrap-4.svg);
         background-size: cover; }
         @media only screen and (max-width: 1100px) {
           .skills__leftBottom--bootstrap {
