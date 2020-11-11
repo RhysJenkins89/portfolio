@@ -140,8 +140,7 @@ html {
     height: 45rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: .2rem solid black; }
+    justify-content: center; }
     @media only screen and (max-width: 1100px) {
       .landing__left {
         grid-row: 1 / 2; } }
@@ -160,8 +159,7 @@ html {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 2rem;
-    border: .2rem solid black; }
+    grid-gap: 2rem; }
     @media only screen and (max-width: 1100px) {
       .landing__right {
         grid-row: 2 / 3;
@@ -269,8 +267,7 @@ html {
     grid-column: 1 / 2;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border: .2rem solid black; }
+    align-items: center; }
     @media only screen and (max-width: 1100px) {
       .about__left {
         grid-column: 1 / 2;
@@ -292,8 +289,7 @@ html {
   .about__right {
     grid-column: 2 / 3;
     display: flex;
-    align-items: center;
-    border: .2rem solid black; }
+    align-items: center; }
     @media only screen and (max-width: 1100px) {
       .about__right {
         grid-column: 1 / 2;
@@ -323,8 +319,7 @@ html {
   .skills__left {
     grid-column: 1 / 2;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    border: .2rem solid black; }
+    grid-template-rows: 1fr 1fr; }
     @media only screen and (max-width: 1100px) {
       .skills__left {
         grid-column: 1 / 2;
@@ -412,8 +407,7 @@ html {
   .skills__right {
     grid-column: 2 / 3;
     display: flex;
-    align-items: center;
-    border: .2rem solid black; }
+    align-items: center; }
     @media only screen and (max-width: 1100px) {
       .skills__right {
         grid-column: 1 / 2;
@@ -443,8 +437,7 @@ html {
       padding: 2rem 2rem; } }
   .projects__left {
     grid-column: 1 / 2;
-    height: 100%;
-    border: .2rem solid black; }
+    height: 100%; }
     @media only screen and (max-width: 1100px) {
       .projects__left {
         grid-column: 1 / 2;
@@ -462,8 +455,7 @@ html {
       justify-content: space-evenly; }
   .projects__right {
     grid-column: 2 / 3;
-    height: 100%;
-    border: .2rem solid black; }
+    height: 100%; }
     @media only screen and (max-width: 1100px) {
       .projects__right {
         grid-column: 1 / 2;
@@ -506,7 +498,6 @@ button {
   .contact__left {
     grid-column: 1 / 2;
     height: 100%;
-    border: .2rem solid black;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -519,7 +510,6 @@ button {
   .contact__right {
     grid-column: 2 / 3;
     height: 100%;
-    border: .2rem solid black;
     display: flex;
     align-items: center; }
     @media only screen and (max-width: 1100px) {
