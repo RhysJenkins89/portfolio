@@ -496,6 +496,16 @@ button {
   border: .1rem solid black;
   font-family: inherit; }
 
+@media only screen and (max-width: 1100px) {
+  .projects-two-text {
+    display: none; } }
+
+.projects-one-text {
+  display: none; }
+  @media only screen and (max-width: 1100px) {
+    .projects-one-text {
+      display: block; } }
+
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
