@@ -23,7 +23,8 @@ hamButton.addEventListener("click", function() {
 overlay.addEventListener("click", function () {
     overlay.classList.remove("navigation__open");
     hamButton.classList.remove("open");
-    links.classList.remove("navigation__open");    
+    links.classList.remove("navigation__open");
+    menuOpen = false;    
 });
 
 links.addEventListener("click", () => {
