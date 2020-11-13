@@ -34,17 +34,11 @@ links.addEventListener("click", () => {
     menuOpen = false;
 });
 
-var winTest = window.location.toString();
-
-var newWin = winTest.split("#")[0];
-
 // The following removes the global transition: none once the page has loaded.  
 window.addEventListener("load", () => {
     document.body.classList.remove("preload");
 });
 
 //Remove the refresh id issue.
-
-// Clean all this up!
 
 
