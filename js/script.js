@@ -30,6 +30,7 @@ links.addEventListener("click", () => {
     overlay.classList.remove("navigation__open");
     links.classList.remove("navigation__open");
     hamButton.classList.remove("open");
+    menuOpen = false;
 });
 
 var winTest = window.location.toString();
