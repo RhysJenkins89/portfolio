@@ -7,9 +7,6 @@
 *::after {
   box-sizing: inherit; }
 
-.preload * {
-  transition: none !important; }
-
 body {
   font-family: "lato", sans-serif;
   font-weight: 400;
@@ -24,6 +21,9 @@ html {
   @media only screen and (max-width: 750px) {
     html {
       font-size: 50%; } }
+
+.preload * {
+  transition: none !important; }
 
 .nav {
   height: 8rem;
@@ -262,6 +262,9 @@ html {
   @media only screen and (max-width: 550px) {
     .about {
       padding: 2rem 5rem; } }
+  @media only screen and (max-width: 380px) {
+    .about {
+      padding: 2rem 2rem; } }
   .about__left {
     grid-column: 1 / 2;
     display: flex;
@@ -579,6 +582,3 @@ a {
   @media only screen and (max-width: 1100px) {
     .one-text {
       display: block; } }
-
-.small-email {
-  display: none; }
