@@ -423,7 +423,7 @@ html {
       .skills__leftBottom--sass {
         height: 15rem;
         width: 15rem;
-        background-image: url(../images/sass-1.svg);
+        background-image: url(../images/sass.svg);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat; }
@@ -442,7 +442,7 @@ html {
       .skills__leftBottom--react {
         height: 15rem;
         width: 15rem;
-        background-image: url(../images/React-icon.svg);
+        background-image: url(../images/react.svg);
         background-size: cover;
         background-position: center; }
         @media only screen and (max-width: 1100px) {
