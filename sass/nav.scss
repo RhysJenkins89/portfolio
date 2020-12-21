@@ -1,0 +1,136 @@
+.nav {
+    height: 8rem; // 12.5vh
+    padding: 0 10rem; // This padding doesn't quite align to the images. Sad! 
+    display: flex;
+    // This flex display affects the one child element of .nav, which is __list. 
+    justify-content: flex-start;
+    align-items: center;
+
+    @media only screen and (max-width: $tablet) {
+        padding: 0 5rem;
+    }
+
+    &__list {
+        width: 100%;
+        // The width is essential here. The __list element needs to take up 100 percent of its parent, .nav, in 
+        // order for the flex display to work. 
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        &--item {
+            list-style: none;
+            font-size: 2rem;
+            padding: 0 2.5rem;
+        }
+    }
+
+    &__square {
+        position: fixed;
+        height: 4rem;
+        width: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 3;
+    
+        &.open .nav__ham {
+            background: transparent;
+        }
+
+        &.open .nav__ham::before {
+            transform: rotate(45deg)
+        }
+
+        &.open .nav__ham::after {
+            transform: rotate(-45deg)
+        }
+    }
+
+    &__ham {
+        position: fixed;
+        display: block;
+        height: .2rem;
+        width: 3rem;
+        background-color: #373b44;
+        transition: all .8s;
+
+        &::before, 
+        &::after {
+            content: "";
+            height: .2rem;
+            width: 3rem;
+            position: absolute;
+            background-color: #373b44;
+            transition: all .8s;   
+        }
+        
+        &::before {
+            transform: translateY(-1rem);
+        }
+
+        &::after {
+            transform: translateY(1rem);
+        }
+    }
+}
+ 
+.navigation__links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    height: 100vh;
+    width: 25rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+    transform: translateX(25rem);
+    transition: all .75s;
+
+    &.navigation__open {
+        transform: translateX(0);
+    }
+
+    &--link {
+        width: 100%;
+        color: #373b44;
+        font-size: 2.5rem;
+        text-align: center;
+        text-decoration: none;
+        padding: 1rem 0;
+        background-color: transparent;
+        transition: all .75s;
+        
+        &:hover {
+            background-color: #eeeeee;
+        }
+    }
+}
+
+.navigation__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(.2rem);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .75s;
+
+    &.navigation__open {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+

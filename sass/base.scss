@@ -1,0 +1,57 @@
+// Global CSS settings 
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: 1100px) {
+        font-size: 55%;
+    }
+
+    @media only screen and (max-width: 750px) {
+        font-size: 50%;
+    }
+}
+
+// The font size is 62.5 percent because we want 1rem to equal 10px. The browser default font size is 16px, so we
+// divide 10px by 16px in order to arrive at 62.5 percent. 
+
+.preload * {
+    transition: none !important; 
+    // This stops the transitions from loading on initial page load. I then turn it off in the JS.   
+}
+
+// Media query variables
+$phone: 380px;
+$tablet: 550px;
+$large-tablet: 1100px;
+
+
+
+
+
+
+
+
+
+
+
+
+

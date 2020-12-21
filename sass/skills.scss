@@ -1,0 +1,227 @@
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 4rem;
+    height: 100vh;
+    // This height value is causing the content to shrink in certain contexts.
+    padding: 4rem 10rem;
+    // border: .2rem solid black;
+
+    @media only screen and (max-width: $large-tablet) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 75rem;
+    }
+
+    @media only screen and (max-width: $tablet) {
+        padding: 2rem 5rem;
+        grid-gap: 0.5rem;
+    }
+
+    @media only screen and (max-width: $phone) {
+        padding: 2rem 2rem;
+    }
+
+    &__left {
+        grid-column: 1 / 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        // border: .2rem solid black;
+        width: 100%;
+
+        @media only screen and (max-width: $large-tablet) {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        &Top {
+            grid-row: 1 / 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            &--html {
+                height: 15rem;
+                width: 15rem;
+                // border: .2rem solid black;
+                background-image: url(../images/HTML5_Logo_512.png);
+                background-size: cover;
+
+                @media only screen and (max-width: $large-tablet) {
+                    margin: 2rem;
+                }
+
+                @media only screen and (max-width: $tablet) {
+                    height: 12rem;
+                    width: 12rem;
+                    margin: 2rem 0.5rem;
+                }
+
+                @media only screen and (max-width: $phone) {
+                    height: 8rem;
+                    width: 8rem;
+                }
+            }
+
+            &--css {
+                height: 15rem;
+                width: 15rem;
+                // border: .2rem solid black;
+                background-image: url(../images/css-logo.png);
+                background-size: contain; // contain almost gets us there. 
+                background-repeat: no-repeat;
+                background-position: center;
+
+                @media only screen and (max-width: $large-tablet) {
+                    margin: 2rem;
+                }
+
+                @media only screen and (max-width: $tablet) {
+                    height: 12rem;
+                    width: 12rem;
+                    margin: 2rem 0.5rem;
+                }
+
+                @media only screen and (max-width: $phone) {
+                    height: 8rem;
+                    width: 8rem;
+                }
+            }
+
+            &--javascript {
+                height: 15rem;
+                width: 15rem;
+                // border: .2rem solid black;
+                background-image: url(../images/javascript-js-seeklogo.com.svg);
+                background-size: contain; // contain almost gets us there. 
+                background-repeat: no-repeat;
+                background-position: center;
+
+                @media only screen and (max-width: $large-tablet) {
+                    margin: 2rem;
+                }
+
+                @media only screen and (max-width: $tablet) {
+                    height: 12rem;
+                    width: 12rem;
+                    margin: 2rem 0.5rem;
+                }
+
+                @media only screen and (max-width: $phone) {
+                    height: 8rem;
+                    width: 8rem;
+                }
+            }
+        }
+
+        &Bottom {
+            grid-row: 2 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            &--bootstrap {
+                height: 15rem;
+                width: 15rem;
+                // border: .2rem solid black;
+                background-image: url(../images/bootstrap-4.svg);
+                background-size: cover;
+
+                @media only screen and (max-width: $large-tablet) {
+                    margin: 2rem;
+                }
+
+                @media only screen and (max-width: $tablet) {
+                    height: 12rem;
+                    width: 12rem;
+                    margin: 2rem 0.5rem;
+                }
+
+                @media only screen and (max-width: $phone) {
+                    height: 8rem;
+                    width: 8rem;
+                }
+            }
+
+            &--sass {
+                height: 15rem;
+                width: 15rem;
+                // border: .2rem solid black;
+                background-image: url(../images/sass.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                @media only screen and (max-width: $large-tablet) {
+                    margin: 2rem;
+                }
+
+                @media only screen and (max-width: $tablet) {
+                    height: 12rem;
+                    width: 12rem;
+                    margin: 2rem 0.5rem;
+                }
+
+                @media only screen and (max-width: $phone) {
+                    height: 8rem;
+                    width: 8rem;
+                }
+            }
+
+            &--react {
+                height: 15rem;
+                width: 15rem;
+                // border: .2rem solid black;
+                background-image: url(../images/react.svg);
+                background-size: cover;
+                background-position: center;
+
+                @media only screen and (max-width: $large-tablet) {
+                    margin: 2rem;
+                }
+
+                @media only screen and (max-width: $tablet) {
+                    height: 12rem;
+                    width: 12rem;
+                    margin: 2rem 0.5rem;
+                }
+
+                @media only screen and (max-width: $phone) {
+                    height: 8rem;
+                    width: 8rem;
+                }
+            }
+        }
+    }
+
+    &__right {
+        grid-column: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        // border: .2rem solid black;
+
+        @media only screen and (max-width: $large-tablet) {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        &--header {
+            text-align: left;
+            font-size: 4.5rem;
+            color: #373b44;
+            border-bottom: .2rem solid #373b44;
+        }
+
+        &--text {
+            font-size: 2.5rem;
+            color: #373b44;
+            margin: auto 0;
+
+            @media only screen and (max-width: $large-tablet) {
+                margin: 1rem 0 auto 0;
+            }
+        }
+    }
+}
