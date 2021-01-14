@@ -11,6 +11,12 @@ body {
   font-family: "lato", sans-serif;
   font-weight: 400;
   line-height: 1.6; }
+  @media only screen and (min-width: 1400px) {
+    body {
+      padding: 0 5rem; } }
+  @media only screen and (min-width: 2000px) {
+    body {
+      padding: 0 30rem; } }
 
 html {
   box-sizing: border-box;
@@ -126,7 +132,6 @@ html {
   grid-template-rows: 1fr;
   grid-gap: 4rem;
   height: min-content;
-  max-width: 150rem;
   padding: 4rem 10rem; }
   @media only screen and (max-width: 1100px) {
     .landing {
