@@ -1,92 +1,114 @@
 .contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 4rem;
-    height: 100vh;
-    padding: 4rem 10rem;
-    // border: .2rem solid black;
-
-    @media only screen and (max-width: $large-tablet) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        height: 50rem;
-    }
+    height: 150vh;
+    background-color: #f7f7f7;
 
     @media only screen and (max-width: $tablet) {
-        padding: 2rem 5rem;
+        height: 95rem;
     }
 
-    @media only screen and (max-width: $phone) {
-        padding: 2rem 2rem;
+    @media only screen and (max-width: $small-phone) {
+        height: 85rem;
     }
-    
-    &__left {
-        grid-column: 1 / 2;
-        height: 100%;
-        // border: .2rem solid black;
+
+    &__header {
+        background-image: linear-gradient(
+            to right, 
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),
+        url(../images/drew-hays-u3o7il8s1Fc-unsplash.jpg);
+        background-size: cover;
+        background-position: 0% 25%; // first: horizontal; second: vertical
+        height: 30%;
         display: flex;
         align-items: center;
         justify-content: center;
 
-        @media only screen and (max-width: $large-tablet) {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-        }
-
-        &--button {
-            font-size: 2rem;
+        @media only screen and (max-width: $tablet) {
+            height: 22.5rem;
         }
     }
 
-    &__right {
-        grid-column: 2 / 3;
-        height: 100%;
+    &__title { // todo on tablets, we could make the headings bigger
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 4.5rem;
+        letter-spacing: .25rem;
+        color: whitesmoke;
+    }
+
+    &__content {
+        height: 70%; //todo return to.
         display: flex;
         flex-direction: column;
-        // border: .2rem solid black;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 22.5rem;
 
-        @media only screen and (max-width: $large-tablet) {
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
+        @media only screen and (max-width: $tablet) {
+            height: 45rem;
+            padding: 4rem 17rem;
         }
 
+        @media only screen and (max-width: $small-tablet) {
+            padding: 4rem;
+        }
+
+        // @media only screen and (max-width: $phone) {
+        //     padding: 4rem 2rem;
+        // }
+
         &--header {
+            width: 100%;
+            padding-bottom: 1rem;
             text-align: left;
-            font-size: 4.5rem;
-            color: #373b44;
-            border-bottom: .2rem solid #373b44;
+            font-size: 3rem;
+            color: black;
         }
 
         &--text {
-            font-size: 2.5rem;
             color: #373b44;
-            margin: auto 0;
+            font-size: 2rem;
+            padding-bottom: 2.5rem;
+        }
 
-            @media only screen and (max-width: $large-tablet) {
-                margin: 1rem 0 auto 0;
+        &--container {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            // &-link {
+                // align-self: flex-start;
+            // }
+    
+            &-button {
+                width: 12.5rem;
+                padding: 1.25rem;
+                margin: 1.5rem 2rem 0 0;
+                font-family: inherit;
+                font-size: 1.5rem;
+                border-radius: .2rem;
+                border: none;
+                cursor: pointer;
+                transition: all .75s;
+    
+                @media only screen and (max-width: $tablet) {
+                    font-size: 2rem;
+                    margin: 0 0 2.75rem 0;
+                }
+    
+                @media only screen and (min-width: $large-tablet) {
+                    &:hover {
+                        transform: scale(1.1);
+                        box-shadow: .5rem .25rem 1.25rem rgba(0, 0, 0, 0.4); // horizontal, vertical, blur
+                    }
+                }
+                
+                &:focus {
+                    outline: none;
+                }
             }
         }
-    }
-}
-
-a {
-    text-decoration: none;
-    color: #373b44;
-}
-
-.two-text {
-    // display: none;
-
-    @media only screen and (max-width: $large-tablet) {
-        display: none;
-    }
-} 
-
-.one-text {
-    display: none;
-
-    @media only screen and (max-width: $large-tablet) {
-        display: block;
     }
 }

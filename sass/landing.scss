@@ -1,171 +1,197 @@
 .landing {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 4rem;
-    height: min-content; // 87.5vh
-    // max-width: 150rem; // Come back to his later. 
-    padding: 4rem 10rem;
+    height: 100vh; // todo these settings break on small devices because the unit is vh.
+    background-image: linear-gradient(
+        to right, 
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+        ),
+    url(../images/annie-spratt-QckxruozjRg-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); // Thanks to https://bennettfeely.com/clippy/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // todo adding a dark mode would be super cool.
 
-    @media only screen and (max-width: $large-tablet) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;   
-    }
-
-    @media only screen and (max-width: $tablet) {
-        padding: 2rem 0.75rem;
-    }
-
-    &__left {
-        grid-column: 1 / 2;
-        height: 45rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        // border: .2rem solid black;
-
-        @media only screen and (max-width: $large-tablet) {
-            grid-row: 1 / 2;
-        }
-
-        &--text {
-            text-transform: uppercase;
-            text-align: center;
-            font-size: 5rem;
-            letter-spacing: .75rem;
-            color: #373b44;
-
-            @media only screen and (max-width: $phone) {
-                letter-spacing: .25rem;
-                font-size: 4rem;
-            }
-        }
-    }
-
-    &__right {
-        grid-column: 2 / 3;
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-gap: 2rem;
-        // border: .2rem solid black;
-
-        @media only screen and (max-width: $large-tablet) {
-            grid-row: 2 / 3;
-            grid-column: 1 / 2;
-        }
+    &__header {
+        text-align: center;
+        font-size: 6rem;
+        color: whitesmoke;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        padding: 0 20rem 15rem 20rem;
 
         @media only screen and (max-width: $tablet) {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            grid-gap: 1rem;
-        }
-    
-        &--imageOne {
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
-            background-image: url("https://source.unsplash.com/1600x900/?laptop");
-            background-size: cover;
-
-            @media only screen and (max-width: $tablet) {
-                display: none;
-            }
+            font-size: 5rem;
+            letter-spacing: .25rem;
+            padding: 0 0 15rem 0;
         }
 
-        &--imageTwo {
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
-            background-image: url("https://source.unsplash.com/1600x900/?tech");
-            background-size: cover;
-
-            @media only screen and (max-width: $tablet) {
-                display: none;
-            }
-        }
-
-        &--imageThree {
-            grid-column: 3 / 4;
-            grid-row: 1 / 2;
-            background-image: url("https://source.unsplash.com/1600x900/?keyboard");
-            background-size: cover;
-
-            @media only screen and (max-width: $tablet) {
-                display: none;
-            }
-        }
-
-        &--imageFour {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-            background-image: url("https://source.unsplash.com/1600x900/?programming");
-            background-size: cover;
-
-            @media only screen and (max-width: $tablet) {
-                grid-column: 1 / 2;
-                grid-row: 1 / 2;
-            }
-        }
-
-        &--imageFive {
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-            background-image: url("https://source.unsplash.com/1600x900/?computing");
-            background-size: cover;
-
-            @media only screen and (max-width: $tablet) {
-                grid-column: 2 / 3;
-                grid-row: 2 / 3;
-            }
-        }
-
-        &--imageSix {
-            grid-column: 3 / 4;
-            grid-row: 2 / 3;
-            background-image: url("https://source.unsplash.com/1600x900/?program");
-            background-size: cover;
-
-            @media only screen and (max-width: $tablet) {
-                display: none;
-            }
-        }
-
-        &--imageSeven {
-            grid-column: 1 / 2;
-            grid-row: 3 / 4;
-            background-image: url("https://source.unsplash.com/1600x900/?javascript");
-            background-size: cover;
-
-            @media only screen and (max-width: $tablet) {
-                grid-column: 2 / 3;
-                grid-row: 1 / 2;
-            }
-        }
-
-        &--imageEight {
-            grid-column: 2 / 3;
-            grid-row: 3 / 4;
-            background-image: url("https://source.unsplash.com/1600x900/?css");
-            background-size: cover;
-
-            @media only screen and (max-width: $tablet) {
-                display: none;
-            }
-        }
-
-        &--imageNine {
-            grid-column: 3 / 4;
-            grid-row: 3 / 4;
-            background-image: url("https://source.unsplash.com/1600x900/?html");
-            background-size: cover;
-
-            @media only screen and (max-width: $tablet) {
-                grid-column: 1 / 2;
-                grid-row: 2 / 3;
-            }
+        @media only screen and (max-width: $phone) {
+            font-size: 3.75rem;
+            letter-spacing: .2rem;
         }
     }
 }
+
+
+
+
+
+
+
+//     &__left {
+//         grid-column: 1 / 2;
+//         height: 45rem;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         // border: .2rem solid black;
+
+//         @media only screen and (max-width: $large-tablet) {
+//             grid-row: 1 / 2;
+//         }
+
+//         &--text {
+//             text-transform: uppercase;
+//             text-align: center;
+//             font-size: 5rem;
+//             letter-spacing: .75rem;
+//             color: #373b44;
+
+//             @media only screen and (max-width: $phone) {
+//                 letter-spacing: .25rem;
+//                 font-size: 4rem;
+//             }
+//         }
+//     }
+
+//     &__right {
+//         grid-column: 2 / 3;
+
+//         display: grid;
+//         grid-template-columns: repeat(3, 1fr);
+//         grid-template-rows: repeat(3, 1fr);
+//         grid-gap: 2rem;
+//         // border: .2rem solid black;
+
+//         @media only screen and (max-width: $large-tablet) {
+//             grid-row: 2 / 3;
+//             grid-column: 1 / 2;
+//         }
+
+//         @media only screen and (max-width: $tablet) {
+//             grid-template-columns: 1fr 1fr;
+//             grid-template-rows: 1fr 1fr;
+//             grid-gap: 1rem;
+//         }
+    
+//         &--imageOne {
+//             grid-column: 1 / 2;
+//             grid-row: 1 / 2;
+//             background-image: url("https://source.unsplash.com/1600x900/?laptop");
+//             background-size: cover;
+
+//             @media only screen and (max-width: $tablet) {
+//                 display: none;
+//             }
+//         }
+
+//         &--imageTwo {
+//             grid-column: 2 / 3;
+//             grid-row: 1 / 2;
+//             background-image: url("https://source.unsplash.com/1600x900/?tech");
+//             background-size: cover;
+
+//             @media only screen and (max-width: $tablet) {
+//                 display: none;
+//             }
+//         }
+
+//         &--imageThree {
+//             grid-column: 3 / 4;
+//             grid-row: 1 / 2;
+//             background-image: url("https://source.unsplash.com/1600x900/?keyboard");
+//             background-size: cover;
+
+//             @media only screen and (max-width: $tablet) {
+//                 display: none;
+//             }
+//         }
+
+//         &--imageFour {
+//             grid-column: 1 / 2;
+//             grid-row: 2 / 3;
+//             background-image: url("https://source.unsplash.com/1600x900/?programming");
+//             background-size: cover;
+
+//             @media only screen and (max-width: $tablet) {
+//                 grid-column: 1 / 2;
+//                 grid-row: 1 / 2;
+//             }
+//         }
+
+//         &--imageFive {
+//             grid-column: 2 / 3;
+//             grid-row: 2 / 3;
+//             background-image: url("https://source.unsplash.com/1600x900/?computing");
+//             background-size: cover;
+
+//             @media only screen and (max-width: $tablet) {
+//                 grid-column: 2 / 3;
+//                 grid-row: 2 / 3;
+//             }
+//         }
+
+//         &--imageSix {
+//             grid-column: 3 / 4;
+//             grid-row: 2 / 3;
+//             background-image: url("https://source.unsplash.com/1600x900/?program");
+//             background-size: cover;
+
+//             @media only screen and (max-width: $tablet) {
+//                 display: none;
+//             }
+//         }
+
+//         &--imageSeven {
+//             grid-column: 1 / 2;
+//             grid-row: 3 / 4;
+//             background-image: url("https://source.unsplash.com/1600x900/?javascript");
+//             background-size: cover;
+
+//             @media only screen and (max-width: $tablet) {
+//                 grid-column: 2 / 3;
+//                 grid-row: 1 / 2;
+//             }
+//         }
+
+//         &--imageEight {
+//             grid-column: 2 / 3;
+//             grid-row: 3 / 4;
+//             background-image: url("https://source.unsplash.com/1600x900/?css");
+//             background-size: cover;
+
+//             @media only screen and (max-width: $tablet) {
+//                 display: none;
+//             }
+//         }
+
+//         &--imageNine {
+//             grid-column: 3 / 4;
+//             grid-row: 3 / 4;
+//             background-image: url("https://source.unsplash.com/1600x900/?html");
+//             background-size: cover;
+
+//             @media only screen and (max-width: $tablet) {
+//                 grid-column: 1 / 2;
+//                 grid-row: 2 / 3;
+//             }
+//         }
+//     }
+// }
 
 
 

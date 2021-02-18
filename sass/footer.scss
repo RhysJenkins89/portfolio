@@ -1,0 +1,15 @@
+.footer {
+    // todo apply the visible style with a waypoint.
+
+    &__text {
+        display: none;
+        position: fixed;
+        bottom: 5rem;
+        right: 5rem;
+        font-size: 2rem;
+    }
+
+    &__textVis {
+        display: block;
+    }
+}

@@ -1,87 +1,47 @@
 .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 4rem;
-    height: 100vh;
-    padding: 4rem 10rem;
-    // border: .2rem solid #373b44;
-
-    @media only screen and (max-width: $large-tablet) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 2rem;
-        height: 65rem;
-    }
+    height: 110vh; // todo these settings break on small devices because the unit is vh.
+    background-color: #f7f7f7; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     @media only screen and (max-width: $tablet) {
-        padding: 2rem 5rem;
+        height: 90rem;
     }
 
-    @media only screen and (max-width: $phone) {
-        padding: 2rem 2rem;
-    }
-
-    &__left {
-        grid-column: 1 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        // border: .2rem solid black;
-
-        @media only screen and (max-width: $large-tablet) {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-            // height: 80%;
-        }
-
-        &--image {
-            height: 50%;
-            width: 50%;
-            border-radius: 50%;
-            background-image: url("../images/rhys-fb.jpg");
-            background-size: cover;
-
-            @media only screen and (max-width: $large-tablet) {
-                height: 25rem;
-                width: 25rem;
-            }
-
-            @media only screen and (max-width: $phone) {
-                height: 20rem;
-                width: 20rem;
-            }
-        }
-    }
-
-    &__right {
-        grid-column: 2 / 3;
+    &__content {
+        height: 100%;
         display: flex;
         flex-direction: column;
-        // border: .2rem solid black;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 12.5rem;
 
-        @media only screen and (max-width: $large-tablet) {
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
-            // height: 80%;
+        @media only screen and (max-width: $tablet) {
+            padding: 4rem;
         }
 
+        // @media only screen and (max-width: $phone) {
+        //     padding: 4rem 2rem;
+        // }
+
         &--header {
+            width: 100%;
+            padding-bottom: 1rem;
             text-align: left;
-            font-size: 4.5rem;
-            color: #373b44;
-            border-bottom: .2rem solid #373b44;
+            font-size: 3rem;
+            color: black;
+            // Darker headers for better design.
         }
 
         &--text {
-            font-size: 2.5rem;
             color: #373b44;
-            margin: auto 0;
+            font-size: 2rem;
 
-            @media only screen and (max-width: $large-tablet) {
-                margin: 1rem 0 auto 0;
+            &:not(:last-child) {
+                padding-bottom: 1.5rem;
             }
         }
     }
 }
-

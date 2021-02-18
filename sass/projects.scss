@@ -1,122 +1,212 @@
 .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 4rem;
-    height: 70rem; // Return to this later. VH probably isn't the best unit for this case.
-    padding: 4rem 10rem;
-    // border: .2rem solid black;
-
-    @media only screen and (max-width: $large-tablet) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 30rem 1fr;
-        height: 100rem; //100vh
-        grid-gap: 5rem;
-    }
+    height: 130rem; 
+    background-color: #f7f7f7;
 
     @media only screen and (max-width: $tablet) {
-        padding: 2rem 5rem;
-    } 
-
-    @media only screen and (max-width: $phone) {
-        padding: 2rem 2rem;
-        grid-gap: 2rem;
+        height: 210rem;
     }
 
-    &__left {
-        grid-column: 1 / 2;
-        height: 60rem;
+    &__header {
+        background-image: linear-gradient(
+            to right, 
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),
+        url(../images/tim-gouw-NSFG5sJYZgQ-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (max-width: $tablet) {
+            height: 22.5rem;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 4.5rem;
+        letter-spacing: .25rem;
+        color: whitesmoke;
+    }
+
+    &__content {
+        height: 100rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        // border: .2rem solid black;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 7.5rem 22.5rem; //todo make this padding uniform across the site.
 
-        @media only screen and (max-width: $large-tablet) {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
+        @media only screen and (max-width: $tablet) {
+            height: 120rem;
+            padding: 4rem 17.5rem;
         }
 
-        &--ecom {
-            height: 22.5rem;
-            background-image: url(../images/ecommerceOne.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            // border: .2rem solid #373b44;
+        @media only screen and (max-width: $small-tablet) {
+            padding: 4rem;
         }
 
-        &--nexter {
-            height: 22.5rem;
-            background-image: url(../images/nexterOne.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            // border: .2rem solid #373b44;
-        }
-
-        // &--buttons {
-        //     height: 25%;
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: space-evenly;
-        //     border: .2rem solid #373b44;
+        // @media only screen and (max-width: $phone) {
+        //     padding: 4rem 2rem;
         // }
-    }
 
-    &__right { 
-        grid-column: 2 / 3;
-        display: flex;
-        flex-direction: column;
-        height: 60rem;
-        // border: .2rem solid black;
-
-        @media only screen and (max-width: $large-tablet) {
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
-        }
-
-        &--header { 
+        &--header {
+            width: 100%;
+            padding-bottom: 1rem;
             text-align: left;
-            // padding: 0 0;
-            font-size: 4.5rem;
-            color: #373b44;
-            border-bottom: .2rem solid #373b44;
+            font-size: 3rem;
+            color: black;
         }
 
         &--text {
-            font-size: 2.5rem;
             color: #373b44;
-            margin: auto 0;
+            font-size: 2rem;
 
-            @media only screen and (max-width: $large-tablet) {
-                margin: 1rem 0 auto 0;
+            &:not(:last-child) {
+                padding-bottom: 1.5rem;
             }
         }
     }
-}
 
-button {
-    padding: 2rem;
-    background-color: white;
-    border: .1rem solid black;
-    font-family: inherit;
+    &__container {
+        // todo have the cards in this container flip over.
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 75rem;
+        width: 100%;
 
-    // hover
-    // focus: none
-}
-
-.projects-two-text {
-    // display: none;
-
-    @media only screen and (max-width: $large-tablet) {
-        display: none;
+        @media only screen and (max-width: $tablet) {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
     }
-}
+    
+    &__card-one, 
+    &__card {
+        // Remember that these elements are children of __container.
+        border: .1rem solid black;
+        height: 50rem;
+        width: 35rem;
+        padding: 1.5rem;
+        margin-right: 7.5rem;
+        border-radius: .5rem;
+        box-shadow: 1rem .8rem 2.5rem rgba(0, 0, 0, 0.4); // horizontal, vertical, blur
+        transition: all 1s;
 
-.projects-one-text {
-    display: none;
+        @media only screen and (max-width: $tablet) {
+            height: 72.5rem;
+            width: 45rem;
+            margin: 5rem 0;
+            padding: 2rem;
+        }
 
-    @media only screen and (max-width: $large-tablet) {
-        display: block;
+        @media only screen and (max-width: $small-tablet) {
+            height: 70rem;
+            width: 37.5rem;
+        }
+
+        @media only screen and (max-width: $phone) {
+            height: 60rem;
+            width: 30rem;
+        }
+
+        // min 
+        @media only screen and (min-width: $large-tablet) {
+            &:hover {
+                transform: scale(1.075);
+                box-shadow: 1.25rem 1rem 3rem rgba(0, 0, 0, 0.4); // horizontal, vertical, blur
+            }
+        }
+
+        &--image {
+            background-image: linear-gradient(
+            to right, 
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+            ),
+            url(../images/annie-spratt-QckxruozjRg-unsplash.jpg);
+            background-size: cover;
+            background-position: center;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+            border-top-left-radius: .5rem;
+            border-top-right-radius: .5rem;
+            height: 52.5%; 
+
+            @media only screen and (max-width: $tablet) {
+                height: 55%;
+            }
+
+            @media only screen and (max-width: $phone) {
+                height: 48%;   
+            }
+        }
+
+        &--header {
+            font-size: 2rem;
+            color: black;
+            margin-top: 2rem;
+
+            @media only screen and (max-width: $tablet) {
+                font-size: 2.5rem;
+                margin-top: 2.5rem;
+            }
+        }
+
+        &--text {
+            font-size: 1.5rem;
+            color: #373b44;
+            margin-top: 1rem;
+
+            @media only screen and (max-width: $tablet) {
+                font-size: 1.75rem;
+                margin-top: 1.5rem;
+            }
+        }
+
+        &--link {
+            text-decoration: none;
+        }
+
+        &--button {
+            padding: 1.25rem;
+            margin: 1.5rem 2rem 0 0;
+            font-family: inherit;
+            font-size: 1.5rem;
+            border-radius: .2rem;
+            border: none;
+            cursor: pointer;
+            transition: all .75s;
+
+            @media only screen and (max-width: $tablet) {
+                font-size: 1.75rem;
+                margin: 2rem 2rem 0 0;
+            }
+
+            @media only screen and (min-width: $large-tablet) {
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: .5rem .25rem 1.25rem rgba(0, 0, 0, 0.4); // horizontal, vertical, blur
+                }
+            }
+            
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &__card--image {
+        background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+        ),
+        url(../images/ecommerceTwo.png);    
     }
 }

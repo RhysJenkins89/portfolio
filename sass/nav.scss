@@ -1,10 +1,17 @@
 .nav {
     height: 8rem; // 12.5vh
-    padding: 0 10rem; // This padding doesn't quite align to the images. Sad! 
+    padding: 0 10rem;
     display: flex;
     // This flex display affects the one child element of .nav, which is __list. 
     justify-content: flex-start;
     align-items: center;
+    // display: none;
+    // visibility: hidden;
+    // Adding the above two items removed the hamburger!
+    // color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
 
     @media only screen and (max-width: $tablet) {
         padding: 0 5rem;
@@ -26,6 +33,7 @@
     }
 
     &__square {
+        margin-right: .55rem;
         position: fixed;
         height: 4rem;
         width: 4rem;
@@ -34,6 +42,13 @@
         align-items: center;
         cursor: pointer;
         z-index: 3;
+        background-color: transparent;
+        transition: all .75s;
+        
+        &.background {
+            background-color: #373b44;
+            // todo now we're back here!
+        }
     
         &.open .nav__ham {
             background: transparent;
@@ -53,7 +68,7 @@
         display: block;
         height: .2rem;
         width: 3rem;
-        background-color: #373b44;
+        background-color: #f7f7f7;
         transition: all .8s;
 
         &::before, 
@@ -62,8 +77,12 @@
             height: .2rem;
             width: 3rem;
             position: absolute;
-            background-color: #373b44;
+            background-color: #f7f7f7;
             transition: all .8s;   
+        }
+
+        &::before.newStyle {
+            background-color: #f7f7f7;
         }
         
         &::before {
@@ -83,13 +102,28 @@
     z-index: 2;
     height: 100vh;
     width: 25rem;
-    background-color: white;
+    background-color: #f7f7f7;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 10rem;
     transform: translateX(25rem);
     transition: all .75s;
+
+    &--top {
+        height: 14%;
+        width: 100%;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        right: 0rem;
+        transition: all .75s;
+    
+        &.navigation__open {
+            background-color: #373b44;
+            // todo make this look cool
+        }
+    }
 
     &.navigation__open {
         transform: translateX(0);
@@ -122,11 +156,24 @@
     visibility: hidden;
     opacity: 0;
     transition: all .75s;
+    z-index: 1;
 
     &.navigation__open {
         visibility: visible;
         opacity: 1;
     }
+}
+
+.nav__ham.newStyle {
+    background-color: #373b44; 
+}
+
+.nav__ham.newStyle::before {
+    background-color: #373b44;
+} 
+
+.nav__ham.newStyle::after {
+    background-color: #373b44;
 }
 
 
