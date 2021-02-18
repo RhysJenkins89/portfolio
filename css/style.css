@@ -18,8 +18,11 @@ html {
   font-size: 62.5%; }
   @media only screen and (max-width: 1100px) {
     html {
-      font-size: 55%; } }
+      font-size: 60%; } }
   @media only screen and (max-width: 800px) {
+    html {
+      font-size: 55%; } }
+  @media only screen and (max-width: 600px) {
     html {
       font-size: 50%; } }
 
@@ -197,6 +200,9 @@ html {
     padding: 0 12.5rem; }
     @media only screen and (max-width: 800px) {
       .about__content {
+        padding: 4rem 17.5rem; } }
+    @media only screen and (max-width: 600px) {
+      .about__content {
         padding: 4rem; } }
     .about__content--header {
       width: 100%;
@@ -241,6 +247,9 @@ html {
     align-items: center;
     padding: 0 22.5rem; }
     @media only screen and (max-width: 800px) {
+      .skills__content {
+        padding: 4rem 17.5rem; } }
+    @media only screen and (max-width: 600px) {
       .skills__content {
         padding: 4rem; } }
     .skills__content--header {
