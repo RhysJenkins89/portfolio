@@ -43,7 +43,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 0 22.5rem;
+        padding: 7.5rem 25rem;
 
         @media only screen and (max-width: $tablet) {
             height: 45rem;
@@ -62,7 +62,7 @@
             width: 100%;
             padding-bottom: 1rem;
             text-align: left;
-            font-size: 3rem;
+            font-size: 3.5rem;
             color: black;
         }
 
@@ -78,9 +78,9 @@
             justify-content: space-evenly;
             align-items: center;
 
-            // &-link {
-                // align-self: flex-start;
-            // }
+            @media only screen and (max-width: $small-phone) {
+                justify-content: space-between;
+            }
     
             &-button {
                 width: 12.5rem;
@@ -97,7 +97,12 @@
                     font-size: 2rem;
                     margin: 0 0 2.75rem 0;
                 }
+
+                @media only screen and (max-width: $small-phone) {
+                    width: 10rem;
+                }
     
+                // min-width
                 @media only screen and (min-width: $large-tablet) {
                     &:hover {
                         transform: scale(1.1);

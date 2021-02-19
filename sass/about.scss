@@ -1,5 +1,5 @@
 .about {
-    height: 110vh; // todo these settings break on small devices because the unit is vh.
+    height: 110vh;
     background-color: #f7f7f7; 
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     justify-content: center;
 
     @media only screen and (max-width: $tablet) {
-        height: 90rem;
+        height: 120rem;
     }
 
     &__content {
@@ -16,7 +16,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 0 12.5rem;
+        padding: 7.5rem 25rem;
 
         @media only screen and (max-width: $tablet) {
             padding: 4rem 17.5rem;
@@ -34,9 +34,8 @@
             width: 100%;
             padding-bottom: 1rem;
             text-align: left;
-            font-size: 3rem;
+            font-size: 3.5rem;
             color: black;
-            // Darker headers for better design.
         }
 
         &--text {

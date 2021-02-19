@@ -47,9 +47,9 @@ html {
         font-size: 55%;
     }
 
-    @media only screen and (max-width: $small-tablet) {
-        font-size: 50%;
-    }
+    // @media only screen and (max-width: $small-tablet) {
+    //     font-size: 50%;
+    // }
 }
 
 // The font size is 62.5 percent because we want 1rem to equal 10px. The browser default font size is 16px, so we

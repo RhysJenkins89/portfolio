@@ -22,9 +22,6 @@ html {
   @media only screen and (max-width: 800px) {
     html {
       font-size: 55%; } }
-  @media only screen and (max-width: 600px) {
-    html {
-      font-size: 50%; } }
 
 .preload * {
   transition: none !important; }
@@ -190,14 +187,14 @@ html {
   justify-content: center; }
   @media only screen and (max-width: 800px) {
     .about {
-      height: 90rem; } }
+      height: 120rem; } }
   .about__content {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 12.5rem; }
+    padding: 7.5rem 25rem; }
     @media only screen and (max-width: 800px) {
       .about__content {
         padding: 4rem 17.5rem; } }
@@ -208,7 +205,7 @@ html {
       width: 100%;
       padding-bottom: 1rem;
       text-align: left;
-      font-size: 3rem;
+      font-size: 3.5rem;
       color: black; }
     .about__content--text {
       color: #373b44;
@@ -221,7 +218,7 @@ html {
   background-color: #f7f7f7; }
   @media only screen and (max-width: 800px) {
     .skills {
-      height: 115rem; } }
+      height: 140rem; } }
   .skills__header {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg);
     background-size: cover;
@@ -245,7 +242,7 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 22.5rem; }
+    padding: 7.5rem 25rem; }
     @media only screen and (max-width: 800px) {
       .skills__content {
         padding: 4rem 17.5rem; } }
@@ -256,7 +253,7 @@ html {
       width: 100%;
       padding-bottom: 1rem;
       text-align: left;
-      font-size: 3rem;
+      font-size: 3.5rem;
       color: black; }
     .skills__content--text {
       color: #373b44;
@@ -267,9 +264,12 @@ html {
 .projects {
   height: 130rem;
   background-color: #f7f7f7; }
+  @media only screen and (max-width: 1100px) {
+    .projects {
+      height: 190rem; } }
   @media only screen and (max-width: 800px) {
     .projects {
-      height: 210rem; } }
+      height: 225rem; } }
   .projects__header {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tim-gouw-NSFG5sJYZgQ-unsplash.jpg);
     background-size: cover;
@@ -293,10 +293,10 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 7.5rem 22.5rem; }
-    @media only screen and (max-width: 800px) {
+    padding: 7.5rem 25rem; }
+    @media only screen and (max-width: 1100px) {
       .projects__content {
-        height: 120rem;
+        height: 150rem;
         padding: 4rem 17.5rem; } }
     @media only screen and (max-width: 600px) {
       .projects__content {
@@ -305,7 +305,7 @@ html {
       width: 100%;
       padding-bottom: 1rem;
       text-align: left;
-      font-size: 3rem;
+      font-size: 3.5rem;
       color: black; }
     .projects__content--text {
       color: #373b44;
@@ -318,11 +318,21 @@ html {
     align-items: center;
     height: 75rem;
     width: 100%; }
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 1400px) {
+      .projects__container {
+        width: 122.5%;
+        align-self: flex-start; } }
+    @media only screen and (max-width: 1100px) {
       .projects__container {
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: center; } }
+        justify-content: space-evenly;
+        align-items: center;
+        height: 120rem;
+        width: 100%;
+        align-self: center; } }
+    @media only screen and (max-width: 800px) {
+      .projects__container {
+        justify-content: flex-start; } }
   .projects__card-one, .projects__card {
     border: .1rem solid black;
     height: 50rem;
@@ -335,7 +345,7 @@ html {
     @media only screen and (max-width: 800px) {
       .projects__card-one, .projects__card {
         height: 72.5rem;
-        width: 45rem;
+        width: 40rem;
         margin: 5rem 0;
         padding: 2rem; } }
     @media only screen and (max-width: 600px) {
@@ -345,7 +355,7 @@ html {
     @media only screen and (max-width: 400px) {
       .projects__card-one, .projects__card {
         height: 60rem;
-        width: 30rem; } }
+        width: 28.5rem; } }
     @media only screen and (min-width: 1100px) {
       .projects__card-one:hover, .projects__card:hover {
         transform: scale(1.075);
@@ -436,7 +446,7 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 22.5rem; }
+    padding: 7.5rem 25rem; }
     @media only screen and (max-width: 800px) {
       .contact__content {
         height: 45rem;
@@ -448,7 +458,7 @@ html {
       width: 100%;
       padding-bottom: 1rem;
       text-align: left;
-      font-size: 3rem;
+      font-size: 3.5rem;
       color: black; }
     .contact__content--text {
       color: #373b44;
@@ -459,6 +469,9 @@ html {
       display: flex;
       justify-content: space-evenly;
       align-items: center; }
+      @media only screen and (max-width: 300px) {
+        .contact__content--container {
+          justify-content: space-between; } }
       .contact__content--container-button {
         width: 12.5rem;
         padding: 1.25rem;
@@ -473,6 +486,9 @@ html {
           .contact__content--container-button {
             font-size: 2rem;
             margin: 0 0 2.75rem 0; } }
+        @media only screen and (max-width: 300px) {
+          .contact__content--container-button {
+            width: 10rem; } }
         @media only screen and (min-width: 1100px) {
           .contact__content--container-button:hover {
             transform: scale(1.1);

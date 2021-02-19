@@ -2,8 +2,12 @@
     height: 130rem; 
     background-color: #f7f7f7;
 
+    @media only screen and (max-width: $large-tablet) {
+        height: 190rem;
+    }
+
     @media only screen and (max-width: $tablet) {
-        height: 210rem;
+        height: 225rem;
     }
 
     &__header {
@@ -39,10 +43,10 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 7.5rem 22.5rem; //todo make this padding uniform across the site.
+        padding: 7.5rem 25rem; //todo write this in a variable.
 
-        @media only screen and (max-width: $tablet) {
-            height: 120rem;
+        @media only screen and (max-width: $large-tablet) {
+            height: 150rem;
             padding: 4rem 17.5rem;
         }
 
@@ -50,15 +54,11 @@
             padding: 4rem;
         }
 
-        // @media only screen and (max-width: $phone) {
-        //     padding: 4rem 2rem;
-        // }
-
         &--header {
             width: 100%;
             padding-bottom: 1rem;
             text-align: left;
-            font-size: 3rem;
+            font-size: 3.5rem;
             color: black;
         }
 
@@ -80,10 +80,22 @@
         height: 75rem;
         width: 100%;
 
-        @media only screen and (max-width: $tablet) {
+        @media only screen and (max-width: $large-desktop) {
+            width: 122.5%;
+            align-self: flex-start;
+        }
+
+        @media only screen and (max-width: $large-tablet) {
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: space-evenly;
             align-items: center;
+            height: 120rem;
+            width: 100%;
+            align-self: center;
+        }
+
+        @media only screen and (max-width: $tablet) {
+            justify-content: flex-start;
         }
     }
     
@@ -101,7 +113,7 @@
 
         @media only screen and (max-width: $tablet) {
             height: 72.5rem;
-            width: 45rem;
+            width: 40rem;
             margin: 5rem 0;
             padding: 2rem;
         }
@@ -113,7 +125,7 @@
 
         @media only screen and (max-width: $phone) {
             height: 60rem;
-            width: 30rem;
+            width: 28.5rem;
         }
 
         // min 
