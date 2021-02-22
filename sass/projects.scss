@@ -39,7 +39,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 7.5rem 25rem; //todo write this in a variable. 
+        padding: 12.5rem 25rem; //todo write this in a variable. 
 
         @media only screen and (max-width: $tablet) {
             padding: 6rem 17.5rem;
@@ -109,6 +109,10 @@
         border-radius: .5rem;
         box-shadow: 1rem .8rem 2.5rem rgba(0, 0, 0, 0.4); // horizontal, vertical, blur
         transition: all 1s;
+
+        @media only screen and (max-width: $large-tablet) {
+            margin-right: 0;
+        }
 
         @media only screen and (max-width: $tablet) {
             height: 72.5rem;
