@@ -1,10 +1,6 @@
 .projects {
-    height: fit-content; // 130rem 
+    height: fit-content;
     background-color: #f7f7f7;
-
-    @media only screen and (max-width: $large-tablet) {
-        height: 190rem; // change
-    }
 
     @media only screen and (max-width: $tablet) {
         height: fit-content;
@@ -43,7 +39,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 7.5rem 25rem; //todo write this in a variable.
+        padding: 7.5rem 25rem; //todo write this in a variable. 
 
         @media only screen and (max-width: $tablet) {
             padding: 6rem 17.5rem;
@@ -108,6 +104,7 @@
         height: 50rem;
         width: 35rem;
         padding: 1.5rem;
+        margin-top: 5rem;
         margin-right: 7.5rem;
         border-radius: .5rem;
         box-shadow: 1rem .8rem 2.5rem rgba(0, 0, 0, 0.4); // horizontal, vertical, blur
@@ -130,7 +127,7 @@
             width: 28.5rem;
         }
 
-        // min 
+        // min-width
         @media only screen and (min-width: $large-tablet) {
             &:hover {
                 transform: scale(1.075);

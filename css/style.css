@@ -270,9 +270,6 @@ html {
 .projects {
   height: fit-content;
   background-color: #f7f7f7; }
-  @media only screen and (max-width: 1100px) {
-    .projects {
-      height: 190rem; } }
   @media only screen and (max-width: 800px) {
     .projects {
       height: fit-content; } }
@@ -345,6 +342,7 @@ html {
     height: 50rem;
     width: 35rem;
     padding: 1.5rem;
+    margin-top: 5rem;
     margin-right: 7.5rem;
     border-radius: .5rem;
     box-shadow: 1rem 0.8rem 2.5rem rgba(0, 0, 0, 0.4);
