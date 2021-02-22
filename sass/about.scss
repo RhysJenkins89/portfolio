@@ -1,5 +1,5 @@
 .about {
-    height: 110vh;
+    height: fit-content;
     background-color: #f7f7f7; 
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     justify-content: center;
 
     @media only screen and (max-width: $tablet) {
-        height: 120rem;
+        height: fit-content; // This is a very useful setting. 
     }
 
     &__content {
@@ -19,16 +19,16 @@
         padding: 7.5rem 25rem;
 
         @media only screen and (max-width: $tablet) {
-            padding: 4rem 17.5rem;
+            padding: 6rem 17.5rem;
         }
 
         @media only screen and (max-width: $small-tablet) {
-            padding: 4rem;
-        }
+            padding: 6rem 6rem;
+        } 
 
-        // @media only screen and (max-width: $phone) {
-        //     padding: 4rem 2rem;
-        // }
+        @media only screen and (max-width: $phone) {
+            padding: 6rem 4rem;
+        }
 
         &--header {
             width: 100%;
@@ -39,6 +39,7 @@
         }
 
         &--text {
+            // line height?
             color: #373b44;
             font-size: 2rem;
 

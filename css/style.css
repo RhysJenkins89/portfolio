@@ -179,7 +179,7 @@ html {
         letter-spacing: .2rem; } }
 
 .about {
-  height: 110vh;
+  height: fit-content;
   background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
@@ -187,7 +187,7 @@ html {
   justify-content: center; }
   @media only screen and (max-width: 800px) {
     .about {
-      height: 120rem; } }
+      height: fit-content; } }
   .about__content {
     height: 100%;
     display: flex;
@@ -197,10 +197,13 @@ html {
     padding: 7.5rem 25rem; }
     @media only screen and (max-width: 800px) {
       .about__content {
-        padding: 4rem 17.5rem; } }
+        padding: 6rem 17.5rem; } }
     @media only screen and (max-width: 600px) {
       .about__content {
-        padding: 4rem; } }
+        padding: 6rem 6rem; } }
+    @media only screen and (max-width: 400px) {
+      .about__content {
+        padding: 6rem 4rem; } }
     .about__content--header {
       width: 100%;
       padding-bottom: 1rem;
@@ -214,16 +217,16 @@ html {
         padding-bottom: 1.5rem; }
 
 .skills {
-  height: 150vh;
+  height: fit-content;
   background-color: #f7f7f7; }
   @media only screen and (max-width: 800px) {
     .skills {
-      height: 140rem; } }
+      height: fit-content; } }
   .skills__header {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    height: 30%;
+    height: 30rem;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -237,7 +240,7 @@ html {
     letter-spacing: .25rem;
     color: whitesmoke; }
   .skills__content {
-    height: 90rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -245,10 +248,13 @@ html {
     padding: 7.5rem 25rem; }
     @media only screen and (max-width: 800px) {
       .skills__content {
-        padding: 4rem 17.5rem; } }
+        padding: 6rem 17.5rem; } }
     @media only screen and (max-width: 600px) {
       .skills__content {
-        padding: 4rem; } }
+        padding: 6rem 6rem; } }
+    @media only screen and (max-width: 400px) {
+      .skills__content {
+        padding: 6rem 4rem; } }
     .skills__content--header {
       width: 100%;
       padding-bottom: 1rem;
@@ -262,14 +268,14 @@ html {
         padding-bottom: 1.5rem; }
 
 .projects {
-  height: 130rem;
+  height: fit-content;
   background-color: #f7f7f7; }
   @media only screen and (max-width: 1100px) {
     .projects {
       height: 190rem; } }
   @media only screen and (max-width: 800px) {
     .projects {
-      height: 225rem; } }
+      height: fit-content; } }
   .projects__header {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tim-gouw-NSFG5sJYZgQ-unsplash.jpg);
     background-size: cover;
@@ -288,19 +294,21 @@ html {
     letter-spacing: .25rem;
     color: whitesmoke; }
   .projects__content {
-    height: 100rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     padding: 7.5rem 25rem; }
-    @media only screen and (max-width: 1100px) {
+    @media only screen and (max-width: 800px) {
       .projects__content {
-        height: 150rem;
-        padding: 4rem 17.5rem; } }
+        padding: 6rem 17.5rem; } }
     @media only screen and (max-width: 600px) {
       .projects__content {
-        padding: 4rem; } }
+        padding: 6rem 6rem; } }
+    @media only screen and (max-width: 400px) {
+      .projects__content {
+        padding: 6rem 4rem; } }
     .projects__content--header {
       width: 100%;
       padding-bottom: 1rem;
@@ -316,7 +324,7 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 75rem;
+    height: fit-content;
     width: 100%; }
     @media only screen and (max-width: 1400px) {
       .projects__container {
@@ -327,7 +335,6 @@ html {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 120rem;
         width: 100%;
         align-self: center; } }
     @media only screen and (max-width: 800px) {
@@ -415,19 +422,16 @@ html {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/ecommerceTwo.png); }
 
 .contact {
-  height: 150vh;
+  height: fit-content;
   background-color: #f7f7f7; }
   @media only screen and (max-width: 800px) {
     .contact {
-      height: 95rem; } }
-  @media only screen and (max-width: 300px) {
-    .contact {
-      height: 85rem; } }
+      height: fit-content; } }
   .contact__header {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/drew-hays-u3o7il8s1Fc-unsplash.jpg);
     background-size: cover;
     background-position: 0% 25%;
-    height: 30%;
+    height: 30rem;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -441,7 +445,7 @@ html {
     letter-spacing: .25rem;
     color: whitesmoke; }
   .contact__content {
-    height: 70%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -449,11 +453,13 @@ html {
     padding: 7.5rem 25rem; }
     @media only screen and (max-width: 800px) {
       .contact__content {
-        height: 45rem;
-        padding: 4rem 17rem; } }
+        padding: 6rem 17.5rem; } }
     @media only screen and (max-width: 600px) {
       .contact__content {
-        padding: 4rem; } }
+        padding: 6rem 6rem; } }
+    @media only screen and (max-width: 400px) {
+      .contact__content {
+        padding: 6rem 4rem; } }
     .contact__content--header {
       width: 100%;
       padding-bottom: 1rem;

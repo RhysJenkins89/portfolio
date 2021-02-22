@@ -1,13 +1,9 @@
 .contact {
-    height: 150vh;
+    height: fit-content;
     background-color: #f7f7f7;
 
     @media only screen and (max-width: $tablet) {
-        height: 95rem;
-    }
-
-    @media only screen and (max-width: $small-phone) {
-        height: 85rem;
+        height: fit-content;
     }
 
     &__header {
@@ -19,7 +15,7 @@
         url(../images/drew-hays-u3o7il8s1Fc-unsplash.jpg);
         background-size: cover;
         background-position: 0% 25%; // first: horizontal; second: vertical
-        height: 30%;
+        height: 30rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -38,7 +34,7 @@
     }
 
     &__content {
-        height: 70%; //todo return to.
+        height: 100%; //todo return to.
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -46,17 +42,16 @@
         padding: 7.5rem 25rem;
 
         @media only screen and (max-width: $tablet) {
-            height: 45rem;
-            padding: 4rem 17rem;
+            padding: 6rem 17.5rem;
         }
 
         @media only screen and (max-width: $small-tablet) {
-            padding: 4rem;
+            padding: 6rem 6rem;
         }
 
-        // @media only screen and (max-width: $phone) {
-        //     padding: 4rem 2rem;
-        // }
+        @media only screen and (max-width: $phone) {
+            padding: 6rem 4rem;
+        }
 
         &--header {
             width: 100%;
