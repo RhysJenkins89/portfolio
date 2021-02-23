@@ -1,6 +1,6 @@
 .about {
     height: fit-content;
-    background-color: #f7f7f7; 
+    background-color: $bg-light; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,17 +26,26 @@
             padding: 6rem 4rem;
         }
 
+        // min-width 
+        @media only screen and (min-width: $large-desktop) {
+            padding: 15rem 42.5rem;
+        }
+
+        @media only screen and (min-width: $very-large-desktop) {
+            padding: 15rem 60rem;
+        }
+
         &--header {
             width: 100%;
             padding-bottom: 1rem;
             text-align: left;
             font-size: 3.5rem;
-            color: black;
+            color: $header-dark;
         }
 
         &--text {
             // line height?
-            color: #373b44;
+            color: $text-dark;
             font-size: 2rem;
 
             &:not(:last-child) {

@@ -201,12 +201,18 @@ html {
     @media only screen and (max-width: 400px) {
       .about__content {
         padding: 6rem 4rem; } }
+    @media only screen and (min-width: 1400px) {
+      .about__content {
+        padding: 15rem 42.5rem; } }
+    @media only screen and (min-width: 2000px) {
+      .about__content {
+        padding: 15rem 60rem; } }
     .about__content--header {
       width: 100%;
       padding-bottom: 1rem;
       text-align: left;
       font-size: 3.5rem;
-      color: black; }
+      color: #000000; }
     .about__content--text {
       color: #373b44;
       font-size: 2rem; }
@@ -252,6 +258,12 @@ html {
     @media only screen and (max-width: 400px) {
       .skills__content {
         padding: 6rem 4rem; } }
+    @media only screen and (min-width: 1400px) {
+      .skills__content {
+        padding: 15rem 42.5rem; } }
+    @media only screen and (min-width: 2000px) {
+      .skills__content {
+        padding: 15rem 60rem; } }
     .skills__content--header {
       width: 100%;
       padding-bottom: 1rem;
@@ -303,6 +315,12 @@ html {
     @media only screen and (max-width: 400px) {
       .projects__content {
         padding: 6rem 4rem; } }
+    @media only screen and (min-width: 1400px) {
+      .projects__content {
+        padding: 15rem 42.5rem; } }
+    @media only screen and (min-width: 2000px) {
+      .projects__content {
+        padding: 15rem 60rem; } }
     .projects__content--header {
       width: 100%;
       padding-bottom: 1rem;
@@ -320,9 +338,9 @@ html {
     align-items: center;
     height: fit-content;
     width: 100%; }
-    @media only screen and (max-width: 1400px) {
+    @media only screen and (max-width: 2000px) {
       .projects__container {
-        width: 122.5%;
+        width: 132.5%;
         align-self: flex-start; } }
     @media only screen and (max-width: 1100px) {
       .projects__container {
@@ -458,6 +476,12 @@ html {
     @media only screen and (max-width: 400px) {
       .contact__content {
         padding: 6rem 4rem; } }
+    @media only screen and (min-width: 1400px) {
+      .contact__content {
+        padding: 15rem 42.5rem; } }
+    @media only screen and (min-width: 2000px) {
+      .contact__content {
+        padding: 15rem 60rem; } }
     .contact__content--header {
       width: 100%;
       padding-bottom: 1rem;

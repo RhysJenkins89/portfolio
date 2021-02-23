@@ -11,7 +11,6 @@ const waypointFunction = () => {
     newCheck.classList.toggle("newStyle");
     if (menuOpen) {
         hamButton.classList.toggle("background");
-        // navBackground.classList.toggle("navigation__open");
     }
 }
 
@@ -22,34 +21,27 @@ const standardOffset = {offset: "7%"}
 
 // About
 const aboutMain = $(".about");
-
 aboutMain.waypoint(waypointFunction, firstOffset);
 
 // Skills
 const skillsHeader = $(".skills");
-
 skillsHeader.waypoint(waypointFunction, standardOffset);
 
 const skillsMain = $(".skills__content");
-
 skillsMain.waypoint(waypointFunction, standardOffset);
 
 // Projects
 const projectsHeader = $(".projects");
-
 projectsHeader.waypoint(waypointFunction, standardOffset);
 
 const projectsMain = $(".projects__content");
-
 projectsMain.waypoint(waypointFunction, standardOffset);
 
 // Contact
 const contactHeader = $(".contact");
-
 contactHeader.waypoint(waypointFunction, standardOffset);
 
 const contactMain = $(".contact__content");
-
 contactMain.waypoint(waypointFunction, standardOffset);
 
 // Hamburger
@@ -60,13 +52,11 @@ hamButton.addEventListener("click", function() {
         links.classList.add("navigation__open");
         if (!newCheck.classList.contains("newStyle")) {
             hamButton.classList.add("background");
-            // navBackground.classList.add("navigation__open");
         }
         menuOpen = true;
     } else {
         hamButton.classList.remove("open");
         hamButton.classList.remove("background");
-        // navBackground.classList.remove("navigation__open");
         overlay.classList.remove("navigation__open");
         links.classList.remove("navigation__open");
         menuOpen = false;
@@ -79,7 +69,6 @@ overlay.addEventListener("click", function () {
     links.classList.remove("navigation__open");
     hamButton.classList.remove("open");
     hamButton.classList.remove("background");
-    // navBackground.classList.remove("navigation__open");
     menuOpen = false;    
 });
 
@@ -89,7 +78,6 @@ links.addEventListener("click", () => {
     links.classList.remove("navigation__open");
     hamButton.classList.remove("open");
     hamButton.classList.remove("background");
-    // navBackground.classList.remove("navigation__open");
     menuOpen = false;
 });
 

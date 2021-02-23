@@ -34,7 +34,7 @@
     }
 
     &__content {
-        height: 100%; //todo return to.
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -51,6 +51,15 @@
 
         @media only screen and (max-width: $phone) {
             padding: 6rem 4rem;
+        }
+
+        // min-width 
+        @media only screen and (min-width: $large-desktop) {
+            padding: 15rem 42.5rem;
+        }
+
+        @media only screen and (min-width: $very-large-desktop) {
+            padding: 15rem 60rem;
         }
 
         &--header {
