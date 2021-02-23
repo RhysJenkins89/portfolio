@@ -2,10 +2,10 @@
     height: 100vh;
     background-image: linear-gradient(
         to right, 
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)
+        rgba($bg-gradient, 0.4),
+        rgba($bg-gradient, 0.4)
         ),
-    url(../images/annie-spratt-QckxruozjRg-unsplash.jpg); // todo fix the image issue on mobile.
+    url(../images/annie-spratt-QckxruozjRg-unsplash.jpg);
     background-size: cover;
     background-position: top;
     background-attachment: scroll;
@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // todo adding a dark mode would be super cool.
+    // todo adding a dark mode would be really cool.
 
     // min-width
     @media only screen and (min-width: $large-tablet) {
@@ -28,13 +28,13 @@
         letter-spacing: .5rem;
         padding: 0 20rem 15rem 20rem;
 
-        @media only screen and (max-width: $tablet) {
+        @include tablet {
             font-size: 5rem;
             letter-spacing: .25rem;
             padding: 0 0 15rem 0;
         }
 
-        @media only screen and (max-width: $phone) {
+        @include phone {
             font-size: 3.75rem;
             letter-spacing: .2rem;
         }

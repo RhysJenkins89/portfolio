@@ -1,16 +1,12 @@
 .skills {
     height: fit-content;
-    background-color: #f7f7f7;
-
-    @media only screen and (max-width: $tablet) {
-        height: fit-content;
-    }
+    background-color: $bg-light;
 
     &__header {
         background-image: linear-gradient(
             to right, 
-            rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.4)
+            rgba($bg-gradient, 0.4),
+            rgba($bg-gradient, 0.4)
         ),
         url(../images/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg);
         background-size: cover;
@@ -20,7 +16,7 @@
         align-items: center;
         justify-content: center;
 
-        @media only screen and (max-width: $tablet) {
+        @include tablet {
             height: 22.5rem;
         }
     }
@@ -30,27 +26,26 @@
         text-transform: uppercase;
         font-size: 4.5rem;
         letter-spacing: .25rem;
-        color: whitesmoke;
+        color: $header-light;
     }
 
     &__content {
         height: 100%;
-        // max-width: 1750px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 12.5rem 25rem;
+        padding: $content-padding;
 
-        @media only screen and (max-width: $tablet) {
+        @include tablet {
             padding: 6rem 17.5rem;
         }
 
-        @media only screen and (max-width: $small-tablet) {
+        @include small-tablet {
             padding: 6rem 6rem;
         }
 
-        @media only screen and (max-width: $phone) {
+        @include phone {
             padding: 6rem 4rem;
         }
 
@@ -68,11 +63,11 @@
             padding-bottom: 1rem;
             text-align: left;
             font-size: 3.5rem;
-            color: black;
+            color: $header-dark;
         }
 
         &--text {
-            color: #373b44;
+            color: $text-dark;
             font-size: 2rem;
 
             &:not(:last-child) {

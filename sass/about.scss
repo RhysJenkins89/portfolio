@@ -12,17 +12,17 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 12.5rem 25rem;
+        padding: $content-padding;
 
-        @media only screen and (max-width: $tablet) {
+        @include tablet {
             padding: 6rem 17.5rem;
         }
 
-        @media only screen and (max-width: $small-tablet) {
+        @include small-tablet {
             padding: 6rem 6rem;
-        } 
+        }
 
-        @media only screen and (max-width: $phone) {
+        @include phone {
             padding: 6rem 4rem;
         }
 

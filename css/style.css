@@ -225,9 +225,6 @@ html {
 .skills {
   height: fit-content;
   background-color: #f7f7f7; }
-  @media only screen and (max-width: 800px) {
-    .skills {
-      height: fit-content; } }
   .skills__header {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg);
     background-size: cover;
@@ -244,7 +241,7 @@ html {
     text-transform: uppercase;
     font-size: 4.5rem;
     letter-spacing: .25rem;
-    color: whitesmoke; }
+    color: #f5f5f5; }
   .skills__content {
     height: 100%;
     display: flex;
@@ -272,7 +269,7 @@ html {
       padding-bottom: 1rem;
       text-align: left;
       font-size: 3.5rem;
-      color: black; }
+      color: #000000; }
     .skills__content--text {
       color: #373b44;
       font-size: 2rem; }
@@ -282,9 +279,6 @@ html {
 .projects {
   height: fit-content;
   background-color: #f7f7f7; }
-  @media only screen and (max-width: 800px) {
-    .projects {
-      height: fit-content; } }
   .projects__header {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tim-gouw-NSFG5sJYZgQ-unsplash.jpg);
     background-size: cover;
@@ -301,7 +295,7 @@ html {
     text-transform: uppercase;
     font-size: 4.5rem;
     letter-spacing: .25rem;
-    color: whitesmoke; }
+    color: #f5f5f5; }
   .projects__content {
     height: 100%;
     display: flex;
@@ -329,7 +323,7 @@ html {
       padding-bottom: 1rem;
       text-align: left;
       font-size: 3.5rem;
-      color: black; }
+      color: #000000; }
     .projects__content--text {
       color: #373b44;
       font-size: 2rem; }
@@ -402,7 +396,7 @@ html {
           height: 48%; } }
     .projects__card-one--header, .projects__card--header {
       font-size: 2rem;
-      color: black;
+      color: #000000;
       margin-top: 2rem; }
       @media only screen and (max-width: 800px) {
         .projects__card-one--header, .projects__card--header {
@@ -443,9 +437,6 @@ html {
 .contact {
   height: fit-content;
   background-color: #f7f7f7; }
-  @media only screen and (max-width: 800px) {
-    .contact {
-      height: fit-content; } }
   .contact__header {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/drew-hays-u3o7il8s1Fc-unsplash.jpg);
     background-size: cover;
@@ -462,7 +453,7 @@ html {
     text-transform: uppercase;
     font-size: 4.5rem;
     letter-spacing: .25rem;
-    color: whitesmoke; }
+    color: #f5f5f5; }
   .contact__content {
     height: 100%;
     display: flex;
@@ -490,7 +481,7 @@ html {
       padding-bottom: 1rem;
       text-align: left;
       font-size: 3.5rem;
-      color: black; }
+      color: #000000; }
     .contact__content--text {
       color: #373b44;
       font-size: 2rem;
