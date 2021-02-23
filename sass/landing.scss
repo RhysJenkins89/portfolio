@@ -8,12 +8,17 @@
     url(../images/annie-spratt-QckxruozjRg-unsplash.jpg); // todo fix the image issue on mobile.
     background-size: cover;
     background-position: top;
-    background-attachment: fixed;
+    background-attachment: scroll;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); // Thanks to https://bennettfeely.com/clippy/
     display: flex;
     align-items: center;
     justify-content: center;
     // todo adding a dark mode would be super cool.
+
+    // min-width
+    @media only screen and (min-width: $large-tablet) {
+        background-attachment: fixed;
+    }
 
     &__header {
         text-align: center;
