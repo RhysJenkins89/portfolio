@@ -11,8 +11,7 @@ $very-large-desktop: 2000px;
 $bg-light: #f7f7f7;
 
 $header-dark: #000000;
-$header-light: whitesmoke; // change to the hex code
-
+$header-light: #f5f5f5;
 $text-dark: #373b44;
 
 // Global CSS settings 
@@ -31,7 +30,7 @@ body {
     font-family: "lato", sans-serif;
     font-weight: 400;
     line-height: 1.6;
-    background-color: $bg-light;
+    background-color: darkcyan;
 }
 
 html {

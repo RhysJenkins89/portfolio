@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: -12.75rem;
 
     &__content {
         height: 100%;
@@ -44,7 +45,6 @@
         }
 
         &--text {
-            // line height?
             color: $text-dark;
             font-size: 2rem;
 
