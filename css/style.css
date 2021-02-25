@@ -11,7 +11,11 @@ body {
   font-family: "lato", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  transition: background-color .75s; }
+
+body.dark {
+  background-color: #121212; }
 
 html {
   box-sizing: border-box;
@@ -102,6 +106,8 @@ html {
   padding-top: 10rem;
   transform: translateX(25rem);
   transition: all .75s; }
+  .navigation__links.dark {
+    background-color: #121212; }
   .navigation__links--top {
     height: 14%;
     width: 100%;
@@ -123,6 +129,8 @@ html {
     padding: 1rem 0;
     background-color: transparent;
     transition: all .75s; }
+    .navigation__links--link.dark {
+      color: #f5f5f5; }
     .navigation__links--link:hover {
       background-color: #eeeeee; }
 
@@ -150,6 +158,28 @@ html {
 
 .nav__ham.newStyle::after {
   background-color: #373b44; }
+
+.navigation__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0 3rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 2rem;
+  width: 17.5rem;
+  cursor: pointer; }
+  .navigation__button:focus {
+    outline: none; }
+
+.button--dark.dark-on {
+  display: none; }
+
+.button--light {
+  display: none; }
+  .button--light.light-on {
+    display: block; }
 
 .landing {
   height: 100vh;
@@ -183,7 +213,6 @@ html {
 
 .about {
   height: fit-content;
-  background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -215,16 +244,21 @@ html {
       padding-bottom: 1rem;
       text-align: left;
       font-size: 3.5rem;
-      color: #000000; }
+      color: #000000;
+      transition: color .75s; }
+      .about__content--header.dark {
+        color: #f5f5f5; }
     .about__content--text {
       color: #373b44;
-      font-size: 2rem; }
+      font-size: 2rem;
+      transition: color .75s; }
+      .about__content--text.dark {
+        color: #f5f5f5; }
       .about__content--text:not(:last-child) {
         padding-bottom: 1.5rem; }
 
 .skills {
-  height: fit-content;
-  background-color: #f7f7f7; }
+  height: fit-content; }
   .skills__header {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg);
     background-size: cover;
@@ -269,16 +303,21 @@ html {
       padding-bottom: 1rem;
       text-align: left;
       font-size: 3.5rem;
-      color: #000000; }
+      color: #000000;
+      transition: color .75s; }
+      .skills__content--header.dark {
+        color: #f5f5f5; }
     .skills__content--text {
       color: #373b44;
-      font-size: 2rem; }
+      font-size: 2rem;
+      transition: color .75s; }
+      .skills__content--text.dark {
+        color: #f5f5f5; }
       .skills__content--text:not(:last-child) {
         padding-bottom: 1.5rem; }
 
 .projects {
-  height: fit-content;
-  background-color: #f7f7f7; }
+  height: fit-content; }
   .projects__header {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tim-gouw-NSFG5sJYZgQ-unsplash.jpg);
     background-size: cover;
@@ -323,10 +362,16 @@ html {
       padding-bottom: 1rem;
       text-align: left;
       font-size: 3.5rem;
-      color: #000000; }
+      color: #000000;
+      transition: color .75s; }
+      .projects__content--header.dark {
+        color: #f5f5f5; }
     .projects__content--text {
       color: #373b44;
-      font-size: 2rem; }
+      font-size: 2rem;
+      transition: color .75s; }
+      .projects__content--text.dark {
+        color: #f5f5f5; }
       .projects__content--text:not(:last-child) {
         padding-bottom: 1.5rem; }
   .projects__container {
@@ -398,6 +443,8 @@ html {
       font-size: 2rem;
       color: #000000;
       margin-top: 2rem; }
+      .projects__card-one--header.dark, .projects__card--header.dark {
+        color: #f5f5f5; }
       @media only screen and (max-width: 800px) {
         .projects__card-one--header, .projects__card--header {
           font-size: 2.5rem;
@@ -406,6 +453,8 @@ html {
       font-size: 1.5rem;
       color: #373b44;
       margin-top: 1rem; }
+      .projects__card-one--text.dark, .projects__card--text.dark {
+        color: #f5f5f5; }
       @media only screen and (max-width: 800px) {
         .projects__card-one--text, .projects__card--text {
           font-size: 1.75rem;
@@ -435,8 +484,7 @@ html {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/ecommerceTwo.png); }
 
 .contact {
-  height: fit-content;
-  background-color: #f7f7f7; }
+  height: fit-content; }
   .contact__header {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/drew-hays-u3o7il8s1Fc-unsplash.jpg);
     background-size: cover;
@@ -481,11 +529,17 @@ html {
       padding-bottom: 1rem;
       text-align: left;
       font-size: 3.5rem;
-      color: #000000; }
+      color: #000000;
+      transition: color .75s; }
+      .contact__content--header.dark {
+        color: #f5f5f5; }
     .contact__content--text {
       color: #373b44;
       font-size: 2rem;
-      padding-bottom: 2.5rem; }
+      padding-bottom: 2.5rem;
+      transition: color .75s; }
+      .contact__content--text.dark {
+        color: #f5f5f5; }
     .contact__content--container {
       width: 100%;
       display: flex;

@@ -47,7 +47,6 @@
         
         &.background {
             background-color: #373b44;
-            // todo now we're back here!
         }
     
         &.open .nav__ham {
@@ -102,13 +101,18 @@
     z-index: 2;
     height: 100vh;
     width: 25rem;
-    background-color: #f7f7f7;
+    background-color: $bg-light;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 10rem;
     transform: translateX(25rem);
     transition: all .75s;
+
+    // Dark mode
+    &.dark {
+        background-color: $bg-dark;
+    }
 
     &--top {
         height: 14%;
@@ -121,7 +125,6 @@
     
         &.navigation__open {
             background-color: #373b44;
-            // todo make this look cool
         }
     }
 
@@ -138,6 +141,10 @@
         padding: 1rem 0;
         background-color: transparent;
         transition: all .75s;
+
+        &.dark {
+            color: $text-light;
+        }
         
         &:hover {
             background-color: #eeeeee;
@@ -174,6 +181,45 @@
 
 .nav__ham.newStyle::after {
     background-color: #373b44;
+}
+
+.navigation {
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto 0 3rem 0;
+        padding: 1rem;
+        border: none;
+        border-radius: 1rem;
+        font-size: 2rem;
+        width: 17.5rem;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__SVG {
+        
+    }
+}
+
+.button--dark {
+
+    &.dark-on {
+        display: none;
+    }
+}
+
+.button--light {
+    display: none;
+
+    &.light-on {
+        display: block;
+    }
 }
 
 

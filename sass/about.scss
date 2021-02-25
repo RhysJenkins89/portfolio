@@ -1,6 +1,5 @@
 .about {
     height: fit-content;
-    background-color: $bg-light; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,11 +40,23 @@
             text-align: left;
             font-size: 3.5rem;
             color: $header-dark;
+            transition: color .75s;
+
+            // Dark mode
+            &.dark {
+                color: $header-light;
+            }
         }
 
         &--text {
             color: $text-dark;
             font-size: 2rem;
+            transition: color .75s;
+
+            // Dark mode 
+            &.dark {
+                color: $text-light;
+            }
 
             &:not(:last-child) {
                 padding-bottom: 1.5rem;

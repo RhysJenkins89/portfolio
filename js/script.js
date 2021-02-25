@@ -2,12 +2,89 @@
 const hamButton = document.getElementById("button");
 const overlay = document.querySelector(".navigation__overlay");
 const links = document.querySelector(".navigation__links");
+const linksProper = document.getElementsByClassName("navigation__links--link")
 const navBackground = document.querySelector(".navigation__links--top");
 const newCheck = document.querySelector(".nav__ham");
+const toggleButton = document.getElementsByClassName("navigation__button")[0];
 let menuOpen = false;
+let darkModeOn;
+
+const enableDarkMode = () => {
+    document.body.classList.add("dark");
+    links.classList.add("dark");
+    document.querySelector(".button--dark").classList.add("dark-on");
+    document.querySelector(".button--light").classList.add("light-on");
+
+    // Looping over the nav text
+    for (let i = 0; i < linksProper.length; i++) {
+        let eachLink = linksProper[i];
+        eachLink.classList.add("dark");
+    }
+
+    // Looping over the heading elements
+    const headers = document.getElementsByClassName("header");
+    for (let i = 0; i < headers.length; i++) {  
+        let eachHeader = headers[i];
+        eachHeader.classList.add("dark");
+    }
+
+    // Looping over the text elements
+    const paragraphs = document.getElementsByClassName("text");
+    for (let i = 0; i < paragraphs.length; i++) {
+        let eachParagraph = paragraphs[i];
+        eachParagraph.classList.add("dark");
+    }
+
+    darkModeOn = true;
+    localStorage.setItem("darkMode", "enabled");
+}
+
+const disableDarkMode = () => {
+    document.body.classList.remove("dark");
+    links.classList.remove("dark");
+    document.querySelector(".button--dark").classList.remove("dark-on");
+    document.querySelector(".button--light").classList.remove("light-on");
+
+    // Looping over the nav text
+    for (let i = 0; i < linksProper.length; i++) {
+        let eachLink = linksProper[i];
+        eachLink.classList.remove("dark");
+    }
+
+    // Looping over the heading elements
+    const headers = document.getElementsByClassName("header");
+    for (let i = 0; i < headers.length; i++) {  
+        let eachHeader = headers[i];
+        eachHeader.classList.remove("dark");
+    }
+
+    // Looping over the text elements
+    const paragraphs = document.getElementsByClassName("text");
+    for (let i = 0; i < paragraphs.length; i++) {
+        let eachParagraph = paragraphs[i];
+        eachParagraph.classList.remove("dark");
+    }
+
+    darkModeOn = false;
+    localStorage.setItem("darkMode", null);
+}
+
+// Dark mode local storage
+let darkMode = localStorage.getItem("darkMode");
+console.log(darkMode);
+if (darkMode == "enabled") {
+    enableDarkMode();
+    darkModeOn = true;
+}
+
+console.log(linksProper);
 
 // Waypoint function
 const waypointFunction = () => {
+    // todo This is the next problem to solve.
+    // if (document.body.classList.contains("dark")) {
+    //     return;
+    // }
     newCheck.classList.toggle("newStyle");
     if (menuOpen) {
         hamButton.classList.toggle("background");
@@ -73,15 +150,38 @@ overlay.addEventListener("click", function () {
 });
 
 // Nav links
-links.addEventListener("click", () => {
-    overlay.classList.remove("navigation__open");
-    links.classList.remove("navigation__open");
-    hamButton.classList.remove("open");
-    hamButton.classList.remove("background");
-    menuOpen = false;
-});
+for (let i = 0; i < linksProper.length; i++) {
+    let link = linksProper[i];
+    link.addEventListener("click", () => {
+        overlay.classList.remove("navigation__open");
+        links.classList.remove("navigation__open");
+        hamButton.classList.remove("open");
+        hamButton.classList.remove("background");
+        menuOpen = false;    
+    })
+}
+
+// links.addEventListener("click", () => {
+//     overlay.classList.remove("navigation__open");
+//     links.classList.remove("navigation__open");
+//     hamButton.classList.remove("open");
+//     hamButton.classList.remove("background");
+//     menuOpen = false;
+// });
+
+// Dark mode toggle
+toggleButton.addEventListener("click", () => { 
+    console.log(darkMode);
+    console.log(darkModeOn);
+    if (darkModeOn) {
+        disableDarkMode();
+    } else {
+        enableDarkMode();
+    }
+})
 
 // The following removes the global transition: none once the page has loaded.  
 window.addEventListener("load", () => {
     document.body.classList.remove("preload");
 });
+
