@@ -144,6 +144,10 @@
 
         &.dark {
             color: $text-light;
+
+            &:hover {
+                background-color: #303030;
+            }
         }
         
         &:hover {
@@ -194,31 +198,45 @@
         border: none;
         border-radius: 1rem;
         font-size: 2rem;
+        height: 5rem;
         width: 17.5rem;
         cursor: pointer;
+        transition: background-color .75s, color .25s;
+        color: $text-dark;
+
+        &.dark {
+            background-color: $bg-button-dark;
+            color: $text-light;
+        }
 
         &:focus {
             outline: none;
         }
     }
-
-    &__SVG {
-        
-    }
 }
 
 .button--dark {
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    transition: all .75s;
 
     &.dark-on {
-        display: none;
+        opacity: 0;
+        visibility: hidden;
     }
 }
 
 .button--light {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .75s;
+
 
     &.light-on {
-        display: block;
+        opacity: 1;
+        visibility: visible;
     }
 }
 

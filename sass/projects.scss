@@ -125,7 +125,12 @@
         margin-right: 7.5rem;
         border-radius: .5rem;
         box-shadow: 1rem .8rem 2.5rem rgba($box-shadow, 0.4); // horizontal, vertical, blur
+        background-color: transparent;
         transition: all 1s;
+
+        &.dark {
+            background-color: $bg-card-dark;
+        }
 
         @include large-tablet {
             margin-right: 0;

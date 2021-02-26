@@ -1,11 +1,13 @@
 // Variables
-const hamButton = document.getElementById("button");
+const hamButton = document.getElementById("buttonHam");
 const overlay = document.querySelector(".navigation__overlay");
 const links = document.querySelector(".navigation__links");
 const linksProper = document.getElementsByClassName("navigation__links--link")
 const navBackground = document.querySelector(".navigation__links--top");
 const newCheck = document.querySelector(".nav__ham");
 const toggleButton = document.getElementsByClassName("navigation__button")[0];
+const cards = document.getElementsByClassName("card");
+const buttons = document.getElementsByClassName("button");
 let menuOpen = false;
 let darkModeOn;
 
@@ -14,6 +16,7 @@ const enableDarkMode = () => {
     links.classList.add("dark");
     document.querySelector(".button--dark").classList.add("dark-on");
     document.querySelector(".button--light").classList.add("light-on");
+    toggleButton.classList.add("dark");
 
     // Looping over the nav text
     for (let i = 0; i < linksProper.length; i++) {
@@ -35,6 +38,18 @@ const enableDarkMode = () => {
         eachParagraph.classList.add("dark");
     }
 
+    // Looping over the card elements
+    for (let i = 0; i < cards.length; i++) {
+        let eachCard = cards[i];
+        eachCard.classList.add("dark");
+    }
+
+    // Looping over the button elements
+    for (let i = 0; i < buttons.length; i++) {
+        let eachButton = buttons[i];
+        eachButton.classList.add("dark");
+    }
+
     darkModeOn = true;
     localStorage.setItem("darkMode", "enabled");
 }
@@ -44,6 +59,7 @@ const disableDarkMode = () => {
     links.classList.remove("dark");
     document.querySelector(".button--dark").classList.remove("dark-on");
     document.querySelector(".button--light").classList.remove("light-on");
+    toggleButton.classList.remove("dark");
 
     // Looping over the nav text
     for (let i = 0; i < linksProper.length; i++) {
@@ -65,19 +81,28 @@ const disableDarkMode = () => {
         eachParagraph.classList.remove("dark");
     }
 
+    // Looping over the card elements
+    for (let i = 0; i < cards.length; i++) {
+        let eachCard = cards[i];
+        eachCard.classList.remove("dark");
+    }
+
+    // Looping over the button elements
+    for (let i = 0; i < buttons.length; i++) {
+        let eachButton = buttons[i];
+        eachButton.classList.remove("dark");
+    }
+
     darkModeOn = false;
     localStorage.setItem("darkMode", null);
 }
 
 // Dark mode local storage
 let darkMode = localStorage.getItem("darkMode");
-console.log(darkMode);
 if (darkMode == "enabled") {
     enableDarkMode();
     darkModeOn = true;
 }
-
-console.log(linksProper);
 
 // Waypoint function
 const waypointFunction = () => {
@@ -161,18 +186,8 @@ for (let i = 0; i < linksProper.length; i++) {
     })
 }
 
-// links.addEventListener("click", () => {
-//     overlay.classList.remove("navigation__open");
-//     links.classList.remove("navigation__open");
-//     hamButton.classList.remove("open");
-//     hamButton.classList.remove("background");
-//     menuOpen = false;
-// });
-
 // Dark mode toggle
 toggleButton.addEventListener("click", () => { 
-    console.log(darkMode);
-    console.log(darkModeOn);
     if (darkModeOn) {
         disableDarkMode();
     } else {

@@ -128,3 +128,14 @@
         }
     }
 }
+
+.button {
+    color: $text-dark;
+    background-color: #DCDCDC;
+    transition: all .75s;
+
+    &.dark {
+        color: $text-light;
+        background-color: $bg-button-dark;
+    }
+}

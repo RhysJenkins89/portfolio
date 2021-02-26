@@ -15,7 +15,7 @@ body {
   transition: background-color .75s; }
 
 body.dark {
-  background-color: #121212; }
+  background-color: #202020; }
 
 html {
   box-sizing: border-box;
@@ -107,7 +107,7 @@ html {
   transform: translateX(25rem);
   transition: all .75s; }
   .navigation__links.dark {
-    background-color: #121212; }
+    background-color: #202020; }
   .navigation__links--top {
     height: 14%;
     width: 100%;
@@ -131,6 +131,8 @@ html {
     transition: all .75s; }
     .navigation__links--link.dark {
       color: #f5f5f5; }
+      .navigation__links--link.dark:hover {
+        background-color: #303030; }
     .navigation__links--link:hover {
       background-color: #eeeeee; }
 
@@ -168,18 +170,34 @@ html {
   border: none;
   border-radius: 1rem;
   font-size: 2rem;
+  height: 5rem;
   width: 17.5rem;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: background-color .75s, color .25s;
+  color: #373b44; }
+  .navigation__button.dark {
+    background-color: #505050;
+    color: #f5f5f5; }
   .navigation__button:focus {
     outline: none; }
 
-.button--dark.dark-on {
-  display: none; }
+.button--dark {
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transition: all .75s; }
+  .button--dark.dark-on {
+    opacity: 0;
+    visibility: hidden; }
 
 .button--light {
-  display: none; }
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .75s; }
   .button--light.light-on {
-    display: block; }
+    opacity: 1;
+    visibility: visible; }
 
 .landing {
   height: 100vh;
@@ -403,7 +421,10 @@ html {
     margin-right: 7.5rem;
     border-radius: .5rem;
     box-shadow: 1rem 0.8rem 2.5rem rgba(0, 0, 0, 0.4);
+    background-color: transparent;
     transition: all 1s; }
+    .projects__card-one.dark, .projects__card.dark {
+      background-color: #303030; }
     @media only screen and (max-width: 1100px) {
       .projects__card-one, .projects__card {
         margin-right: 0; } }
@@ -571,6 +592,14 @@ html {
             box-shadow: 0.5rem 0.25rem 1.25rem rgba(0, 0, 0, 0.4); } }
         .contact__content--container-button:focus {
           outline: none; }
+
+.button {
+  color: #373b44;
+  background-color: #DCDCDC;
+  transition: all .75s; }
+  .button.dark {
+    color: #f5f5f5;
+    background-color: #505050; }
 
 .footer__text {
   display: none;
