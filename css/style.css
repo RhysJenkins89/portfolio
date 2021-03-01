@@ -152,13 +152,13 @@ html {
     visibility: visible;
     opacity: 1; }
 
-.nav__ham.newStyle {
+.nav__ham.ham-dark {
   background-color: #373b44; }
 
-.nav__ham.newStyle::before {
+.nav__ham.ham-dark::before {
   background-color: #373b44; }
 
-.nav__ham.newStyle::after {
+.nav__ham.ham-dark::after {
   background-color: #373b44; }
 
 .navigation__button {

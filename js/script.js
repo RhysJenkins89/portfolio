@@ -4,7 +4,7 @@ const overlay = document.querySelector(".navigation__overlay");
 const links = document.querySelector(".navigation__links");
 const linksProper = document.getElementsByClassName("navigation__links--link")
 const navBackground = document.querySelector(".navigation__links--top");
-const newCheck = document.querySelector(".nav__ham");
+const navHam = document.querySelector(".nav__ham");
 const toggleButton = document.getElementsByClassName("navigation__button")[0];
 const cards = document.getElementsByClassName("card");
 const buttons = document.getElementsByClassName("button");
@@ -17,7 +17,7 @@ const enableDarkMode = () => {
     document.querySelector(".button--dark").classList.add("dark-on");
     document.querySelector(".button--light").classList.add("light-on");
     toggleButton.classList.add("dark");
-    newCheck.classList.remove("newStyle");
+    navHam.classList.remove("ham-dark");
 
     // Looping over the nav text
     for (let i = 0; i < linksProper.length; i++) {
@@ -105,15 +105,19 @@ if (darkMode == "enabled") {
     darkModeOn = true;
 }
 
-// todo change styles based on direction
-// on dark mode off, turn ham dark, then add up/down listeners on the waypoints.
 // Waypoint function
-const waypointFunction = (direction) => {
+const waypointTop = (direction) => {
     if (document.body.classList.contains("dark")) return;
-    newCheck.classList.toggle("newStyle");
-    if (menuOpen) {
-        hamButton.classList.toggle("background");
-    }
+    if (direction == "up") navHam.classList.add("ham-dark");
+    if (direction == "down") navHam.classList.remove("ham-dark");
+    if (menuOpen) hamButton.classList.toggle("background");
+} 
+
+const waypointBottom = (direction) => {
+    if (document.body.classList.contains("dark")) return;
+    if (direction == "down") navHam.classList.add("ham-dark");   
+    if (direction == "up") navHam.classList.remove("ham-dark"); 
+    if (menuOpen) hamButton.classList.toggle("background");
 }
 
 const firstOffset = {offset: "25%"}
@@ -123,28 +127,28 @@ const standardOffset = {offset: "7%"}
 
 // About
 const aboutMain = $(".about");
-aboutMain.waypoint(waypointFunction, firstOffset);
+aboutMain.waypoint(waypointBottom, firstOffset);
 
 // Skills
 const skillsHeader = $(".skills");
-skillsHeader.waypoint(waypointFunction, standardOffset);
+skillsHeader.waypoint(waypointTop, standardOffset);
 
 const skillsMain = $(".skills__content");
-skillsMain.waypoint(waypointFunction, standardOffset);
+skillsMain.waypoint(waypointBottom, standardOffset);
 
 // Projects
 const projectsHeader = $(".projects");
-projectsHeader.waypoint(waypointFunction, standardOffset);
+projectsHeader.waypoint(waypointTop, standardOffset);
 
 const projectsMain = $(".projects__content");
-projectsMain.waypoint(waypointFunction, standardOffset);
+projectsMain.waypoint(waypointBottom, standardOffset);
 
 // Contact
 const contactHeader = $(".contact");
-contactHeader.waypoint(waypointFunction, standardOffset);
+contactHeader.waypoint(waypointTop, standardOffset);
 
 const contactMain = $(".contact__content");
-contactMain.waypoint(waypointFunction, standardOffset);
+contactMain.waypoint(waypointBottom, standardOffset);
 
 // Hamburger
 hamButton.addEventListener("click", function() {
@@ -152,11 +156,11 @@ hamButton.addEventListener("click", function() {
         hamButton.classList.add("open");
         overlay.classList.add("navigation__open")
         links.classList.add("navigation__open");
-        if (!newCheck.classList.contains("newStyle")) {
+        if (!navHam.classList.contains("ham-dark")) {
             hamButton.classList.add("background");
         }
         if (document.body.classList.contains("dark")) {
-            newCheck.classList.remove("newStyle");
+            navHam.classList.remove("ham-dark");
         }
         menuOpen = true;
     } else {

@@ -67,9 +67,8 @@
         display: block;
         height: .2rem;
         width: 3rem;
-        background-color: #f7f7f7;
+        background-color: $ham-light;
         transition: all .8s;
-        //todo change the colour of the dark style on dark mode -- that should solve it 
 
         &::before, 
         &::after {
@@ -77,12 +76,14 @@
             height: .2rem;
             width: 3rem;
             position: absolute;
-            background-color: #f7f7f7;
-            transition: all .8s;   
+            background-color: $ham-light;
+            transition: all .8s;
         }
 
         &::before.newStyle {
             background-color: #f7f7f7;
+
+            // And possibly here as well.
         }
         
         &::before {
@@ -176,16 +177,16 @@
     }
 }
 
-.nav__ham.newStyle {
-    background-color: #373b44; 
+.nav__ham.ham-dark {
+    background-color: $ham-dark; 
 }
 
-.nav__ham.newStyle::before {
-    background-color: #373b44;
+.nav__ham.ham-dark::before {
+    background-color: $ham-dark;
 } 
 
-.nav__ham.newStyle::after {
-    background-color: #373b44;
+.nav__ham.ham-dark::after {
+    background-color: $ham-dark;
 }
 
 .navigation {
