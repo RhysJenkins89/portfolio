@@ -17,6 +17,7 @@ const enableDarkMode = () => {
     document.querySelector(".button--dark").classList.add("dark-on");
     document.querySelector(".button--light").classList.add("light-on");
     toggleButton.classList.add("dark");
+    newCheck.classList.remove("newStyle");
 
     // Looping over the nav text
     for (let i = 0; i < linksProper.length; i++) {
@@ -104,12 +105,11 @@ if (darkMode == "enabled") {
     darkModeOn = true;
 }
 
+// todo change styles based on direction
+// on dark mode off, turn ham dark, then add up/down listeners on the waypoints.
 // Waypoint function
-const waypointFunction = () => {
-    // todo This is the next problem to solve.
-    // if (document.body.classList.contains("dark")) {
-    //     return;
-    // }
+const waypointFunction = (direction) => {
+    if (document.body.classList.contains("dark")) return;
     newCheck.classList.toggle("newStyle");
     if (menuOpen) {
         hamButton.classList.toggle("background");
@@ -154,6 +154,9 @@ hamButton.addEventListener("click", function() {
         links.classList.add("navigation__open");
         if (!newCheck.classList.contains("newStyle")) {
             hamButton.classList.add("background");
+        }
+        if (document.body.classList.contains("dark")) {
+            newCheck.classList.remove("newStyle");
         }
         menuOpen = true;
     } else {
