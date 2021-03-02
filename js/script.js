@@ -119,8 +119,8 @@ const waypointTop = (direction) => {
 
 const waypointBottom = (direction) => {
     if (document.body.classList.contains("dark")) return;
-    if (direction == "down") navHam.classList.add("ham-dark");   
-    if (direction == "up") navHam.classList.remove("ham-dark"); 
+    if (direction == "up") navHam.classList.remove("ham-dark");
+    if (direction == "down") navHam.classList.add("ham-dark");    
     if (menuOpen && direction == "up") hamButton.classList.add("background");
     if (menuOpen && direction == "down") hamButton.classList.remove("background");
 }

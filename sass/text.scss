@@ -1,0 +1,36 @@
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    letter-spacing: .25rem;
+    color: $header-light;
+}
+
+.header {
+    width: 100%;
+    padding-bottom: 1rem;
+    text-align: left;
+    font-size: 3.5rem;
+    color: $header-dark;
+    transition: color .75s;
+
+    // Dark mode
+    &.dark {
+        color: $header-light;
+    }
+}
+
+.text {
+    color: $text-dark;
+    font-size: 2rem;
+    transition: color .75s;
+
+    // Dark mode 
+    &.dark {
+        color: $text-light;
+    }
+
+    &:not(:last-child) {
+        padding-bottom: 1.5rem;
+    }
+} 

@@ -1,0 +1,48 @@
+.container-heading {
+    background-image: linear-gradient(
+        to right, 
+        rgba($bg-gradient, 0.4),
+        rgba($bg-gradient, 0.4)
+    ),
+    url(../images/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+        height: 22.5rem;
+    }
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: $content-padding;
+
+    @include tablet {
+        padding: 6rem 17.5rem;
+    }
+
+    @include small-tablet {
+        padding: 6rem 6rem;
+    }
+
+    @include phone {
+        padding: 6rem 4rem;
+    }
+
+    // min-width 
+    @media only screen and (min-width: $large-desktop) {
+        padding: 15rem 42.5rem;
+    }
+
+    @media only screen and (min-width: $very-large-desktop) {
+        padding: 15rem 60rem;
+    }
+}

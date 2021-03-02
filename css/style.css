@@ -235,104 +235,9 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-  .about__content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 12.5rem 25rem; }
-    @media only screen and (max-width: 800px) {
-      .about__content {
-        padding: 6rem 17.5rem; } }
-    @media only screen and (max-width: 600px) {
-      .about__content {
-        padding: 6rem 6rem; } }
-    @media only screen and (max-width: 400px) {
-      .about__content {
-        padding: 6rem 4rem; } }
-    @media only screen and (min-width: 1400px) {
-      .about__content {
-        padding: 15rem 42.5rem; } }
-    @media only screen and (min-width: 2000px) {
-      .about__content {
-        padding: 15rem 60rem; } }
-    .about__content--header {
-      width: 100%;
-      padding-bottom: 1rem;
-      text-align: left;
-      font-size: 3.5rem;
-      color: #000000;
-      transition: color .75s; }
-      .about__content--header.dark {
-        color: #f5f5f5; }
-    .about__content--text {
-      color: #373b44;
-      font-size: 2rem;
-      transition: color .75s; }
-      .about__content--text.dark {
-        color: #f5f5f5; }
-      .about__content--text:not(:last-child) {
-        padding-bottom: 1.5rem; }
 
 .skills {
   height: fit-content; }
-  .skills__header {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 30rem;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    @media only screen and (max-width: 800px) {
-      .skills__header {
-        height: 22.5rem; } }
-  .skills__title {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 4.5rem;
-    letter-spacing: .25rem;
-    color: #f5f5f5; }
-  .skills__content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 12.5rem 25rem; }
-    @media only screen and (max-width: 800px) {
-      .skills__content {
-        padding: 6rem 17.5rem; } }
-    @media only screen and (max-width: 600px) {
-      .skills__content {
-        padding: 6rem 6rem; } }
-    @media only screen and (max-width: 400px) {
-      .skills__content {
-        padding: 6rem 4rem; } }
-    @media only screen and (min-width: 1400px) {
-      .skills__content {
-        padding: 15rem 42.5rem; } }
-    @media only screen and (min-width: 2000px) {
-      .skills__content {
-        padding: 15rem 60rem; } }
-    .skills__content--header {
-      width: 100%;
-      padding-bottom: 1rem;
-      text-align: left;
-      font-size: 3.5rem;
-      color: #000000;
-      transition: color .75s; }
-      .skills__content--header.dark {
-        color: #f5f5f5; }
-    .skills__content--text {
-      color: #373b44;
-      font-size: 2rem;
-      transition: color .75s; }
-      .skills__content--text.dark {
-        color: #f5f5f5; }
-      .skills__content--text:not(:last-child) {
-        padding-bottom: 1.5rem; }
 
 .projects {
   height: fit-content; }
@@ -612,3 +517,64 @@ html {
 
 .footer__textVis {
   display: block; }
+
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  letter-spacing: .25rem;
+  color: #f5f5f5; }
+
+.header {
+  width: 100%;
+  padding-bottom: 1rem;
+  text-align: left;
+  font-size: 3.5rem;
+  color: #000000;
+  transition: color .75s; }
+  .header.dark {
+    color: #f5f5f5; }
+
+.text {
+  color: #373b44;
+  font-size: 2rem;
+  transition: color .75s; }
+  .text.dark {
+    color: #f5f5f5; }
+  .text:not(:last-child) {
+    padding-bottom: 1.5rem; }
+
+.container-heading {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 800px) {
+    .container-heading {
+      height: 22.5rem; } }
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 12.5rem 25rem; }
+  @media only screen and (max-width: 800px) {
+    .container {
+      padding: 6rem 17.5rem; } }
+  @media only screen and (max-width: 600px) {
+    .container {
+      padding: 6rem 6rem; } }
+  @media only screen and (max-width: 400px) {
+    .container {
+      padding: 6rem 4rem; } }
+  @media only screen and (min-width: 1400px) {
+    .container {
+      padding: 15rem 42.5rem; } }
+  @media only screen and (min-width: 2000px) {
+    .container {
+      padding: 15rem 60rem; } }
