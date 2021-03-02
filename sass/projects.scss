@@ -185,9 +185,9 @@
         }
 
         &--header {
-            font-size: 2rem;
+            font-size: 2rem !important;
             color: $header-dark;
-            margin-top: 2rem;
+            margin-top: 2rem !important;
             transition: color .75s;
 
             // Dark mode 
@@ -202,9 +202,9 @@
         }
 
         &--text {
-            font-size: 1.5rem;
+            font-size: 1.5rem !important;
             color: $text-dark;
-            margin-top: 1rem;
+            margin-top: 1rem !important;
             transition: color .75s;
 
             // Dark mode 
