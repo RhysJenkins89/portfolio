@@ -18,6 +18,7 @@ const enableDarkMode = () => {
     document.querySelector(".button--light").classList.add("light-on");
     toggleButton.classList.add("dark");
     navHam.classList.remove("ham-dark");
+    hamButton.classList.remove("background");
 
     // Looping over the nav text
     for (let i = 0; i < linksProper.length; i++) {
@@ -61,6 +62,8 @@ const disableDarkMode = () => {
     document.querySelector(".button--dark").classList.remove("dark-on");
     document.querySelector(".button--light").classList.remove("light-on");
     toggleButton.classList.remove("dark");
+    navHam.classList.add("ham-dark");
+
 
     // Looping over the nav text
     for (let i = 0; i < linksProper.length; i++) {
@@ -105,19 +108,21 @@ if (darkMode == "enabled") {
     darkModeOn = true;
 }
 
-// Waypoint function
+// Waypoint functions
 const waypointTop = (direction) => {
     if (document.body.classList.contains("dark")) return;
     if (direction == "up") navHam.classList.add("ham-dark");
     if (direction == "down") navHam.classList.remove("ham-dark");
-    if (menuOpen) hamButton.classList.toggle("background");
+    if (menuOpen && direction == "up") hamButton.classList.remove("background");
+    if (menuOpen && direction == "down") hamButton.classList.add("background");
 } 
 
 const waypointBottom = (direction) => {
     if (document.body.classList.contains("dark")) return;
     if (direction == "down") navHam.classList.add("ham-dark");   
     if (direction == "up") navHam.classList.remove("ham-dark"); 
-    if (menuOpen) hamButton.classList.toggle("background");
+    if (menuOpen && direction == "up") hamButton.classList.add("background");
+    if (menuOpen && direction == "down") hamButton.classList.remove("background");
 }
 
 const firstOffset = {offset: "25%"}
@@ -147,7 +152,7 @@ projectsMain.waypoint(waypointBottom, standardOffset);
 const contactHeader = $(".contact");
 contactHeader.waypoint(waypointTop, standardOffset);
 
-const contactMain = $(".contact__content");
+const contactMain = $(".contact__content"); // todo the offset here doesn't work properly
 contactMain.waypoint(waypointBottom, standardOffset);
 
 // Hamburger
@@ -161,6 +166,7 @@ hamButton.addEventListener("click", function() {
         }
         if (document.body.classList.contains("dark")) {
             navHam.classList.remove("ham-dark");
+            hamButton.classList.remove("background");
         }
         menuOpen = true;
     } else {
@@ -195,15 +201,10 @@ for (let i = 0; i < linksProper.length; i++) {
 
 // Dark mode toggle
 toggleButton.addEventListener("click", () => { 
-    if (darkModeOn) {
-        disableDarkMode();
-    } else {
-        enableDarkMode();
-    }
+    darkModeOn ? disableDarkMode() : enableDarkMode();
 })
 
 // The following removes the global transition: none once the page has loaded.  
 window.addEventListener("load", () => {
     document.body.classList.remove("preload");
 });
-
