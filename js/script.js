@@ -138,21 +138,21 @@ aboutMain.waypoint(waypointBottom, firstOffset);
 const skillsHeader = $(".skills");
 skillsHeader.waypoint(waypointTop, standardOffset);
 
-const skillsMain = $(".skills__content");
+const skillsMain = $("#skills-content");
 skillsMain.waypoint(waypointBottom, standardOffset);
 
 // Projects
 const projectsHeader = $(".projects");
 projectsHeader.waypoint(waypointTop, standardOffset);
 
-const projectsMain = $(".projects__content");
+const projectsMain = $("#projects-content");
 projectsMain.waypoint(waypointBottom, standardOffset);
 
 // Contact
 const contactHeader = $(".contact");
 contactHeader.waypoint(waypointTop, standardOffset);
 
-const contactMain = $(".contact__content"); // todo the offset here doesn't work properly
+const contactMain = $("#contact-content"); // todo the offset here doesn't work properly
 contactMain.waypoint(waypointBottom, standardOffset);
 
 // Hamburger
