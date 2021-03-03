@@ -241,62 +241,6 @@ html {
 
 .projects {
   height: fit-content; }
-  .projects__header {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tim-gouw-NSFG5sJYZgQ-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 30rem;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    @media only screen and (max-width: 800px) {
-      .projects__header {
-        height: 22.5rem; } }
-  .projects__title {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 4.5rem;
-    letter-spacing: .25rem;
-    color: #f5f5f5; }
-  .projects__content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 12.5rem 25rem; }
-    @media only screen and (max-width: 800px) {
-      .projects__content {
-        padding: 6rem 17.5rem; } }
-    @media only screen and (max-width: 600px) {
-      .projects__content {
-        padding: 6rem 6rem; } }
-    @media only screen and (max-width: 400px) {
-      .projects__content {
-        padding: 6rem 4rem; } }
-    @media only screen and (min-width: 1400px) {
-      .projects__content {
-        padding: 15rem 42.5rem; } }
-    @media only screen and (min-width: 2000px) {
-      .projects__content {
-        padding: 15rem 60rem; } }
-    .projects__content--header {
-      width: 100%;
-      padding-bottom: 1rem;
-      text-align: left;
-      font-size: 3.5rem;
-      color: #000000;
-      transition: color .75s; }
-      .projects__content--header.dark {
-        color: #f5f5f5; }
-    .projects__content--text {
-      color: #373b44;
-      font-size: 2rem;
-      transition: color .75s; }
-      .projects__content--text.dark {
-        color: #f5f5f5; }
-      .projects__content--text:not(:last-child) {
-        padding-bottom: 1.5rem; }
   .projects__container {
     display: flex;
     justify-content: flex-start;
@@ -317,42 +261,55 @@ html {
     @media only screen and (max-width: 800px) {
       .projects__container {
         justify-content: flex-start; } }
-  .projects__card-one, .projects__card {
-    border: .1rem solid black;
-    height: 50rem;
-    width: 35rem;
-    padding: 1.5rem;
-    margin-top: 5rem;
-    margin-right: 7.5rem;
-    border-radius: .5rem;
-    box-shadow: 1rem 0.8rem 2.5rem rgba(0, 0, 0, 0.4);
-    background-color: transparent;
-    transition: all 1s; }
-    .projects__card-one.dark, .projects__card.dark {
-      background-color: #303030; }
-    @media only screen and (max-width: 1100px) {
-      .projects__card-one, .projects__card {
-        margin-right: 0; } }
+
+.card {
+  border: .1rem solid black;
+  height: 50rem;
+  width: 35rem;
+  padding: 1.5rem;
+  margin-top: 5rem;
+  margin-right: 7.5rem;
+  border-radius: .5rem;
+  box-shadow: 1rem 0.8rem 2.5rem rgba(0, 0, 0, 0.4);
+  background-color: transparent;
+  transition: all 1s; }
+  .card.dark {
+    background-color: #303030; }
+  @media only screen and (max-width: 1100px) {
+    .card {
+      margin-right: 0; } }
+  @media only screen and (max-width: 800px) {
+    .card {
+      height: auto;
+      width: 40rem;
+      margin: 5rem 0;
+      padding: 2rem; } }
+  @media only screen and (max-width: 600px) {
+    .card {
+      width: 37.5rem; } }
+  @media only screen and (max-width: 400px) {
+    .card {
+      width: 28.5rem; } }
+  @media only screen and (min-width: 1100px) {
+    .card:hover {
+      transform: scale(1.075);
+      box-shadow: 1.25rem 1rem 3rem rgba(0, 0, 0, 0.4); } }
+  .card__image {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/annie-spratt-QckxruozjRg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    height: 52.5%; }
     @media only screen and (max-width: 800px) {
-      .projects__card-one, .projects__card {
-        height: 72.5rem;
-        width: 40rem;
-        margin: 5rem 0;
-        padding: 2rem; } }
-    @media only screen and (max-width: 600px) {
-      .projects__card-one, .projects__card {
-        height: 70rem;
-        width: 37.5rem; } }
+      .card__image {
+        height: 25rem; } }
     @media only screen and (max-width: 400px) {
-      .projects__card-one, .projects__card {
-        height: 60rem;
-        width: 28.5rem; } }
-    @media only screen and (min-width: 1100px) {
-      .projects__card-one:hover, .projects__card:hover {
-        transform: scale(1.075);
-        box-shadow: 1.25rem 1rem 3rem rgba(0, 0, 0, 0.4); } }
-    .projects__card-one--image, .projects__card--image {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/annie-spratt-QckxruozjRg-unsplash.jpg);
+      .card__image {
+        height: 22.5rem; } }
+    .card__image--ecom {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/ecommerceTwo.png);
       background-size: cover;
       background-position: center;
       clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -360,145 +317,88 @@ html {
       border-top-right-radius: .5rem;
       height: 52.5%; }
       @media only screen and (max-width: 800px) {
-        .projects__card-one--image, .projects__card--image {
-          height: 55%; } }
+        .card__image--ecom {
+          height: 25rem; } }
       @media only screen and (max-width: 400px) {
-        .projects__card-one--image, .projects__card--image {
-          height: 48%; } }
-    .projects__card-one--header, .projects__card--header {
-      font-size: 2rem !important;
-      color: #000000;
-      margin-top: 2rem !important;
-      transition: color .75s; }
-      .projects__card-one--header.dark, .projects__card--header.dark {
-        color: #f5f5f5; }
-      @media only screen and (max-width: 800px) {
-        .projects__card-one--header, .projects__card--header {
-          font-size: 2.5rem;
-          margin-top: 2.5rem; } }
-    .projects__card-one--text, .projects__card--text {
-      font-size: 1.5rem !important;
-      color: #373b44;
-      margin-top: 1rem !important;
-      transition: color .75s; }
-      .projects__card-one--text.dark, .projects__card--text.dark {
-        color: #f5f5f5; }
-      @media only screen and (max-width: 800px) {
-        .projects__card-one--text, .projects__card--text {
-          font-size: 1.75rem;
-          margin-top: 1.5rem; } }
-    .projects__card-one--link, .projects__card--link {
-      text-decoration: none; }
-    .projects__card-one--button, .projects__card--button {
-      padding: 1.25rem;
-      margin: 1.5rem 2rem 0 0;
-      font-family: inherit;
-      font-size: 1.5rem;
-      border-radius: .2rem;
-      border: none;
-      cursor: pointer;
-      transition: all .75s; }
-      @media only screen and (max-width: 800px) {
-        .projects__card-one--button, .projects__card--button {
-          font-size: 1.75rem;
-          margin: 2rem 2rem 0 0; } }
-      @media only screen and (min-width: 1100px) {
-        .projects__card-one--button:hover, .projects__card--button:hover {
-          transform: scale(1.1);
-          box-shadow: 0.5rem 0.25rem 1.25rem rgba(0, 0, 0, 0.4); } }
-      .projects__card-one--button:focus, .projects__card--button:focus {
-        outline: none; }
-  .projects__card--image {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/ecommerceTwo.png); }
+        .card__image--ecom {
+          height: 22.5rem; } }
+  .card__header {
+    font-size: 2rem;
+    color: #000000;
+    margin-top: 2rem;
+    transition: color .75s; }
+    .card__header.dark {
+      color: #f5f5f5; }
+    @media only screen and (max-width: 800px) {
+      .card__header {
+        font-size: 2.5rem;
+        margin-top: 2.5rem; } }
+  .card__text {
+    font-size: 1.5rem;
+    color: #373b44;
+    margin-top: 1rem;
+    transition: color .75s; }
+    .card__text.dark {
+      color: #f5f5f5; }
+    @media only screen and (max-width: 800px) {
+      .card__text {
+        font-size: 1.75rem;
+        margin-top: 1.5rem; } }
+  .card__link {
+    text-decoration: none; }
+  .card__button {
+    padding: 1.25rem;
+    margin: 1.5rem 2rem 0 0;
+    font-family: inherit;
+    font-size: 1.5rem;
+    border-radius: .2rem;
+    border: none;
+    cursor: pointer;
+    transition: all .75s; }
+    @media only screen and (max-width: 800px) {
+      .card__button {
+        font-size: 1.75rem;
+        margin: 2rem 2rem 0 0; } }
+    @media only screen and (min-width: 1100px) {
+      .card__button:hover {
+        transform: scale(1.1);
+        box-shadow: 0.5rem 0.25rem 1.25rem rgba(0, 0, 0, 0.4); } }
+    .card__button:focus {
+      outline: none; }
 
 .contact {
   height: fit-content; }
-  .contact__header {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/drew-hays-u3o7il8s1Fc-unsplash.jpg);
-    background-size: cover;
-    background-position: 0% 25%;
-    height: 30rem;
+  .contact__container {
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center; }
+    justify-content: space-evenly;
+    align-items: center; }
+    @media only screen and (max-width: 300px) {
+      .contact__container {
+        justify-content: space-between; } }
+  .contact__button {
+    width: 12.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 2rem 0 0;
+    font-family: inherit;
+    font-size: 1.5rem;
+    border-radius: .2rem;
+    border: none;
+    cursor: pointer;
+    transition: all .75s; }
     @media only screen and (max-width: 800px) {
-      .contact__header {
-        height: 22.5rem; } }
-  .contact__title {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 4.5rem;
-    letter-spacing: .25rem;
-    color: #f5f5f5; }
-  .contact__content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 12.5rem 25rem; }
-    @media only screen and (max-width: 800px) {
-      .contact__content {
-        padding: 6rem 17.5rem; } }
-    @media only screen and (max-width: 600px) {
-      .contact__content {
-        padding: 6rem 6rem; } }
-    @media only screen and (max-width: 400px) {
-      .contact__content {
-        padding: 6rem 4rem; } }
-    @media only screen and (min-width: 1400px) {
-      .contact__content {
-        padding: 15rem 42.5rem; } }
-    @media only screen and (min-width: 2000px) {
-      .contact__content {
-        padding: 15rem 60rem; } }
-    .contact__content--header {
-      width: 100%;
-      padding-bottom: 1rem;
-      text-align: left;
-      font-size: 3.5rem;
-      color: #000000;
-      transition: color .75s; }
-      .contact__content--header.dark {
-        color: #f5f5f5; }
-    .contact__content--text {
-      color: #373b44;
-      font-size: 2rem;
-      padding-bottom: 2.5rem;
-      transition: color .75s; }
-      .contact__content--text.dark {
-        color: #f5f5f5; }
-    .contact__content--container {
-      width: 100%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center; }
-      @media only screen and (max-width: 300px) {
-        .contact__content--container {
-          justify-content: space-between; } }
-      .contact__content--container-button {
-        width: 12.5rem;
-        padding: 1.25rem;
-        margin: 1.5rem 2rem 0 0;
-        font-family: inherit;
-        font-size: 1.5rem;
-        border-radius: .2rem;
-        border: none;
-        cursor: pointer;
-        transition: all .75s; }
-        @media only screen and (max-width: 800px) {
-          .contact__content--container-button {
-            font-size: 2rem;
-            margin: 0 0 2.75rem 0; } }
-        @media only screen and (max-width: 300px) {
-          .contact__content--container-button {
-            width: 10rem; } }
-        @media only screen and (min-width: 1100px) {
-          .contact__content--container-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0.5rem 0.25rem 1.25rem rgba(0, 0, 0, 0.4); } }
-        .contact__content--container-button:focus {
-          outline: none; }
+      .contact__button {
+        font-size: 2rem;
+        margin: 0 0 2.75rem 0; } }
+    @media only screen and (max-width: 300px) {
+      .contact__button {
+        width: 10rem; } }
+    @media only screen and (min-width: 1100px) {
+      .contact__button:hover {
+        transform: scale(1.1);
+        box-shadow: 0.5rem 0.25rem 1.25rem rgba(0, 0, 0, 0.4); } }
+    .contact__button:focus {
+      outline: none; }
 
 .button {
   color: #373b44;
@@ -508,16 +408,6 @@ html {
     color: #f5f5f5;
     background-color: #505050; }
 
-.footer__text {
-  display: none;
-  position: fixed;
-  bottom: 5rem;
-  right: 5rem;
-  font-size: 2rem; }
-
-.footer__textVis {
-  display: block; }
-
 .heading {
   text-align: center;
   text-transform: uppercase;
@@ -525,26 +415,26 @@ html {
   letter-spacing: .25rem;
   color: #f5f5f5; }
 
-.header-main {
+.header {
   width: 100%;
   padding-bottom: 1rem;
   text-align: left;
   font-size: 3.5rem;
   color: #000000;
   transition: color .75s; }
-  .header-main.dark {
+  .header.dark {
     color: #f5f5f5; }
 
-.text-main {
+.text {
   color: #373b44;
   font-size: 2rem;
   transition: color .75s; }
-  .text-main.dark {
+  .text.dark {
     color: #f5f5f5; }
-  .text-main:not(:last-child) {
+  .text:not(:last-child) {
     padding-bottom: 1.5rem; }
 
-.container-heading {
+.heading-container--skills {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -553,7 +443,32 @@ html {
   align-items: center;
   justify-content: center; }
   @media only screen and (max-width: 800px) {
-    .container-heading {
+    .heading-container--skills {
+      height: 22.5rem; } }
+
+.heading-container--projects {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tim-gouw-NSFG5sJYZgQ-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 800px) {
+    .heading-container--projects {
+      height: 22.5rem; } }
+
+.heading-container--contact {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/drew-hays-u3o7il8s1Fc-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: 0 25%; }
+  @media only screen and (max-width: 800px) {
+    .heading-container--contact {
       height: 22.5rem; } }
 
 .container {

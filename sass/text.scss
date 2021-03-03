@@ -6,7 +6,7 @@
     color: $header-light;
 }
 
-.header-main {
+.header {
     width: 100%;
     padding-bottom: 1rem;
     text-align: left;
@@ -20,7 +20,7 @@
     }
 }
 
-.text-main {
+.text {
     color: $text-dark;
     font-size: 2rem;
     transition: color .75s;

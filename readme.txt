@@ -10,7 +10,9 @@ I've put the todo section here at the top of the file in order to make it easy t
 * Completely refactor the nav section
 * Continue to rewrite the BEM notation
 * Load dark mode based on the user's system preference
+* Refactor the dark mode functions
 * Research a better fix for the hamburger colour functionality
+* Credit the photographers
 
 // Tools that I used
 * HTML

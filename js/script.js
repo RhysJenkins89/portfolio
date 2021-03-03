@@ -46,6 +46,20 @@ const enableDarkMode = () => {
         eachCard.classList.add("dark");
     }
 
+    // Looping over the card headers
+    const cardHeaders = document.getElementsByClassName("card__header")
+    for (let i = 0; i < cardHeaders.length; i++) {
+        let eachHead = cardHeaders[i];
+        eachHead.classList.add("dark");
+    }
+
+    // Looping over the card text
+    const cardParagraphs = document.getElementsByClassName("card__text")
+    for (let i = 0; i < cardParagraphs.length; i++) {
+        let eachPara = cardParagraphs[i];
+        eachPara.classList.add("dark");
+    }
+
     // Looping over the button elements
     for (let i = 0; i < buttons.length; i++) {
         let eachButton = buttons[i];
@@ -89,6 +103,20 @@ const disableDarkMode = () => {
     for (let i = 0; i < cards.length; i++) {
         let eachCard = cards[i];
         eachCard.classList.remove("dark");
+    }
+
+    // Looping over the card headers
+    const cardHeaders = document.getElementsByClassName("card__header")
+    for (let i = 0; i < cardHeaders.length; i++) {
+        let eachHead = cardHeaders[i];
+        eachHead.classList.remove("dark");
+    }
+
+    // Looping over the card text
+    const cardParagraphs = document.getElementsByClassName("card__text")
+    for (let i = 0; i < cardParagraphs.length; i++) {
+        let eachPara = cardParagraphs[i];
+        eachPara.classList.remove("dark");
     }
 
     // Looping over the button elements

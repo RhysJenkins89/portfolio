@@ -128,10 +128,34 @@ html {
     }
 }
 
-// todo 
-// reorganise the sass files so the buttons are in one folder, the text is in one folder, etc
-// Rewrite the nav
-// Update the readme
-// Rewrite the BEM notation
-// Fix the button hover on dark mode
-// Load dark mode based on user preference
+// Card mixins
+@mixin image-styles {
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    height: 52.5%;
+
+    @include tablet {
+        height: 25rem;
+    }
+
+    @include phone {
+        height: 22.5rem;
+    }
+}
+
+// Header mixin 
+@mixin heading-styles {
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+        height: 22.5rem;
+    }
+}

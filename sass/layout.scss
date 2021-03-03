@@ -1,19 +1,35 @@
-.container-heading {
-    background-image: linear-gradient(
-        to right, 
-        rgba($bg-gradient, 0.4),
-        rgba($bg-gradient, 0.4)
-    ),
-    url(../images/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 30rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.heading-container {
 
-    @include tablet {
-        height: 22.5rem;
+    &--skills {
+        background-image: linear-gradient(
+            to right, 
+            rgba($bg-gradient, 0.4),
+            rgba($bg-gradient, 0.4)
+        ),
+        url(../images/shridhar-gupta-dZxQn4VEv2M-unsplash.jpg);
+        @include heading-styles;
+    }
+    
+
+    &--projects {
+        background-image: linear-gradient(
+            to right, 
+            rgba($bg-gradient, 0.4),
+            rgba($bg-gradient, 0.4)
+        ),
+        url(../images/tim-gouw-NSFG5sJYZgQ-unsplash.jpg);
+        @include heading-styles;
+    }
+
+    &--contact {
+        background-image: linear-gradient(
+            to right, 
+            rgba($bg-gradient, 0.4),
+            rgba($bg-gradient, 0.4)
+        ),
+        url(../images/drew-hays-u3o7il8s1Fc-unsplash.jpg);
+        @include heading-styles;
+        background-position: 0 25%;
     }
 }
 
