@@ -30,7 +30,8 @@
      
 .card {
     border: .1rem solid black;
-    height: 50rem;
+    height: fit-content;
+	// Card height changed 
     width: 35rem;
     padding: 1.5rem;
     margin-top: 5rem;

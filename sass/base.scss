@@ -135,7 +135,8 @@ html {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
-    height: 52.5%;
+    height: 25rem;
+    // 52.5%
 
     @include tablet {
         height: 25rem;

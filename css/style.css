@@ -264,7 +264,7 @@ html {
 
 .card {
   border: .1rem solid black;
-  height: 50rem;
+  height: fit-content;
   width: 35rem;
   padding: 1.5rem;
   margin-top: 5rem;
@@ -301,7 +301,7 @@ html {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
-    height: 52.5%; }
+    height: 25rem; }
     @media only screen and (max-width: 800px) {
       .card__image {
         height: 25rem; } }
@@ -315,7 +315,7 @@ html {
       clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
       border-top-left-radius: .5rem;
       border-top-right-radius: .5rem;
-      height: 52.5%; }
+      height: 25rem; }
       @media only screen and (max-width: 800px) {
         .card__image--ecom {
           height: 25rem; } }
