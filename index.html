@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <!-- Stando -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- CSS link -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- jQuery link -->
-    <script src="js/jquery-3.5.1.min.js" defer></script>
-
-    <!-- Waypoints link -->
-    <script src="js/jquery.waypoints.min.js" defer></script>
 
     <!-- JavaScript link -->
     <script src="js/script.js" defer></script>
@@ -24,159 +17,11 @@
     <title>Rhys Jenkins | Portfolio</title>
     <link rel="icon" href="./images/briefcase.png">
     <!-- Icon by Fasil on freeicons.io -->
-
 </head> 
 
-<body class="preload">
-    <!-- todo completely rewrite the BEM notation in this file. -->
-
-    <!-- Navbar -->
-<nav class="nav" id="home">
-    <ul class="nav__list">
-
-        <!-- <h1 class="name">
-            <a href="/portfolio-project/index.html">Rhys Jenkins</a>
-        </h1> -->
-
-        <!-- Hamburger -->
-        <div class="nav__square" id="buttonHam">
-            <span class="nav__ham"></span>
-        </div>
-
-    </ul>
-</nav>
-
-<nav class="navigation">
-    <!-- todo this needs a complete rewrite -->
-
-    <div class="navigation__links">
-        <a href="#home" class="navigation__links--link">
-            Home
-        </a>
-        <a href="#about" class="navigation__links--link">
-            About
-        </a>
-        <a href="#skills" class="navigation__links--link">
-            Skills
-        </a>
-        <a href="#projects" class="navigation__links--link">
-            Projects
-        </a>
-        <a href="#contact" class="navigation__links--link">
-            Contact
-        </a>
-        <button class="button navigation__button">
-            <span class="button--dark">Dark mode</span>
-            <span class="button--light">Light mode</span>
-        </button>
-    </div>
-
-    <div class="navigation__overlay"></div>
-
-</nav>
-
-<!-- Main landing -->
-<section class="landing"> 
-
-    <h1 class="landing__header">Web development</h1>
-
-</section>
-
-<!-- About section -->
-<section class="about" id="about">
-
-    <div class="container">
-        <h3 class="header">I build beautiful, fully responsive websites</h3>
-        <p class="text">My name is Rhys. I am a frontend web developer.</p>
-        <p class="text">I build beautiful, fully responsive websites with simple, user-friendly functionality.</p>
-        <p class="text">Keep scrolling to check out the skills that I have and the projects that I’m working on at the moment.</p>
-        <p class="text">And if you’d like to get in touch, you’ll find my email and a link to my GitHub at the bottom of the page.</p>
-    </div>
-
-</section>
-
-<!-- Skills section -->
-<section class="skills" id="skills">
-
-    <div class="heading-container--skills">
-        <h2 class="heading">Skills</h2>
-    </div>
-
-    <div class="container" id="skills-content">
-        <h3 class="header">I leverage powerful frontend tools to write clean, simple code</h3>
-        <p class="text">The core tools that I use are HTML, CSS, and JavaScript, but I’m also familiar with a variety of popular libraries and frameworks.</p>
-        <p class="text">I always use the Sass preprocessor when I’m writing CSS, but if I want to use a dedicated CSS framework, I’ll jump over to Bootstrap or Tailwind. These tools help me keep my style sheets readable and easy to maintain.</p>
-        <p class="text">When it comes to JavaScript, I’m most comfortable building robust, component-driven UIs with the React framework, but I also use the jQuery library to write cleaner, simpler JavaScript.</p>
-    </div>
-
-</section>
-
-<!-- Projects section -->
-<section class="projects" id="projects">
-
-    <div class="heading-container--projects">
-        <h2 class="heading">Projects</h2>
-    </div>
-
-    <div class="container" id="projects-content">
-
-        <h3 class="header">I create elegant, customer-focused user experience</h3>
-        <p class="text">Take a look at what I’m currently working on below. You’ll find a link to the live site itself, as well as a link to the codebase on GitHub.</p>
-        <p class="text">Check out the readme file on GitHub for details on how I built the project, the tools that I used, and any new features that I want to add.</p>
-
-        <div class="projects__container">
-
-            <div class="card">
-                <div class="card__image">&nbsp;</div>
-                <h3 class="card__header">Portfolio page</h3>
-                <p class="card__text">The site that you're browsing now is built with HTML, Sass, and JavaScript. I also used a JS library, Waypoints.js, to implement the hamburger colour-change functionality.</p>
-                <a href="#home" class="card__link">
-                    <button class="button card__button">View site</button>    
-                </a>
-                <a href="https://github.com/RhysJenkins89/portfolio" target="_blank" class="card__link">
-                    <button class="button card__button">View code</button>    
-                </a>
-            </div>
-
-            <div class="card">
-                <div class="card__image--ecom">&nbsp;</div>
-                <h3 class="card__header">Ecommerce site</h3>
-                <p class="card__text">My current, on-going project is an ecommerce site, which is built with HTML, Sass, and vanilla JavaScript. It's a work-in-progress, so check out the readme to see what I'm working on next.</p>
-                <a href="https://ecommerce.rhysjenkins.uk/" target="_blank" class="card__link">
-                    <button class="button card__button">View site</button>    
-                </a>
-                <a href="https://github.com/RhysJenkins89/ecommerce" target="_blank" class="card__link">
-                    <button class="button card__button">View code</button>    
-                </a>
-            </div>
-
-        </div>
-    </div>
-
-</section>
-
-<!-- Contact section -->
-<section class="contact" id="contact">
-
-    <div class="heading-container--contact">
-        <h2 class="heading">Contact</h2>
-    </div>
-
-    <div class="container" id="contact-content">
-        <h3 class="header">Let's talk!</h3>
-        <p class="text">I’m currently looking for a new opportunity, so if you’d like to talk about a project or a position, don’t hesitate to get in touch.</p>
-        <p class="text">If you'd like to send me an email, you'll find me at rhys@rhysjenkins.uk, or simply click the email button below.</p>
-        <div class="contact__container">
-            <a href="mailto:rhys@rhysjenkins.uk" target="_blank" class="contact__link">
-                <button class="button contact__button">Email</button>    
-            </a>
-            <a href="https://github.com/RhysJenkins89" target="_blank" class="contact__link">
-                <button class="button contact__button">GitHub</button>    
-            </a>
-        </div>
-    </div>
-</section>
-
+<body>
+    <h1>Work in progress.</h1>
+    <h2>Come back soon!</h2>
 </body>
 
 </html>
