@@ -8,13 +8,15 @@ body {
 }
 
 h1 {
+    font-size: 5rem;
     color: black;
-    margin: 0;
+    margin: 0 0 1rem 0;
 }
 
 h2 {
+    font-size: 2.5rem;
     color: black;
-    margin: 0;
+    margin: 0 0 1rem 0;
 }
 
 .main-landing {
@@ -24,10 +26,36 @@ h2 {
     flex-direction: column;
 
     .heading-container {
-
+        margin: 5rem auto;
+        width: 60rem;
     }
 
     .buttons-container {
         margin-top: auto;
+        margin: auto auto 5rem auto;
+        width: 60rem;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+
+        button {
+            background-color: lightgrey;
+            height: 3rem;
+            width: 10rem;
+            border-radius: .25rem;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            overflow: hidden;
+            margin-right: 2.5rem;
+            
+            &:hover {
+                background-color: lightgray;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
     }
 }
