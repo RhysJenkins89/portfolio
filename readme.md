@@ -4,5 +4,8 @@ I'm currently redesigning and rebuilding my portfolio site. Come back soon!
 
 ## To do
 
-* Add a form, which when submitted sends me an email
+* Bring in the Google fonts correctly
+* Position the headings and text
+* Add a light mode/dark mode toggle
+* Add a form, which when submitted sends the user's data to a database
 * Build a backend with email submission functionality
