@@ -9,4 +9,25 @@ body {
 
 h1 {
     color: black;
+    margin: 0;
+}
+
+h2 {
+    color: black;
+    margin: 0;
+}
+
+.main-landing {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+
+    .heading-container {
+
+    }
+
+    .buttons-container {
+        margin-top: auto;
+    }
 }
