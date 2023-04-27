@@ -23,10 +23,20 @@ h2 {
   width: auto;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .main-landing .heading-container {
-  margin: 5rem auto;
+  margin: 5rem auto 0 auto;
   width: 60rem;
+}
+.main-landing .text-container {
+  margin: 2.5rem auto 0 auto;
+  width: 60rem;
+}
+.main-landing .text-container p {
+  font-size: 1.75rem;
+  line-height: 1.5;
 }
 .main-landing .buttons-container {
   margin-top: auto;
