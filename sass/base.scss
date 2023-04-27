@@ -1,3 +1,4 @@
+@use "./variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 body {
@@ -5,17 +6,18 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    background-color: variables.$dark-grey;
 }
 
 h1 {
     font-size: 5rem;
-    color: black;
+    color: variables.$main-text;
     margin: 0 0 1rem 0;
 }
 
 h2 {
     font-size: 2.5rem;
-    color: black;
+    color: variables.$main-text;
     margin: 0 0 1rem 0;
 }
 
@@ -39,6 +41,7 @@ h2 {
         p {
             font-size: 1.75rem;
             line-height: 1.5;
+            color: variables.$main-text;
         }
     }
 
