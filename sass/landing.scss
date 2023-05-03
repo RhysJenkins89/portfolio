@@ -1,0 +1,76 @@
+@use "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+.main-landing {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .heading-container {
+        margin: 5rem auto 0 auto;
+        width: 60rem;
+
+        @media (max-width: variables.$mobile-large) {
+            width: 90vw;
+        }
+
+        h1 {
+            font-size: 5rem;
+            color: variables.$main-text;
+            margin: 0 0 1rem 0;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            color: variables.$main-text;
+            margin: 0 0 1rem 0;
+        }
+    }
+
+    .text-container {
+        margin: 2.5rem auto 0 auto;
+        width: 60rem;
+
+        @media (max-width: variables.$mobile-large) {
+            width: 90vw;
+        }
+
+        p {
+            font-size: 1.75rem;
+            line-height: 1.5;
+            color: variables.$main-text;
+        }
+    }
+
+    .buttons-container {
+        margin-top: auto;
+        margin: auto auto 5rem auto;
+        width: 60rem;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+
+        button {
+            background-color: lightgrey;
+            height: 3rem;
+            width: 10rem;
+            border-radius: .25rem;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            overflow: hidden;
+            margin-right: 2.5rem;
+            
+            &:hover {
+                background-color: lightgray;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
