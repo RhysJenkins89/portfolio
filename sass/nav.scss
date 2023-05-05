@@ -11,9 +11,13 @@ nav {
         display: flex;
         align-items: center;
         
+        @media (max-width: variables.$tablet) {
+            width: 80vw;
+        }
+        
         @media (max-width: variables.$mobile-large) {
             width: 90vw;
-            flex-wrap: wrap;
+            flex-wrap: wrap; // This property will affect the text of the nav items
         }
 
         p {

@@ -3,19 +3,28 @@
 
 .main-landing {
     height: 100vh;
-    width: auto;
+    width: 80vw;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 
-    .heading-container {
-        margin: 5rem auto 0 auto;
-        width: 60rem;
+    @media (max-width: variables.$mobile-large) {
+        width: 90vw;
+    }
 
-        @media (max-width: variables.$mobile-large) {
-            width: 90vw;
-        }
+    .heading-container {
+        margin: 5rem 0 0 0;
+        // width: 60rem;
+
+        // @media (max-width: variables.$tablet) {
+        //     width: 80vw;
+        // }
+
+        // @media (max-width: variables.$mobile-large) {
+        //     width: 90vw;
+        // }
 
         h1 {
             font-size: 5rem;
@@ -32,11 +41,15 @@
 
     .text-container {
         margin: 2.5rem auto 0 auto;
-        width: 60rem;
+        // width: 60rem;
 
-        @media (max-width: variables.$mobile-large) {
-            width: 90vw;
-        }
+        // @media (max-width: variables.$tablet) {
+        //     width: 80vw;
+        // }
+        
+        // @media (max-width: variables.$mobile-large) {
+        //     width: 90vw;
+        // }
 
         p {
             font-size: 1.75rem;
