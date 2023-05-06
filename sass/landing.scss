@@ -25,6 +25,7 @@
             font-size: 5rem;
             color: variables.$main-text;
             margin: 0 0 1rem 0;
+            transition: all 1s ease;
 
             @media (max-width: variables.$mobile-large) {
                 font-size: 4rem;
@@ -33,12 +34,17 @@
             @media (max-width: variables.$mobile-small) {
                 font-size: 3.5rem;
             }
+
+            &.light-mode {
+                color: variables.$main-text-dark;
+            }
         }
         
         h2 {
             font-size: 2.5rem;
             color: variables.$main-text;
             margin: 0 0 1rem 0;
+            transition: all 1s ease;
 
             @media (max-width: variables.$mobile-large) {
                 font-size: 2rem;
@@ -47,11 +53,17 @@
             @media (max-width: variables.$mobile-small) {
                 font-size: 1.75rem;
             }
+
+            &.light-mode {
+                color: variables.$main-text-dark;
+            }
         }
     }
 
     .text-container {
-        margin: 2.5rem auto 0 auto;
+        margin: 2.5rem 0 0 0;
+        max-width: 1000px;
+        transition: all 1s ease;
 
         p {
             font-size: 1.75rem;
@@ -64,6 +76,10 @@
 
             @media (max-width: variables.$mobile-small) {
                 font-size: 1.2rem;
+            }
+
+            &.light-mode {
+                color: variables.$main-text-dark;
             }
         }
     }

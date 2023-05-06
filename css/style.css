@@ -7,6 +7,10 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #121212;
   max-width: 1750px;
+  transition: all 1s ease;
+}
+body.light-mode {
+  background-color: #f5f5f5;
 }
 
 nav {
@@ -73,6 +77,7 @@ nav .nav-items-container p:last-child {
   font-size: 5rem;
   color: #f5f5f5;
   margin: 0 0 1rem 0;
+  transition: all 1s ease;
 }
 @media (max-width: 500px) {
   .main-landing .heading-container h1 {
@@ -84,10 +89,14 @@ nav .nav-items-container p:last-child {
     font-size: 3.5rem;
   }
 }
+.main-landing .heading-container h1.light-mode {
+  color: #121212;
+}
 .main-landing .heading-container h2 {
   font-size: 2.5rem;
   color: #f5f5f5;
   margin: 0 0 1rem 0;
+  transition: all 1s ease;
 }
 @media (max-width: 500px) {
   .main-landing .heading-container h2 {
@@ -99,8 +108,13 @@ nav .nav-items-container p:last-child {
     font-size: 1.75rem;
   }
 }
+.main-landing .heading-container h2.light-mode {
+  color: #121212;
+}
 .main-landing .text-container {
-  margin: 2.5rem auto 0 auto;
+  margin: 2.5rem 0 0 0;
+  max-width: 1000px;
+  transition: all 1s ease;
 }
 .main-landing .text-container p {
   font-size: 1.75rem;
@@ -116,6 +130,9 @@ nav .nav-items-container p:last-child {
   .main-landing .text-container p {
     font-size: 1.2rem;
   }
+}
+.main-landing .text-container p.light-mode {
+  color: #121212;
 }
 .main-landing .buttons-container {
   margin: auto 0 5rem 0;

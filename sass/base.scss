@@ -8,4 +8,9 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: variables.$dark-grey;
     max-width: 1750px;
+    transition: all 1s ease;
+
+    &.light-mode {
+        background-color: variables.$background-grey;
+    }
 }
