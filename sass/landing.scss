@@ -63,12 +63,12 @@
     .text-container {
         margin: 2.5rem 0 0 0;
         max-width: 1000px;
-        transition: all 1s ease;
 
         p {
             font-size: 1.75rem;
             line-height: 1.5;
             color: variables.$main-text;
+            transition: all 1s ease;
 
             @media (max-width: variables.$mobile-large) {
                 font-size: 1.25rem;
