@@ -4,6 +4,7 @@ I'm currently redesigning and rebuilding my portfolio site. Come back soon!
 
 ## To do
 
+* Sort the text size transition on initial page load
 * Sort the nav items one way or the other
 * Add a projects/what I doing section
 * Find light/dark logos
