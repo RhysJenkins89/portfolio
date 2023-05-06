@@ -32,7 +32,6 @@ nav .nav-items-container {
 @media (max-width: 500px) {
   nav .nav-items-container {
     width: 90vw;
-    flex-wrap: wrap;
   }
 }
 nav .nav-items-container p {
@@ -49,6 +48,12 @@ nav .nav-items-container p:not(:first-child) {
 }
 nav .nav-items-container p:last-child {
   margin: 0;
+}
+nav .nav-items-container .text {
+  transition: all 1s ease;
+}
+nav .nav-items-container .text.light-mode {
+  color: #121212;
 }
 
 .main-landing {

@@ -17,7 +17,7 @@ nav {
         
         @media (max-width: variables.$mobile-large) {
             width: 90vw;
-            flex-wrap: wrap; // This property will affect the text of the nav items
+            // flex-wrap: wrap; // This property will affect the text of the nav items
         }
 
         p {
@@ -37,6 +37,14 @@ nav {
 
         p:last-child {
             margin: 0;
+        }
+
+        .text {
+            transition: all 1s ease;
+
+            &.light-mode {
+                color: variables.$main-text-dark;
+            }
         }
     }
 }
