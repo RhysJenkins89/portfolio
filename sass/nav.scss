@@ -41,6 +41,7 @@ nav {
 
         .text {
             transition: all 1s ease;
+            white-space: nowrap;
 
             &.light-mode {
                 color: variables.$main-text-dark;

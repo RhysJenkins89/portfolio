@@ -1,0 +1,59 @@
+@use "./variables.scss";
+
+// Note: the section styles and the heading and text styles should be defined elsewhere. A mixin should do the trick. 
+
+.projects-section {
+    height: 110vh; // This will cause a bug
+    width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    @media (max-width: variables.$desktop-small) {
+        width: 80vw;
+    }
+
+    @media (max-width: variables.$mobile-large) {
+        width: 90vw;
+    }
+
+    h1 {
+        font-size: 5rem;
+        color: variables.$main-text;
+        margin: 0 0 1rem 0;
+        transition: all 1s ease;
+
+        @media (max-width: variables.$mobile-large) {
+            font-size: 4rem;
+        }
+
+        @media (max-width: variables.$mobile-small) {
+            font-size: 3.5rem;
+        }
+
+        &.light-mode {
+            color: variables.$main-text-dark;
+        }
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+        color: variables.$main-text;
+        margin: 0 0 1rem 0;
+        transition: all 1s ease;
+
+        @media (max-width: variables.$mobile-large) {
+            font-size: 2rem;
+        }
+
+        @media (max-width: variables.$mobile-small) {
+            font-size: 1.75rem;
+        }
+
+        &.light-mode {
+            color: variables.$main-text-dark;
+        }
+    }
+}
