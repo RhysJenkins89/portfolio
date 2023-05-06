@@ -226,5 +226,28 @@ nav .nav-items-container .text.light-mode {
 .projects-section h2.light-mode {
   color: #121212;
 }
+.projects-section .text-container {
+  margin: 2.5rem 0 0 0;
+  max-width: 1000px;
+}
+.projects-section .text-container p {
+  font-size: 1.75rem;
+  line-height: 1.5;
+  color: #f5f5f5;
+  transition: all 1s ease;
+}
+@media (max-width: 500px) {
+  .projects-section .text-container p {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 325px) {
+  .projects-section .text-container p {
+    font-size: 1.2rem;
+  }
+}
+.projects-section .text-container p.light-mode {
+  color: #121212;
+}
 
 /*# sourceMappingURL=style.css.map */
