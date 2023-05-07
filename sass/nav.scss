@@ -52,12 +52,22 @@ nav {
             height: 35px;
             width: 35px;
             cursor: pointer;
+
+            @media (max-width: variables.$mobile-large) {
+                height: 30px;
+                width: 30px;
+            }
         }
 
         .moon-icon {
             height: 25px;
             width: 25px;
             cursor: pointer;
+
+            @media (max-width: variables.$mobile-large) {
+                height: 25px;
+                width: 25px;
+            }
         }
     }
 }
