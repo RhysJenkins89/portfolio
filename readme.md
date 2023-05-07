@@ -16,3 +16,4 @@ I'm currently redesigning and rebuilding my portfolio site. Come back soon!
 * Build better button styles
 * Fade in/out dark/light mode icons on click
 * Change the browser tab icon colour depending on the browser theme
+* Commit test new email
