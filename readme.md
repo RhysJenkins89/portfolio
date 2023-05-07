@@ -15,5 +15,4 @@ I'm currently redesigning and rebuilding my portfolio site. Come back soon!
 * Build/find a system for the correct font-size values across devices
 * Build better button styles
 * Fade in/out dark/light mode icons on click
-* Fix the minor position shift in the icons
-* Change the browser tab icon colour
+* Change the browser tab icon colour depending on the browser theme
