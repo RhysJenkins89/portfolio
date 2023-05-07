@@ -56,6 +56,16 @@ nav .nav-items-container .text {
 nav .nav-items-container .text.light-mode {
   color: #121212;
 }
+nav .nav-items-container .sun-icon {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+nav .nav-items-container .moon-icon {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
 
 .main-landing {
   height: 110vh;

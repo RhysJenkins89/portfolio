@@ -47,5 +47,17 @@ nav {
                 color: variables.$main-text-dark;
             }
         }
+
+        .sun-icon {
+            height: 35px;
+            width: 35px;
+            cursor: pointer;
+        }
+
+        .moon-icon {
+            height: 25px;
+            width: 25px;
+            cursor: pointer;
+        }
     }
 }
