@@ -1,33 +1,8 @@
 // Dark/light mode toggle
-const toggleTheme = document.querySelector('#darkModeToggle');
-let isDarkMode = true;
 const moonContainer = document.querySelector('.moon-container');
 const sunContainer = document.querySelector('.sun-container');
 const sunIcon = document.querySelector('.sun-icon'); 
 const moonIcon = document.querySelector('.moon-icon');
-toggleTheme.addEventListener('click', () => {
-    // if (isDarkMode) {
-    //     isDarkMode = !isDarkMode;
-    //     // moonIcon.style.display = 'block'
-    //     // sunIcon.style.display = 'none'
-    //     // moonContainer.classList.toggle('fade-out');
-    //     // moonIcon.classList.toggle('fade-out');
-    //     // sunContainer.classList.remove('moved');
-    //     // sunIcon.classList.remove('moved');
-    // } else {
-    //     isDarkMode = !isDarkMode;
-    //     // moonIcon.style.display = 'none'
-    //     // sunIcon.style.display = 'block'
-    //     moonContainer.classList.toggle('fade');
-    //     moonIcon.classList.toggle('fade');
-    //     sunIcon.classList.toggle('fade');
-    // }
-
-    // document.querySelector('#body').classList.toggle('light-mode');
-    // document.querySelectorAll('h1').forEach(element => element.classList.toggle('light-mode'));
-    // document.querySelectorAll('h2').forEach(element => element.classList.toggle('light-mode'));
-    // document.querySelectorAll('.text').forEach(element => element.classList.toggle('light-mode'));
-});
 
 function lightDarkToggle() {
     document.querySelector('#body').classList.toggle('light-mode');
@@ -36,7 +11,15 @@ function lightDarkToggle() {
     document.querySelectorAll('.text').forEach(element => element.classList.toggle('light-mode'));
 }
 
+let clickDisabled = false;
+
 sunContainer.addEventListener('click', () => {
+    if (clickDisabled) return;
+    if (sunContainer.classList.contains('moved')) return;
+
+    // Remove click events
+    clickDisabled = true;
+
     // Return to correct transition styles if necessary
     sunContainer.style.transition = 'all 1s ease-out';
     sunIcon.style.transition = 'all 1s ease-in';
@@ -49,11 +32,15 @@ sunContainer.addEventListener('click', () => {
     moonContainer.classList.remove('moved');
     moonIcon.classList.remove('moved');
 
-    // If the moon contains the the fade-out class, remove it
+    // If the moon contains the fade-out class, remove it
     if (moonContainer.classList.contains('fade-out')) {
         moonContainer.classList.remove('fade-out');
         moonIcon.classList.remove('fade-out');
     }
+
+    // Add a pointer cursor to the moon and remove it from the sun
+    moonIcon.style.cursor = 'pointer';
+    sunIcon.style.cursor = 'default';
 
     lightDarkToggle();
 
@@ -66,9 +53,20 @@ sunContainer.addEventListener('click', () => {
         sunContainer.style.transition = 'all 1s ease-in';
         sunIcon.style.transition = 'all 1s ease-out';
     }, 1000);
+
+    // Return click events
+    setTimeout(() => {
+        clickDisabled = false;
+    }, 2000)
 });
 
 moonContainer.addEventListener('click', () => {
+    if (clickDisabled) return;
+    if (moonContainer.classList.contains('moved')) return;
+
+    // Remove click events
+    clickDisabled = true;
+
     // Return to correct transition styles if necessary
     moonContainer.style.transition = 'all 1s ease-out'
     moonIcon.style.transition = 'all 1s ease-in'
@@ -87,6 +85,10 @@ moonContainer.addEventListener('click', () => {
         sunIcon.classList.remove('fade-out');
     }
 
+    // Add a pointer cursor to the sun and remove it from the moon
+    sunIcon.style.cursor = 'pointer';
+    moonIcon.style.cursor = 'default';
+
     lightDarkToggle();
 
     setTimeout(() => {
@@ -98,4 +100,9 @@ moonContainer.addEventListener('click', () => {
         moonContainer.style.transition = 'all 1s ease-in'
         moonIcon.style.transition = 'all 1s ease-out'
     }, 1000);
+
+    // Return click events
+    setTimeout(() => {
+        clickDisabled = false;
+    }, 2000)
 });

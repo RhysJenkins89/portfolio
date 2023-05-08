@@ -50,6 +50,10 @@ nav {
 
         .icons-container {
             position: relative;
+            height: .5rem;
+            width: .5rem;
+            display: grid;
+            place-items: center;
         }
 
         .sun-container {
@@ -103,7 +107,6 @@ nav {
             .moon-icon {
                 height: 25px;
                 width: 25px;
-                cursor: pointer;
                 margin-right: .25rem;
                 opacity: 1;
                 transition: all 1s ease-out;
