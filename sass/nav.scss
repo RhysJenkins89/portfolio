@@ -48,26 +48,99 @@ nav {
             }
         }
 
-        .sun-icon {
-            height: 35px;
-            width: 35px;
-            cursor: pointer;
+        // Position one icon on top of the other -- DONE
+        // Use absolute and relative position to do this -- DONE
+        // Add a class that moves one icon to the bottom-left position with transform properties -- DONE
+        // On click, add the fade-out class and remove the other class -- DONE
+        // Once the animation has finished, add the class that places the icon in the appropriate place on the page
+        // Then I'm in a position to add and remove classes that place the items in the correct place on the page, and fade-in and fade-out as appropriate
 
-            @media (max-width: variables.$mobile-large) {
-                height: 30px;
-                width: 30px;
+        .icons-container {
+            position: relative;
+            background-color: red;
+        }
+
+        .sun-container {
+            transition: all 1s ease-in;
+            // background-color: red;
+            position: absolute;
+            
+            &.moved {
+                transform: translateX(-75px);
+            }
+
+            // &.fade-in {
+            //     opacity: 1;
+            //     transform: translateX(75px);
+            // }
+
+            &.fade-out {
+                transform: translateX(75px);
+            }
+
+            .sun-icon {
+                height: 35px;
+                width: 35px;
+                cursor: pointer;
+                opacity: 1;
+                transform: translateY(0);
+                transition: all 1s ease-out;
+                
+                @media (max-width: variables.$mobile-large) {
+                    height: 30px;
+                    width: 30px;
+                }
+                
+                &.moved {
+                    transform: translateY(35px);
+                }
+    
+                // &.fade-in {
+                //     opacity: 1;
+                //     transform: translateX(75px);
+                // }
+
+                &.fade-out {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
             }
         }
 
-        .moon-icon {
-            height: 25px;
-            width: 25px;
-            cursor: pointer;
-            margin-right: .25rem;
+        .moon-container {
+            transition: all 1s ease-out;
+            // background-color: greenyellow;
+            position: absolute;
 
-            @media (max-width: variables.$mobile-large) {
+            &.fade-out {
+                transform: translateX(75px);
+            }
+
+            &.moved {
+                transform: translateX(-75px);
+            }
+
+            .moon-icon {
                 height: 25px;
                 width: 25px;
+                cursor: pointer;
+                margin-right: .25rem;
+                opacity: 1;
+                transition: all 1s ease-in;
+    
+                @media (max-width: variables.$mobile-large) {
+                    height: 25px;
+                    width: 25px;
+                }
+    
+                &.fade-out {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+
+                &.moved {
+                    transform: translateY(35px);
+                }
             }
         }
     }
