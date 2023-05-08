@@ -58,17 +58,16 @@ nav .nav-items-container .text.light-mode {
 }
 nav .nav-items-container .icons-container {
   position: relative;
-  background-color: red;
 }
 nav .nav-items-container .sun-container {
-  transition: all 1s ease-in;
+  transition: all 1s ease-out;
   position: absolute;
-}
-nav .nav-items-container .sun-container.moved {
-  transform: translateX(-75px);
 }
 nav .nav-items-container .sun-container.fade-out {
   transform: translateX(75px);
+}
+nav .nav-items-container .sun-container.moved {
+  transform: translateX(-75px);
 }
 nav .nav-items-container .sun-container .sun-icon {
   height: 35px;
@@ -76,7 +75,7 @@ nav .nav-items-container .sun-container .sun-icon {
   cursor: pointer;
   opacity: 1;
   transform: translateY(0);
-  transition: all 1s ease-out;
+  transition: all 1s ease-in;
 }
 @media (max-width: 500px) {
   nav .nav-items-container .sun-container .sun-icon {
@@ -84,15 +83,15 @@ nav .nav-items-container .sun-container .sun-icon {
     width: 30px;
   }
 }
-nav .nav-items-container .sun-container .sun-icon.moved {
-  transform: translateY(35px);
-}
 nav .nav-items-container .sun-container .sun-icon.fade-out {
   opacity: 0;
   transform: translateY(30px);
 }
+nav .nav-items-container .sun-container .sun-icon.moved {
+  transform: translateY(35px);
+}
 nav .nav-items-container .moon-container {
-  transition: all 1s ease-out;
+  transition: all 1s ease-in;
   position: absolute;
 }
 nav .nav-items-container .moon-container.fade-out {
@@ -107,7 +106,7 @@ nav .nav-items-container .moon-container .moon-icon {
   cursor: pointer;
   margin-right: 0.25rem;
   opacity: 1;
-  transition: all 1s ease-in;
+  transition: all 1s ease-out;
 }
 @media (max-width: 500px) {
   nav .nav-items-container .moon-container .moon-icon {
@@ -121,6 +120,7 @@ nav .nav-items-container .moon-container .moon-icon.fade-out {
 }
 nav .nav-items-container .moon-container .moon-icon.moved {
   transform: translateY(35px);
+  opacity: 0;
 }
 
 .main-landing {
