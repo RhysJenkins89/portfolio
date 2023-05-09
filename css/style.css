@@ -156,12 +156,12 @@ nav .nav-items-container .moon-container .moon-icon.moved {
 }
 @media (max-width: 500px) {
   .main-landing .heading-container h1 {
-    font-size: 4rem;
+    font-size: 3.25rem;
   }
 }
 @media (max-width: 325px) {
   .main-landing .heading-container h1 {
-    font-size: 3.5rem;
+    font-size: 2.75rem;
   }
 }
 .main-landing .heading-container h1.light-mode {
@@ -208,6 +208,9 @@ nav .nav-items-container .moon-container .moon-icon.moved {
 }
 .main-landing .text-container p.light-mode {
   color: #121212;
+}
+.main-landing .text-container p a {
+  color: #ea3788;
 }
 .main-landing .buttons-container {
   margin: auto 0 5rem 0;
@@ -265,12 +268,12 @@ nav .nav-items-container .moon-container .moon-icon.moved {
 }
 @media (max-width: 500px) {
   .projects-section h1 {
-    font-size: 4rem;
+    font-size: 3.25rem;
   }
 }
 @media (max-width: 325px) {
   .projects-section h1 {
-    font-size: 3.5rem;
+    font-size: 2.75rem;
   }
 }
 .projects-section h1.light-mode {
@@ -317,6 +320,9 @@ nav .nav-items-container .moon-container .moon-icon.moved {
 }
 .projects-section .text-container p.light-mode {
   color: #121212;
+}
+.projects-section .text-container p a {
+  color: #ea3788;
 }
 
 /*# sourceMappingURL=style.css.map */

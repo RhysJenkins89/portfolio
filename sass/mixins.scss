@@ -1,7 +1,7 @@
 @use "./variables.scss";
 
 @mixin section-layout {
-    height: 110vh; // Check
+    height: 110vh;
     width: 60vw;
     margin: 0 auto;
     display: flex;
@@ -25,11 +25,11 @@
     transition: all 1s ease;
 
     @media (max-width: variables.$mobile-large) {
-        font-size: 4rem;
+        font-size: 3.25rem;
     }
 
     @media (max-width: variables.$mobile-small) {
-        font-size: 3.5rem;
+        font-size: 2.75rem;
     }
 
     &.light-mode {
@@ -72,5 +72,9 @@
 
     &.light-mode {
         color: variables.$main-text-dark;
+    }
+
+    a {
+        color: #ea3788;
     }
 }

@@ -19,3 +19,4 @@ I'm currently redesigning and rebuilding my portfolio site. Come back soon!
 * Change the browser tab icon colour depending on the browser theme
 * To stop the CSS transition, perhaps only load the JS after page load
 * Write page landing copy
+* Fix the text size on very small devices
