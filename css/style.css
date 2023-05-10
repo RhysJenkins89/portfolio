@@ -152,7 +152,7 @@ nav .nav-items-container .moon-container .moon-icon.moved {
   font-size: 5rem;
   color: #f5f5f5;
   margin: 0 0 1rem 0;
-  transition: all 1s ease;
+  transition: color 1s ease;
 }
 @media (max-width: 500px) {
   .main-landing .heading-container h1 {
@@ -171,7 +171,7 @@ nav .nav-items-container .moon-container .moon-icon.moved {
   font-size: 2.5rem;
   color: #f5f5f5;
   margin: 0 0 1rem 0;
-  transition: all 1s ease;
+  transition: color 1s ease;
 }
 @media (max-width: 500px) {
   .main-landing .heading-container h2 {
@@ -194,7 +194,7 @@ nav .nav-items-container .moon-container .moon-icon.moved {
   font-size: 1.75rem;
   line-height: 1.5;
   color: #f5f5f5;
-  transition: all 1s ease;
+  transition: color 1s ease;
 }
 @media (max-width: 500px) {
   .main-landing .text-container p {
@@ -264,7 +264,7 @@ nav .nav-items-container .moon-container .moon-icon.moved {
   font-size: 5rem;
   color: #f5f5f5;
   margin: 0 0 1rem 0;
-  transition: all 1s ease;
+  transition: color 1s ease;
 }
 @media (max-width: 500px) {
   .projects-section h1 {
@@ -283,7 +283,7 @@ nav .nav-items-container .moon-container .moon-icon.moved {
   font-size: 2.5rem;
   color: #f5f5f5;
   margin: 0 0 1rem 0;
-  transition: all 1s ease;
+  transition: color 1s ease;
 }
 @media (max-width: 500px) {
   .projects-section h2 {
@@ -306,7 +306,7 @@ nav .nav-items-container .moon-container .moon-icon.moved {
   font-size: 1.75rem;
   line-height: 1.5;
   color: #f5f5f5;
-  transition: all 1s ease;
+  transition: color 1s ease;
 }
 @media (max-width: 500px) {
   .projects-section .text-container p {
