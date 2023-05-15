@@ -4,6 +4,7 @@ I'm currently redesigning and rebuilding my portfolio site. Come back soon!
 
 ## To do
 
+* Write new/better copy
 * Add a projects/what I doing section
 * Add a form, which when submitted sends the user's data to a database
 * Build a backend with email/text submission functionality
