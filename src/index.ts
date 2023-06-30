@@ -1,4 +1,4 @@
-function darkLightToggle() {
+function darkLightToggle(): void {
     const moonContainer = document.querySelector('.moon-container') as HTMLElement;
     const sunContainer = document.querySelector('.sun-container') as HTMLElement;
     const sunIcon = document.querySelector('.sun-icon') as HTMLElement; 
@@ -109,5 +109,17 @@ function darkLightToggle() {
     });
 };
 
+// async function renderProjects() { // Return type?
+
+    // Get container element into which to render content
+    // Fetch the project data from the json file
+    // Loop over the project data
+    // Render a card component for each project item
+
+    // const response = await fetch('./data/projects.json')
+    // const projectData = await response.json()
+    // console.log(projectData)
+// } 
 
 darkLightToggle()
+// renderProjects()
