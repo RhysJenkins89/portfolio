@@ -12,7 +12,7 @@ function darkLightToggle(): void {
         document.querySelectorAll('.text').forEach(element => element.classList.toggle('light-mode'));
     }
     
-    let clickDisabled = false;
+    let clickDisabled: boolean = false;
     
     sunContainer.addEventListener('click', () => {
         if (clickDisabled) return;
@@ -20,6 +20,7 @@ function darkLightToggle(): void {
     
         // Remove click events
         clickDisabled = true;
+        const helloThere: String = 'Hello there!'
     
         // Return to correct transition styles if necessary
         sunContainer.style.transition = 'all 1s ease-out';
