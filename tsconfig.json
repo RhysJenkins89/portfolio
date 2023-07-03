@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "noImplicitAny": true,
     "module": "commonjs",                                /* Specify what module code is generated. */
     "outDir": "./dist",                                   /* Specify an output folder for all emitted files. '__extends' in compiled output. */
     "rootDir": "./src",                                  /* Specify the root folder within your source files. */

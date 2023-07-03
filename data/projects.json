@@ -3,12 +3,12 @@
         "title": "Project One",
         "subheading": "This is a subheading",
         "image": "https://images.unsplash.com/photo-1581464647110-26e129ce2d02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        "body-text": "In ut excepteur velit anim nisi non. Veniam commodo duis ipsum cillum ullamco Lorem ut qui ea aute minim pariatur mollit. Deserunt cupidatat adipisicing dolore qui pariatur irure labore voluptate magna quis. Ullamco ullamco eu velit occaecat excepteur incididunt ullamco."
+        "bodyText": "In ut excepteur velit anim nisi non. Veniam commodo duis ipsum cillum ullamco Lorem ut qui ea aute minim pariatur mollit. Deserunt cupidatat adipisicing dolore qui pariatur irure labore voluptate magna quis. Ullamco ullamco eu velit occaecat excepteur incididunt ullamco."
     },
     "project-two": {
         "title": "Project Two",
         "subheading": "This is a subheading",
         "image": "https://images.unsplash.com/photo-1530099486328-e021101a494a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2747&q=80",
-        "body-text": "In ut excepteur velit anim nisi non. Veniam commodo duis ipsum cillum ullamco Lorem ut qui ea aute minim pariatur mollit. Deserunt cupidatat adipisicing dolore qui pariatur irure labore voluptate magna quis. Ullamco ullamco eu velit occaecat excepteur incididunt ullamco."
+        "bodyText": "In ut excepteur velit anim nisi non. Veniam commodo duis ipsum cillum ullamco Lorem ut qui ea aute minim pariatur mollit. Deserunt cupidatat adipisicing dolore qui pariatur irure labore voluptate magna quis. Ullamco ullamco eu velit occaecat excepteur incididunt ullamco."
     }
 }
