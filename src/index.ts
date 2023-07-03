@@ -20,7 +20,7 @@ function darkLightToggle(): void {
     
         // Remove click events
         clickDisabled = true;
-        const helloThere: String = 'Hello there!'
+        const helloThere: string = 'Hello there!'
     
         // Return to correct transition styles if necessary
         sunContainer.style.transition = 'all 1s ease-out';
