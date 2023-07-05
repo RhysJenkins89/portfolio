@@ -1,3 +1,5 @@
+// In order to stop the dark mode fade-in, I'll remove the transition property on the main scss and then add it back once the page has fully loaded. 
+
 function darkLightToggle(): void {
     const moonContainer = document.querySelector('.moon-container') as HTMLElement;
     const sunContainer = document.querySelector('.sun-container') as HTMLElement;
@@ -122,10 +124,10 @@ async function renderProjects() { // Return type?
     for (const project in projectData) {
         cardsContainer.insertAdjacentHTML('beforeend',
             `
-                <div>
-                    <h2>${projectData[project].title}</h2>
-                    <p>${projectData[project].subheading}</p>
-                    <p>${projectData[project].bodyText}</p>
+                <div class="card">
+                    <h3 class="card-heading">${projectData[project].title}</h3>
+                    <p class="card-subheading">${projectData[project].subheading}</p>
+                    <p class="card-body">${projectData[project].bodyText}</p>
                 </div>
             `
         )
