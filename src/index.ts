@@ -110,33 +110,27 @@ function darkLightToggle(): void {
     });
 };
 
-// async function renderProjects() { // Return type?
+async function renderProjects() { // Return type?
+    // Get container element into which to render content
+    const cardsContainer = document.querySelector('.cards-container') as HTMLElement
+    
+    // Fetch the project data from the json file
+    const response = await fetch('./data/projects.json')
+    const projectData = await response.json()
 
-    // // Get container element into which to render content
-    // const cardsContainer = document.querySelector('.cards-container') as HTMLElement
-    // // Fetch the project data from the json file
-    // // Loop over the project data
-    // // Render a card component for each project item
-
-    // const response = await fetch('./data/projects.json')
-    // const projectData = await response.json()
-    // console.log(projectData)
-    // console.log('testing')
-
-    // for (const project in projectData) {
-        // console.log(projectData[project])
-        // // Inside this loop, render a project data card and amend to the appropriate HTML element
-        // cardsContainer.insertAdjacentHTML('beforeend',
-            // `
-                // <div>
-                    // <h2>${projectData[project].title}</h2>
-                    // <p>${projectData[project].subheading}</p>
-                    // <p>${projectData[project].bodyText}</p>
-                // </div>
-            // `
-        // )
-    // }
-// } 
+    // Loop over the project data, render card for each item
+    for (const project in projectData) {
+        cardsContainer.insertAdjacentHTML('beforeend',
+            `
+                <div>
+                    <h2>${projectData[project].title}</h2>
+                    <p>${projectData[project].subheading}</p>
+                    <p>${projectData[project].bodyText}</p>
+                </div>
+            `
+        )
+    }
+} 
 
 darkLightToggle()
-// renderProjects()
+renderProjects()
