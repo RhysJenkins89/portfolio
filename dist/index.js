@@ -134,7 +134,7 @@ function renderProjects() {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    cardsContainer = document.querySelector('.cards-container');
+                    cardsContainer = document.querySelector('.projects-container');
                     return [4 /*yield*/, fetch('./data/projects.json')];
                 case 1:
                     response = _a.sent();
@@ -145,7 +145,7 @@ function renderProjects() {
                     projectData = _a.sent();
                     // Loop over the project data, render card for each item
                     for (project in projectData) {
-                        cardsContainer.insertAdjacentHTML('beforeend', "\n                <div class=\"card\">\n                    <h3 class=\"card-heading\">".concat(projectData[project].title, "</h3>\n                    <p class=\"card-subheading\">").concat(projectData[project].subheading, "</p>\n                    <p class=\"card-body\">").concat(projectData[project].bodyText, "</p>\n                </div>\n            "));
+                        cardsContainer.insertAdjacentHTML('beforeend', "\n                <div class=\"project\">\n                    <h3 class=\"project-heading\">".concat(projectData[project].title, "</h3>\n                    <p class=\"project-subheading\">").concat(projectData[project].subheading, "</p>\n                    <p class=\"project-text\">").concat(projectData[project].bodyText, "</p>\n                </div>\n            "));
                     }
                     return [2 /*return*/];
             }

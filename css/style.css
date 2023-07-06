@@ -249,8 +249,6 @@ nav .nav-items-container .moon-container .moon-icon.moved {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  border: solid 1px lightgrey;
-  border-radius: 0.5rem;
 }
 @media (max-width: 1100px) {
   .projects-section {
@@ -326,17 +324,68 @@ nav .nav-items-container .moon-container .moon-icon.moved {
 .projects-section .text-container p a {
   color: #ea3788;
 }
-.projects-section .cards-container {
+.projects-section .projects-container {
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
 }
-.projects-section .cards-container .card {
-  border-radius: 0.5rem;
-  border: solid 1px lightgrey;
-  height: 20rem;
-  width: 12.5rem;
-  padding: 0.75rem 0.75rem;
+.projects-section .projects-container .project-heading {
+  font-size: 2.5rem;
+  color: #f5f5f5;
+  margin: 0 0 1rem 0;
+  transition: color 1s ease;
+}
+@media (max-width: 500px) {
+  .projects-section .projects-container .project-heading {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 325px) {
+  .projects-section .projects-container .project-heading {
+    font-size: 1.75rem;
+  }
+}
+.projects-section .projects-container .project-heading.light-mode {
+  color: #121212;
+}
+.projects-section .projects-container .project-subheading {
+  font-size: 2.5rem;
+  color: #f5f5f5;
+  margin: 0 0 1rem 0;
+  transition: color 1s ease;
+}
+@media (max-width: 500px) {
+  .projects-section .projects-container .project-subheading {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 325px) {
+  .projects-section .projects-container .project-subheading {
+    font-size: 1.75rem;
+  }
+}
+.projects-section .projects-container .project-subheading.light-mode {
+  color: #121212;
+}
+.projects-section .projects-container .project-text {
+  font-size: 1.75rem;
+  line-height: 1.5;
+  color: #f5f5f5;
+  transition: color 1s ease;
+}
+@media (max-width: 500px) {
+  .projects-section .projects-container .project-text {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 325px) {
+  .projects-section .projects-container .project-text {
+    font-size: 1.2rem;
+  }
+}
+.projects-section .projects-container .project-text.light-mode {
+  color: #121212;
+}
+.projects-section .projects-container .project-text a {
+  color: #ea3788;
 }
 
 /*# sourceMappingURL=style.css.map */

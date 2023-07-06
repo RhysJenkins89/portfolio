@@ -114,7 +114,7 @@ function darkLightToggle(): void {
 
 async function renderProjects() { // Return type?
     // Get container element into which to render content
-    const cardsContainer = document.querySelector('.cards-container') as HTMLElement
+    const cardsContainer = document.querySelector('.projects-container') as HTMLElement
     
     // Fetch the project data from the json file
     const response = await fetch('./data/projects.json')
@@ -124,10 +124,10 @@ async function renderProjects() { // Return type?
     for (const project in projectData) {
         cardsContainer.insertAdjacentHTML('beforeend',
             `
-                <div class="card">
-                    <h3 class="card-heading">${projectData[project].title}</h3>
-                    <p class="card-subheading">${projectData[project].subheading}</p>
-                    <p class="card-body">${projectData[project].bodyText}</p>
+                <div class="project">
+                    <h3 class="project-heading">${projectData[project].title}</h3>
+                    <p class="project-subheading">${projectData[project].subheading}</p>
+                    <p class="project-text">${projectData[project].bodyText}</p>
                 </div>
             `
         )
