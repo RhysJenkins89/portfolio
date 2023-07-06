@@ -1,5 +1,5 @@
 "use strict";
-// In order to stop the dark mode fade-in, I'll remove the transition property on the main scss and then add it back once the page has fully loaded. 
+// In order to stop the dark mode fade-in, I'll remove the transition property on the main scss and then add it back once the page has fully loaded.
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -37,89 +37,90 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 function darkLightToggle() {
-    var moonContainer = document.querySelector('.moon-container');
-    var sunContainer = document.querySelector('.sun-container');
-    var sunIcon = document.querySelector('.sun-icon');
-    var moonIcon = document.querySelector('.moon-icon');
-    var bodyElement = document.querySelector('#body');
+    var moonContainer = document.querySelector(".moon-container");
+    var sunContainer = document.querySelector(".sun-container");
+    var sunIcon = document.querySelector(".sun-icon");
+    var moonIcon = document.querySelector(".moon-icon");
+    var bodyElement = document.querySelector("#body");
     function toggleTheme() {
-        bodyElement.classList.toggle('light-mode');
-        document.querySelectorAll('h1').forEach(function (element) { return element.classList.toggle('light-mode'); });
-        document.querySelectorAll('h2').forEach(function (element) { return element.classList.toggle('light-mode'); });
-        document.querySelectorAll('.text').forEach(function (element) { return element.classList.toggle('light-mode'); });
+        bodyElement.classList.toggle("light-mode");
+        document
+            .querySelectorAll(".text")
+            .forEach(function (element) { return element.classList.toggle("light-mode"); });
     }
     var clickDisabled = false;
-    sunContainer.addEventListener('click', function () {
+    // There's also a lof of repeated code in the following two functions. I suggest that we consoldate them into one function.
+    sunContainer.addEventListener("click", function () {
         if (clickDisabled)
             return;
-        if (sunContainer.classList.contains('moved'))
+        if (sunContainer.classList.contains("moved"))
             return;
         // Remove click events
         clickDisabled = true;
-        var helloThere = 'Hello there!';
+        var helloThere = "Hello there!";
         // Return to correct transition styles if necessary
-        sunContainer.style.transition = 'all 1s ease-out';
-        sunIcon.style.transition = 'all 1s ease-in';
+        sunContainer.style.transition = "all 1s ease-out";
+        sunIcon.style.transition = "all 1s ease-in";
         // Move out and fade out the sun
-        sunContainer.classList.add('fade-out');
-        sunIcon.classList.add('fade-out');
-        // Move in and fade in the moon 
-        moonContainer.classList.remove('moved');
-        moonIcon.classList.remove('moved');
+        sunContainer.classList.add("fade-out");
+        sunIcon.classList.add("fade-out");
+        // Move in and fade in the moon
+        moonContainer.classList.remove("moved");
+        moonIcon.classList.remove("moved");
         // If the moon contains the fade-out class, remove it
-        if (moonContainer.classList.contains('fade-out')) {
-            moonContainer.classList.remove('fade-out');
-            moonIcon.classList.remove('fade-out');
+        if (moonContainer.classList.contains("fade-out")) {
+            moonContainer.classList.remove("fade-out");
+            moonIcon.classList.remove("fade-out");
         }
         // Add a pointer cursor to the moon and remove it from the sun
-        moonIcon.style.cursor = 'pointer';
-        sunIcon.style.cursor = 'default';
+        moonIcon.style.cursor = "pointer";
+        sunIcon.style.cursor = "default";
         toggleTheme();
         setTimeout(function () {
             // After one second, move the sun to correct position
-            sunContainer.classList.add('moved');
-            sunIcon.classList.add('moved');
+            sunContainer.classList.add("moved");
+            sunIcon.classList.add("moved");
             // Add the correct transition styles
-            sunContainer.style.transition = 'all 1s ease-in';
-            sunIcon.style.transition = 'all 1s ease-out';
+            sunContainer.style.transition = "all 1s ease-in";
+            sunIcon.style.transition = "all 1s ease-out";
         }, 1000);
         // Return click events
         setTimeout(function () {
             clickDisabled = false;
         }, 2000);
     });
-    moonContainer.addEventListener('click', function () {
+    moonContainer.addEventListener("click", function () {
         if (clickDisabled)
             return;
-        if (moonContainer.classList.contains('moved'))
+        if (moonContainer.classList.contains("moved"))
             return;
         // Remove click events
         clickDisabled = true;
         // Return to correct transition styles if necessary
-        moonContainer.style.transition = 'all 1s ease-out';
-        moonIcon.style.transition = 'all 1s ease-in';
+        moonContainer.style.transition = "all 1s ease-out";
+        moonIcon.style.transition = "all 1s ease-in";
         // Move out and fade out the moon
-        moonContainer.classList.add('fade-out');
-        moonIcon.classList.add('fade-out');
+        moonContainer.classList.add("fade-out");
+        moonIcon.classList.add("fade-out");
         // Move in and fade in the sun
-        sunContainer.classList.remove('moved');
-        sunIcon.classList.remove('moved');
+        sunContainer.classList.remove("moved");
+        sunIcon.classList.remove("moved");
         // If the sun contains the fade-out class, remove it
-        if (sunContainer.classList.contains('fade-out')) {
-            sunContainer.classList.remove('fade-out');
-            sunIcon.classList.remove('fade-out');
+        if (sunContainer.classList.contains("fade-out")) {
+            sunContainer.classList.remove("fade-out");
+            sunIcon.classList.remove("fade-out");
         }
         // Add a pointer cursor to the sun and remove it from the moon
-        sunIcon.style.cursor = 'pointer';
-        moonIcon.style.cursor = 'default';
+        sunIcon.style.cursor = "pointer";
+        moonIcon.style.cursor = "default";
         toggleTheme();
         setTimeout(function () {
-            // After one second, move the moon to the correct postition 
-            moonContainer.classList.add('moved');
-            moonIcon.classList.add('moved');
+            // After one second, move the moon to the correct postition
+            moonContainer.classList.add("moved");
+            moonIcon.classList.add("moved");
             // Add the correct transition styles
-            moonContainer.style.transition = 'all 1s ease-in';
-            moonIcon.style.transition = 'all 1s ease-out';
+            moonContainer.style.transition = "all 1s ease-in";
+            moonIcon.style.transition = "all 1s ease-out";
         }, 1000);
         // Return click events
         setTimeout(function () {
@@ -127,15 +128,14 @@ function darkLightToggle() {
         }, 2000);
     });
 }
-;
 function renderProjects() {
     return __awaiter(this, void 0, void 0, function () {
         var cardsContainer, response, projectData, project;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    cardsContainer = document.querySelector('.projects-container');
-                    return [4 /*yield*/, fetch('./data/projects.json')];
+                    cardsContainer = document.querySelector(".projects-container");
+                    return [4 /*yield*/, fetch("./data/projects.json")];
                 case 1:
                     response = _a.sent();
                     return [4 /*yield*/, response.json()
@@ -145,7 +145,7 @@ function renderProjects() {
                     projectData = _a.sent();
                     // Loop over the project data, render card for each item
                     for (project in projectData) {
-                        cardsContainer.insertAdjacentHTML('beforeend', "\n                <div class=\"project\">\n                    <h3 class=\"project-heading\">".concat(projectData[project].title, "</h3>\n                    <p class=\"project-subheading\">").concat(projectData[project].subheading, "</p>\n                    <p class=\"project-text\">").concat(projectData[project].bodyText, "</p>\n                </div>\n            "));
+                        cardsContainer.insertAdjacentHTML("beforeend", "\n                <div class=\"project\">\n                    <h3 class=\"text project-heading\">".concat(projectData[project].title, "</h3>\n                    <p class=\"text project-subheading\">").concat(projectData[project].subheading, "</p>\n                    <p class=\"text project-text\">").concat(projectData[project].bodyText, "</p>\n                </div>\n            "));
                     }
                     return [2 /*return*/];
             }

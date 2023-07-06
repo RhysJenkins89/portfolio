@@ -26,11 +26,11 @@
 
         .project {
             &-heading {
-                @include heading-two;
+                @include heading-three;
             }
 
             &-subheading {
-                @include heading-two;
+                @include paragraph;
             }
 
             &-text {
