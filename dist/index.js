@@ -153,4 +153,4 @@ function renderProjects() {
     });
 }
 darkLightToggle();
-renderProjects();
+// renderProjects()
