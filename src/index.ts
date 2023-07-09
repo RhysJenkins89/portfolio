@@ -115,13 +115,24 @@ function darkLightToggle(): void {
     })
 }
 
+interface ProjectsData {
+    [index: string]: Project
+}
+
+interface Project {
+    title: string, 
+    image: string
+    subheading: string, 
+    bodyText: string, 
+}
+
 async function renderProjects(): Promise<void> {
     const cardsContainer = document.querySelector(
         ".projects-container"
     ) as HTMLElement
 
-    const response = await fetch("./data/projects.json")
-    const projectData = await response.json()
+    const response: Response = await fetch("./data/projects.json")
+    const projectData: ProjectsData = await response.json()
 
     for (const project in projectData) {
         cardsContainer.insertAdjacentHTML(
