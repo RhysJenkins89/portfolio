@@ -138,12 +138,9 @@ function renderProjects() {
                     return [4 /*yield*/, fetch("./data/projects.json")];
                 case 1:
                     response = _a.sent();
-                    return [4 /*yield*/, response.json()
-                        // Loop over the project data, render card for each item
-                    ];
+                    return [4 /*yield*/, response.json()];
                 case 2:
                     projectData = _a.sent();
-                    // Loop over the project data, render card for each item
                     for (project in projectData) {
                         cardsContainer.insertAdjacentHTML("beforeend", "\n                <div class=\"project\">\n                    <h3 class=\"text project-heading\">".concat(projectData[project].title, "</h3>\n                    <p class=\"text project-subheading\">").concat(projectData[project].subheading, "</p>\n                    <p class=\"text project-text\">").concat(projectData[project].bodyText, "</p>\n                </div>\n            "));
                     }
