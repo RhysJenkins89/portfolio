@@ -36,17 +36,25 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var moonContainer = document.querySelector(".moon-container");
+var sunContainer = document.querySelector(".sun-container");
+var sunIcon = document.querySelector(".sun-icon");
+var moonIcon = document.querySelector(".moon-icon");
+var bodyElement = document.querySelector("#body");
+var textElements = document.querySelectorAll(".text");
+// window.onload = (event) => {
+// bodyElement.style.transition = "all 1s ease"
+// textElements.forEach(element => {
+// // element.style.transition = "all 1s ease"
+// console.log(textElements)
+// })
+// }
 function darkLightToggle() {
-    var moonContainer = document.querySelector(".moon-container");
-    var sunContainer = document.querySelector(".sun-container");
-    var sunIcon = document.querySelector(".sun-icon");
-    var moonIcon = document.querySelector(".moon-icon");
-    var bodyElement = document.querySelector("#body");
     function toggleTheme() {
         bodyElement.classList.toggle("light-mode");
-        document
-            .querySelectorAll(".text")
-            .forEach(function (element) { return element.classList.toggle("light-mode"); });
+        textElements.forEach(function (element) {
+            return element.classList.toggle("light-mode");
+        });
     }
     var clickDisabled = false;
     // There's also a lof of repeated code in the following two functions. I suggest that we consoldate them into one function.
@@ -57,7 +65,6 @@ function darkLightToggle() {
             return;
         // Remove click events
         clickDisabled = true;
-        var helloThere = "Hello there!";
         // Return to correct transition styles if necessary
         sunContainer.style.transition = "all 1s ease-out";
         sunIcon.style.transition = "all 1s ease-in";

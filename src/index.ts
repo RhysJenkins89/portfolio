@@ -1,19 +1,26 @@
 // In order to stop the dark mode fade-in, I'll remove the transition property on the main scss and then add it back once the page has fully loaded.
 
-function darkLightToggle(): void {
-    const moonContainer = document.querySelector(
-        ".moon-container"
-    ) as HTMLElement
-    const sunContainer = document.querySelector(".sun-container") as HTMLElement
-    const sunIcon = document.querySelector(".sun-icon") as HTMLElement
-    const moonIcon = document.querySelector(".moon-icon") as HTMLElement
-    const bodyElement = document.querySelector("#body") as HTMLElement
+const moonContainer = document.querySelector(".moon-container") as HTMLElement
+const sunContainer = document.querySelector(".sun-container") as HTMLElement
+const sunIcon = document.querySelector(".sun-icon") as HTMLElement
+const moonIcon = document.querySelector(".moon-icon") as HTMLElement
+const bodyElement = document.querySelector("#body") as HTMLElement
+const textElements = document.querySelectorAll(".text") as NodeListOf<Element>
 
+// window.onload = (event) => {
+    // bodyElement.style.transition = "all 1s ease"
+    // textElements.forEach(element => {
+        // // element.style.transition = "all 1s ease"
+        // console.log(textElements)
+    // })
+// }
+
+function darkLightToggle(): void {
     function toggleTheme() {
         bodyElement.classList.toggle("light-mode")
-        document
-            .querySelectorAll(".text")
-            .forEach((element) => element.classList.toggle("light-mode"))
+        textElements.forEach((element) =>
+            element.classList.toggle("light-mode")
+        )
     }
 
     let clickDisabled: boolean = false
@@ -25,7 +32,6 @@ function darkLightToggle(): void {
 
         // Remove click events
         clickDisabled = true
-        const helloThere: string = "Hello there!"
 
         // Return to correct transition styles if necessary
         sunContainer.style.transition = "all 1s ease-out"
@@ -120,10 +126,10 @@ interface ProjectsData {
 }
 
 interface Project {
-    title: string, 
+    title: string
     image: string
-    subheading: string, 
-    bodyText: string, 
+    subheading: string
+    bodyText: string
 }
 
 async function renderProjects(): Promise<void> {
