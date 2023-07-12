@@ -1,19 +1,16 @@
-// In order to stop the dark mode fade-in, I'll remove the transition property on the main scss and then add it back once the page has fully loaded.
-
 const moonContainer = document.querySelector(".moon-container") as HTMLElement
 const sunContainer = document.querySelector(".sun-container") as HTMLElement
 const sunIcon = document.querySelector(".sun-icon") as HTMLElement
 const moonIcon = document.querySelector(".moon-icon") as HTMLElement
 const bodyElement = document.querySelector("#body") as HTMLElement
-const textElements = document.querySelectorAll(".text") as NodeListOf<Element>
+const textElements = document.querySelectorAll(".text") as NodeListOf<HTMLElement>
 
-// window.onload = (event) => {
-    // bodyElement.style.transition = "all 1s ease"
-    // textElements.forEach(element => {
-        // // element.style.transition = "all 1s ease"
-        // console.log(textElements)
-    // })
-// }
+window.onload = (event) => {
+    bodyElement.style.transition = "all 1s ease"
+    textElements.forEach(element => {
+        element.style.transition = "all 1s ease"
+    })
+}
 
 function darkLightToggle(): void {
     function toggleTheme() {
@@ -25,12 +22,19 @@ function darkLightToggle(): void {
 
     let clickDisabled: boolean = false
 
+    // function addListeners(element: HTMLElement, icon: HTMLElement, event: string): void {
+        // element.addEventListener(event, () => {
+            // if (clickDisabled) return
+            // if (element.classList.contains("moved")) return
+        // })
+        // clickDisabled = true
+    // }
+
     // There's also a lof of repeated code in the following two functions. I suggest that we consoldate them into one function.
     sunContainer.addEventListener("click", () => {
         if (clickDisabled) return
         if (sunContainer.classList.contains("moved")) return
 
-        // Remove click events
         clickDisabled = true
 
         // Return to correct transition styles if necessary
@@ -77,7 +81,6 @@ function darkLightToggle(): void {
         if (clickDisabled) return
         if (moonContainer.classList.contains("moved")) return
 
-        // Remove click events
         clickDisabled = true
 
         // Return to correct transition styles if necessary

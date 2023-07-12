@@ -1,5 +1,4 @@
 "use strict";
-// In order to stop the dark mode fade-in, I'll remove the transition property on the main scss and then add it back once the page has fully loaded.
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -42,13 +41,12 @@ var sunIcon = document.querySelector(".sun-icon");
 var moonIcon = document.querySelector(".moon-icon");
 var bodyElement = document.querySelector("#body");
 var textElements = document.querySelectorAll(".text");
-// window.onload = (event) => {
-// bodyElement.style.transition = "all 1s ease"
-// textElements.forEach(element => {
-// // element.style.transition = "all 1s ease"
-// console.log(textElements)
-// })
-// }
+window.onload = function (event) {
+    bodyElement.style.transition = "all 1s ease";
+    textElements.forEach(function (element) {
+        element.style.transition = "all 1s ease";
+    });
+};
 function darkLightToggle() {
     function toggleTheme() {
         bodyElement.classList.toggle("light-mode");
@@ -57,13 +55,19 @@ function darkLightToggle() {
         });
     }
     var clickDisabled = false;
+    // function addListeners(element: HTMLElement, icon: HTMLElement, event: string): void {
+    // element.addEventListener(event, () => {
+    // if (clickDisabled) return
+    // if (element.classList.contains("moved")) return
+    // })
+    // clickDisabled = true
+    // }
     // There's also a lof of repeated code in the following two functions. I suggest that we consoldate them into one function.
     sunContainer.addEventListener("click", function () {
         if (clickDisabled)
             return;
         if (sunContainer.classList.contains("moved"))
             return;
-        // Remove click events
         clickDisabled = true;
         // Return to correct transition styles if necessary
         sunContainer.style.transition = "all 1s ease-out";
@@ -101,7 +105,6 @@ function darkLightToggle() {
             return;
         if (moonContainer.classList.contains("moved"))
             return;
-        // Remove click events
         clickDisabled = true;
         // Return to correct transition styles if necessary
         moonContainer.style.transition = "all 1s ease-out";
