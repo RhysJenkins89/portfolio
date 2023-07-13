@@ -36,43 +36,31 @@ function darkLightToggle(): void {
         
             clickDisabled = true
 
-            // one: sun
-            // two: moon
-
             elementOne.style.transition = "all 1s ease-out"
             iconOne.style.transition = "all 1s ease-in"
-
-            // Move out and fade out the sun
             elementOne.classList.add("fade-out")
             iconOne.classList.add("fade-out")
 
-            // Move in and fade in the moon
             elementTwo.classList.remove("moved")
             iconTwo.classList.remove("moved")
 
-            // If the moon contains the fade-out class, remove it
             if (elementTwo.classList.contains("fade-out")) {
                 elementTwo.classList.remove("fade-out")
                 iconTwo.classList.remove("fade-out")
             }
 
-            // Add a pointer cursor to the moon and remove it from the sun
             iconTwo.style.cursor = "pointer"
             iconOne.style.cursor = "default"
 
             toggleTheme()
 
             setTimeout(() => {
-                // After one second, move the sun to correct position
                 elementOne.classList.add("moved")
                 iconOne.classList.add("moved")
-
-                // Add the correct transition styles
                 elementOne.style.transition = "all 1s ease-in"
                 iconOne.style.transition = "all 1s ease-out"
             }, 1000)
 
-            // Return click events
             setTimeout(() => {
                 clickDisabled = false
             }, 2000)
