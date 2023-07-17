@@ -4,6 +4,7 @@ I'm currently redesigning and rebuilding my portfolio site. Come back soon!
 
 ## To do
 
+* Add theme selector/themes
 * Sort TypeScript config/building
 * Build project cards, loop over data
 * Add a footer
