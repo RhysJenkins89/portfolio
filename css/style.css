@@ -123,6 +123,12 @@ nav .nav-items-container .moon-container .moon-icon.moved {
   transform: translateY(35px);
   opacity: 0;
 }
+nav .nav-items-container .theme-list-container {
+  display: none;
+}
+nav .nav-items-container .theme-list-container.visible {
+  display: block;
+}
 
 .main-landing {
   height: 110vh;

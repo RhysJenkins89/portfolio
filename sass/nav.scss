@@ -127,5 +127,13 @@ nav {
                 }
             }
         }
+
+        .theme-list-container {
+            display: none;
+
+            &.visible {
+                display: block;
+            }
+        }
     }
 }
