@@ -72,7 +72,8 @@ function darkLightToggle(): void {
     addListeners(moonContainer, moonIcon, sunContainer, sunIcon)
 }
 
-function themeSelector(): void {
+// IIFE 
+(function themeSelector(): void {
     // On hover, show the user a popup with the available themes
     // On theme click, add the corresponding class to the body
     // This will talk to the scss, which updates the colour variables available
@@ -84,9 +85,7 @@ function themeSelector(): void {
        themeSelector.classList.toggle('visible') 
        console.log('theme icon class clicked')
     })
-}
-
-themeSelector()
+})();
 
 interface ProjectsData {
     [index: string]: Project
