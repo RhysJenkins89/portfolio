@@ -22,6 +22,7 @@ nav .nav-items-container {
   height: 100%;
   display: flex;
   align-items: center;
+  position: relative;
 }
 @media (max-width: 1100px) {
   nav .nav-items-container {
@@ -123,8 +124,20 @@ nav .nav-items-container .moon-container .moon-icon.moved {
   transform: translateY(35px);
   opacity: 0;
 }
+nav .nav-items-container .theme-container {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  background-color: #99d6ea;
+}
 nav .nav-items-container .theme-list-container {
-  display: none;
+  display: block;
+  height: fit-content;
+  width: 25%;
+  background-color: #99d6ea;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 nav .nav-items-container .theme-list-container.visible {
   display: block;

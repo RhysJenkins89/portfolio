@@ -120,5 +120,5 @@ async function renderProjects(): Promise<void> {
     }
 }
 
-darkLightToggle()
+// darkLightToggle()
 // renderProjects()

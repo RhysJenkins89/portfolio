@@ -10,6 +10,7 @@ nav {
         height: 100%;    
         display: flex;
         align-items: center;
+        position: relative;
 
         @media (max-width: variables.$desktop-small) {
             width: 80vw;
@@ -128,8 +129,21 @@ nav {
             }
         }
 
+        .theme-container {
+            display: block;
+            height: 2rem;
+            width: 2rem;
+            background-color: #99d6ea;
+        }
+
         .theme-list-container {
-            display: none;
+            display: block;
+            height: fit-content;
+            width: 25%; 
+            background-color: #99d6ea;
+            position: absolute;
+            top: 0;
+            left: 0;
 
             &.visible {
                 display: block;
