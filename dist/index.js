@@ -90,6 +90,21 @@ function darkLightToggle() {
     addListeners(sunContainer, sunIcon, moonContainer, moonIcon);
     addListeners(moonContainer, moonIcon, sunContainer, sunIcon);
 }
+// IIFE 
+(function themeSelector() {
+    // On hover, show the user a popup with the available themes
+    // On theme click, add the corresponding class to the body
+    // This will talk to the scss, which updates the colour variables available
+    var themeIcon = document.querySelector('.theme-icon');
+    var themeSelector = document.querySelector('.theme-list-container');
+    var themeElements = document.querySelectorAll('.theme-element');
+    themeIcon.addEventListener('click', function () {
+        // Note that themeIcon is the container for the placeholder text
+        // When the user clicks the placeholder show/hide the themeSelector
+        themeSelector.classList.toggle('visible');
+        console.log('theme icon class clicked');
+    });
+})();
 function renderProjects() {
     return __awaiter(this, void 0, void 0, function () {
         var cardsContainer, response, projectData, project;
@@ -111,5 +126,5 @@ function renderProjects() {
         });
     });
 }
-darkLightToggle();
+// darkLightToggle()
 // renderProjects()
