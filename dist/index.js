@@ -92,16 +92,11 @@ function darkLightToggle() {
 }
 // IIFE 
 (function themeSelector() {
-    // On hover, show the user a popup with the available themes
-    // On theme click, add the corresponding class to the body
-    // This will talk to the scss, which updates the colour variables available
+    // On click, switch between two themes
     var themeIcon = document.querySelector('.theme-icon');
     var themeSelector = document.querySelector('.theme-list-container');
     var themeElements = document.querySelectorAll('.theme-element');
     themeIcon.addEventListener('click', function () {
-        // Note that themeIcon is the container for the placeholder text
-        // When the user clicks the placeholder show/hide the themeSelector
-        themeSelector.classList.toggle('visible');
         console.log('theme icon class clicked');
     });
 })();

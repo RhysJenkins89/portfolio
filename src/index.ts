@@ -74,16 +74,11 @@ function darkLightToggle(): void {
 
 // IIFE 
 (function themeSelector(): void {
-    // On hover, show the user a popup with the available themes
-    // On theme click, add the corresponding class to the body
-    // This will talk to the scss, which updates the colour variables available
+    // On click, switch between two themes
     const themeIcon = document.querySelector('.theme-icon') as HTMLElement
     const themeSelector = document.querySelector('.theme-list-container') as HTMLElement
     const themeElements = document.querySelectorAll('.theme-element') as NodeListOf<HTMLElement>
     themeIcon.addEventListener('click', () => {
-        // Note that themeIcon is the container for the placeholder text
-        // When the user clicks the placeholder show/hide the themeSelector
-        themeSelector.classList.toggle('visible') 
         console.log('theme icon class clicked')
     })
 })()
