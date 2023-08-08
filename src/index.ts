@@ -81,11 +81,12 @@ function darkLightToggle(): void {
     const themeSelector = document.querySelector('.theme-list-container') as HTMLElement
     const themeElements = document.querySelectorAll('.theme-element') as NodeListOf<HTMLElement>
     themeIcon.addEventListener('click', () => {
-        // Show the theme selector popup
-       themeSelector.classList.toggle('visible') 
-       console.log('theme icon class clicked')
+        // Note that themeIcon is the container for the placeholder text
+        // When the user clicks the placeholder show/hide the themeSelector
+        themeSelector.classList.toggle('visible') 
+        console.log('theme icon class clicked')
     })
-})();
+})()
 
 interface ProjectsData {
     [index: string]: Project

@@ -99,7 +99,8 @@ function darkLightToggle() {
     var themeSelector = document.querySelector('.theme-list-container');
     var themeElements = document.querySelectorAll('.theme-element');
     themeIcon.addEventListener('click', function () {
-        // Show the theme selector popup
+        // Note that themeIcon is the container for the placeholder text
+        // When the user clicks the placeholder show/hide the themeSelector
         themeSelector.classList.toggle('visible');
         console.log('theme icon class clicked');
     });
