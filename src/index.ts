@@ -14,6 +14,9 @@ window.onload = (event) => {
     })
 }
 
+// Vim: command, count, motion
+// It would be useful to automatically go to the start of the code whenever I jump to a line
+
 function darkLightToggle(): void {
     function toggleTheme() {
         bodyElement.classList.toggle("light-mode")
