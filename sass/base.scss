@@ -10,7 +10,11 @@ body {
     max-width: 1750px;
     // transition: all 1s ease;
 
-    &.light-mode {
+    &.light {
         background-color: variables.$background-grey;
+    }
+
+    &.eighties-after-dark {
+        background-color: variables.$background-colour;
     }
 }

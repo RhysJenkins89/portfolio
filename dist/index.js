@@ -47,6 +47,8 @@ window.onload = function (event) {
         element.style.transition = "all 1s ease";
     });
 };
+// Vim: command, count, motion
+// It would be useful to automatically go to the start of the code whenever I jump to a line
 function darkLightToggle() {
     function toggleTheme() {
         bodyElement.classList.toggle("light-mode");
@@ -56,7 +58,7 @@ function darkLightToggle() {
     }
     var clickDisabled = false;
     function addListeners(elementOne, iconOne, elementTwo, iconTwo) {
-        elementOne.addEventListener('click', function () {
+        elementOne.addEventListener("click", function () {
             if (clickDisabled)
                 return;
             if (elementOne.classList.contains("moved"))
@@ -86,18 +88,27 @@ function darkLightToggle() {
             }, 2000);
         });
     }
-    // If I'm going to add a theme selector, this function will need to be significantly rewritten. Or, probably more likely, scrapped altogether. 
+    // If I'm going to add a theme selector, this function will need to be significantly rewritten. Or, probably more likely, scrapped altogether.
     addListeners(sunContainer, sunIcon, moonContainer, moonIcon);
     addListeners(moonContainer, moonIcon, sunContainer, sunIcon);
 }
-// IIFE 
+// IIFE
+;
 (function themeSelector() {
     // On click, switch between two themes
-    var themeIcon = document.querySelector('.theme-icon');
-    var themeSelector = document.querySelector('.theme-list-container');
-    var themeElements = document.querySelectorAll('.theme-element');
-    themeIcon.addEventListener('click', function () {
-        console.log('theme icon class clicked');
+    var themeIcon = document.querySelector(".theme-icon");
+    var themeSelector = document.querySelector(".theme-list-container");
+    var themeElements = document.querySelectorAll(".theme-element");
+    themeIcon.addEventListener("click", function () {
+        console.log("theme icon class clicked");
+        if (document.body.classList.contains("80s-after-dark")) {
+            document.body.classList.remove("80s-after-dark");
+            document.body.classList.add("light");
+        }
+        else {
+            document.body.classList.remove('light');
+            document.body.classList.add('80s-after-dark');
+        }
     });
 })();
 function renderProjects() {

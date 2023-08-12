@@ -33,10 +33,10 @@ function darkLightToggle(): void {
         elementTwo: HTMLElement,
         iconTwo: HTMLElement
     ): void {
-        elementOne.addEventListener('click', () => {
+        elementOne.addEventListener("click", () => {
             if (clickDisabled) return
             if (elementOne.classList.contains("moved")) return
-        
+
             clickDisabled = true
 
             elementOne.style.transition = "all 1s ease-out"
@@ -70,19 +70,30 @@ function darkLightToggle(): void {
         })
     }
 
-    // If I'm going to add a theme selector, this function will need to be significantly rewritten. Or, probably more likely, scrapped altogether. 
+    // If I'm going to add a theme selector, this function will need to be significantly rewritten. Or, probably more likely, scrapped altogether.
     addListeners(sunContainer, sunIcon, moonContainer, moonIcon)
     addListeners(moonContainer, moonIcon, sunContainer, sunIcon)
 }
 
-// IIFE 
-(function themeSelector(): void {
+// IIFE
+;(function themeSelector(): void {
     // On click, switch between two themes
-    const themeIcon = document.querySelector('.theme-icon') as HTMLElement
-    const themeSelector = document.querySelector('.theme-list-container') as HTMLElement
-    const themeElements = document.querySelectorAll('.theme-element') as NodeListOf<HTMLElement>
-    themeIcon.addEventListener('click', () => {
-        console.log('theme icon class clicked')
+    const themeIcon = document.querySelector(".theme-icon") as HTMLElement
+    const themeSelector = document.querySelector(
+        ".theme-list-container"
+    ) as HTMLElement
+    const themeElements = document.querySelectorAll(
+        ".theme-element"
+    ) as NodeListOf<HTMLElement>
+    themeIcon.addEventListener("click", () => {
+        console.log("theme icon class clicked")
+        if (document.body.classList.contains("80s-after-dark")) {
+            document.body.classList.remove("80s-after-dark")
+            document.body.classList.add("light")
+        } else {
+            document.body.classList.remove('light')
+            document.body.classList.add('80s-after-dark')
+        }
     })
 })()
 

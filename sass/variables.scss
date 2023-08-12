@@ -28,10 +28,12 @@ $main-text: #e1e7ec;
 //     --colorful-error-extra-color: #fffb85;
 // }
 
-html[data-theme="80s-after-dark"] {
+
+body[data-theme="80s-after-dark"] {
     $background-colour: #1b1d36;
 }
+
   
-html[data-theme="light"] {
+body[data-theme="light"] {
     $background-colour: whitesmoke;
 }

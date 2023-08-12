@@ -133,7 +133,11 @@ nav {
             display: block;
             height: 2rem;
             width: 2rem;
-            background-color: #99d6ea;
+            // background-color: #99d6ea;
+
+            .theme-icon {
+                cursor: pointer;
+            }
         }
 
         .theme-list-container {
