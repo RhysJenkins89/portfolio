@@ -3,80 +3,34 @@
 nav {
     height: 5rem;
     width: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    background-color: hotpink;
 
-    .nav-items-container {
-        margin: 0 auto;
-        width: 60vw;
-        height: 100%;    
-        display: flex;
-        align-items: center;
-        position: relative;
+    .logo {
+        margin: 0 0;
+    }
 
-        @media (max-width: variables.$desktop-small) {
-            width: 80vw;
-        }
-        
-        @media (max-width: variables.$mobile-large) {
-            width: 90vw;
-            // flex-wrap: wrap; // This property will affect the text of the nav items
-        }
+    .theme-container {
+        margin: 0 0 0 auto;
+        background-color: azure;
 
         p {
-            color: var(--text-color);
-            font-size: 1.5rem;
-        }
-
-        p:first-child {
-            margin: 0 auto 0 0;
-            width: 100%;
-        }
-
-        p:not(:first-child) {
-            margin: 0 1rem 0 0;
             cursor: pointer;
         }
 
-        p:last-child {
-            margin: 0;
-        }
-
-        .text {
-            color: var(--text-color); 
-        }
-
-        .icons-container {
-            position: relative;
-            height: .5rem;
-            width: .5rem;
-            display: grid;
-            place-items: center;
-        }
-
-        .theme-container {
-            display: block;
-            height: 2rem;
-            width: 2rem;
-            // background-color: #99d6ea;
-
-            .theme-icon {
-                cursor: pointer;
-            }
-        }
-
         .theme-list-container {
+            background-color: aqua;
+            display: none;
             display: block;
-            height: fit-content;
-            width: 25%; 
-            background-color: #99d6ea;
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0;
-            transition: all 1s ease;
+            
+            ul {
+                display: flex;
 
-            &.visible {
-                display: block;
-                opacity: 1;
+                li {
+                    list-style: none;
+                }
             }
         }
     }

@@ -72,72 +72,31 @@ html[data-theme="80s-after-dark"] {
 nav {
   height: 5rem;
   width: auto;
-}
-nav .nav-items-container {
-  margin: 0 auto;
-  width: 60vw;
-  height: 100%;
   display: flex;
   align-items: center;
-  position: relative;
+  padding: 0 5rem;
+  background-color: hotpink;
 }
-@media (max-width: 1100px) {
-  nav .nav-items-container {
-    width: 80vw;
-  }
+nav .logo {
+  margin: 0 0;
 }
-@media (max-width: 500px) {
-  nav .nav-items-container {
-    width: 90vw;
-  }
+nav .theme-container {
+  margin: 0 0 0 auto;
+  background-color: azure;
 }
-nav .nav-items-container p {
-  color: var(--text-color);
-  font-size: 1.5rem;
-}
-nav .nav-items-container p:first-child {
-  margin: 0 auto 0 0;
-  width: 100%;
-}
-nav .nav-items-container p:not(:first-child) {
-  margin: 0 1rem 0 0;
+nav .theme-container p {
   cursor: pointer;
 }
-nav .nav-items-container p:last-child {
-  margin: 0;
-}
-nav .nav-items-container .text {
-  color: var(--text-color);
-}
-nav .nav-items-container .icons-container {
-  position: relative;
-  height: 0.5rem;
-  width: 0.5rem;
-  display: grid;
-  place-items: center;
-}
-nav .nav-items-container .theme-container {
+nav .theme-container .theme-list-container {
+  background-color: aqua;
+  display: none;
   display: block;
-  height: 2rem;
-  width: 2rem;
 }
-nav .nav-items-container .theme-container .theme-icon {
-  cursor: pointer;
+nav .theme-container .theme-list-container ul {
+  display: flex;
 }
-nav .nav-items-container .theme-list-container {
-  display: block;
-  height: fit-content;
-  width: 25%;
-  background-color: #99d6ea;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: all 1s ease;
-}
-nav .nav-items-container .theme-list-container.visible {
-  display: block;
-  opacity: 1;
+nav .theme-container .theme-list-container ul li {
+  list-style: none;
 }
 
 :root {
