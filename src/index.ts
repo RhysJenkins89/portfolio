@@ -76,7 +76,7 @@ function darkLightToggle(): void {
 }
 
 // IIFE
-;(function themeSelector(): void {
+(function themeSelector(): void {
     // On click, switch between two themes
     const themeIcon = document.querySelector(".theme-icon") as HTMLElement
     const themeSelector = document.querySelector(

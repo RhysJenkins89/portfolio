@@ -1,18 +1,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+:root {
+  --bg-color: black;
+  --text-color: whitesmoke;
+}
+
+html[data-theme=light] {
+  --bg-color: whitesmoke;
+  --text-color: black;
+}
+
+html[data-theme="80s-after-dark"] {
+  --bg-color: #1b1d36;
+  --text-color: #e1e7ec;
+}
+
+:root {
+  --bg-color: black;
+  --text-color: whitesmoke;
+}
+
+html[data-theme=light] {
+  --bg-color: whitesmoke;
+  --text-color: black;
+}
+
+html[data-theme="80s-after-dark"] {
+  --bg-color: #1b1d36;
+  --text-color: #e1e7ec;
+}
+
+:root {
+  --bg-color: black;
+  --text-color: whitesmoke;
+}
+
+html[data-theme=light] {
+  --bg-color: whitesmoke;
+  --text-color: black;
+}
+
+html[data-theme="80s-after-dark"] {
+  --bg-color: #1b1d36;
+  --text-color: #e1e7ec;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  background-color: #1b1d36;
+  background-color: var(--bg-color);
   max-width: 1750px;
 }
-body.light {
-  background-color: #f5f5f5;
+
+:root {
+  --bg-color: black;
+  --text-color: whitesmoke;
 }
-body.eighties-after-dark {
-  background-color: #1b1d36;
+
+html[data-theme=light] {
+  --bg-color: whitesmoke;
+  --text-color: black;
+}
+
+html[data-theme="80s-after-dark"] {
+  --bg-color: #1b1d36;
+  --text-color: #e1e7ec;
 }
 
 nav {
@@ -38,7 +92,7 @@ nav .nav-items-container {
   }
 }
 nav .nav-items-container p {
-  color: #e1e7ec;
+  color: var(--text-color);
   font-size: 1.5rem;
 }
 nav .nav-items-container p:first-child {
@@ -53,10 +107,7 @@ nav .nav-items-container p:last-child {
   margin: 0;
 }
 nav .nav-items-container .text {
-  white-space: nowrap;
-}
-nav .nav-items-container .text.light-mode {
-  color: #121212;
+  color: var(--text-color);
 }
 nav .nav-items-container .icons-container {
   position: relative;
@@ -64,68 +115,6 @@ nav .nav-items-container .icons-container {
   width: 0.5rem;
   display: grid;
   place-items: center;
-}
-nav .nav-items-container .sun-container {
-  transition: all 1s ease-out;
-  position: absolute;
-}
-nav .nav-items-container .sun-container.fade-out {
-  transform: translateX(75px);
-}
-nav .nav-items-container .sun-container.moved {
-  transform: translateX(-75px);
-}
-nav .nav-items-container .sun-container .sun-icon {
-  height: 35px;
-  width: 35px;
-  cursor: pointer;
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 1s ease-in;
-}
-@media (max-width: 500px) {
-  nav .nav-items-container .sun-container .sun-icon {
-    height: 30px;
-    width: 30px;
-  }
-}
-nav .nav-items-container .sun-container .sun-icon.fade-out {
-  opacity: 0;
-  transform: translateY(30px);
-}
-nav .nav-items-container .sun-container .sun-icon.moved {
-  transform: translateY(35px);
-}
-nav .nav-items-container .moon-container {
-  transition: all 1s ease-in;
-  position: absolute;
-}
-nav .nav-items-container .moon-container.fade-out {
-  transform: translateX(75px);
-}
-nav .nav-items-container .moon-container.moved {
-  transform: translateX(-75px);
-}
-nav .nav-items-container .moon-container .moon-icon {
-  height: 25px;
-  width: 25px;
-  margin-right: 0.25rem;
-  opacity: 1;
-  transition: all 1s ease-out;
-}
-@media (max-width: 500px) {
-  nav .nav-items-container .moon-container .moon-icon {
-    height: 25px;
-    width: 25px;
-  }
-}
-nav .nav-items-container .moon-container .moon-icon.fade-out {
-  opacity: 0;
-  transform: translateY(30px);
-}
-nav .nav-items-container .moon-container .moon-icon.moved {
-  transform: translateY(35px);
-  opacity: 0;
 }
 nav .nav-items-container .theme-container {
   display: block;
@@ -149,6 +138,21 @@ nav .nav-items-container .theme-list-container {
 nav .nav-items-container .theme-list-container.visible {
   display: block;
   opacity: 1;
+}
+
+:root {
+  --bg-color: black;
+  --text-color: whitesmoke;
+}
+
+html[data-theme=light] {
+  --bg-color: whitesmoke;
+  --text-color: black;
+}
+
+html[data-theme="80s-after-dark"] {
+  --bg-color: #1b1d36;
+  --text-color: #e1e7ec;
 }
 
 .main-landing {
@@ -261,6 +265,21 @@ nav .nav-items-container .theme-list-container.visible {
 }
 .main-landing .buttons-container button a {
   text-decoration: none;
+}
+
+:root {
+  --bg-color: black;
+  --text-color: whitesmoke;
+}
+
+html[data-theme=light] {
+  --bg-color: whitesmoke;
+  --text-color: black;
+}
+
+html[data-theme="80s-after-dark"] {
+  --bg-color: #1b1d36;
+  --text-color: #e1e7ec;
 }
 
 .projects-section {

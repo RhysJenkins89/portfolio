@@ -93,7 +93,6 @@ function darkLightToggle() {
     addListeners(moonContainer, moonIcon, sunContainer, sunIcon);
 }
 // IIFE
-;
 (function themeSelector() {
     // On click, switch between two themes
     var themeIcon = document.querySelector(".theme-icon");

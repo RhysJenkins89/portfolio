@@ -22,7 +22,7 @@ nav {
         }
 
         p {
-            color: variables.$main-text;
+            color: var(--text-color);
             font-size: 1.5rem;
         }
 
@@ -41,12 +41,7 @@ nav {
         }
 
         .text {
-            // transition: all 1s ease;
-            white-space: nowrap;
-
-            &.light-mode {
-                color: variables.$main-text-dark;
-            }
+            color: var(--text-color); 
         }
 
         .icons-container {
@@ -55,78 +50,6 @@ nav {
             width: .5rem;
             display: grid;
             place-items: center;
-        }
-
-        .sun-container {
-            transition: all 1s ease-out;
-            position: absolute;
-            
-            &.fade-out {
-                transform: translateX(75px);
-            }
-            
-            &.moved {
-                transform: translateX(-75px);
-            }
-
-            .sun-icon {
-                height: 35px;
-                width: 35px;
-                cursor: pointer;
-                opacity: 1;
-                transform: translateY(0);
-                transition: all 1s ease-in;
-                
-                @media (max-width: variables.$mobile-large) {
-                    height: 30px;
-                    width: 30px;
-                }
-
-                &.fade-out {
-                    opacity: 0;
-                    transform: translateY(30px);
-                }
-
-                &.moved {
-                    transform: translateY(35px);
-                }
-            }
-        }
-
-        .moon-container {
-            transition: all 1s ease-in;
-            position: absolute;
-
-            &.fade-out {
-                transform: translateX(75px);
-            }
-
-            &.moved {
-                transform: translateX(-75px);
-            }
-
-            .moon-icon {
-                height: 25px;
-                width: 25px;
-                margin-right: .25rem;
-                opacity: 1;
-                transition: all 1s ease-out;
-    
-                @media (max-width: variables.$mobile-large) {
-                    height: 25px;
-                    width: 25px;
-                }
-    
-                &.fade-out {
-                    opacity: 0;
-                    transform: translateY(30px);
-                }
-
-                &.moved {
-                    transform: translateY(35px);
-                    opacity: 0;
-                }
-            }
         }
 
         .theme-container {
