@@ -14,7 +14,7 @@ $mobile-small: 325px;
 // 80s After Dark
 $background-colour: #1b1d36;
 $main-text: #e1e7ec;
-
+    
 // :root {
 //     --bg-color: #1b1d36;
 //     --main-color: #fca6d1;
@@ -27,3 +27,20 @@ $main-text: #e1e7ec;
 //     --colorful-error-color: #fffb85;
 //     --colorful-error-extra-color: #fffb85;
 // }
+
+// Simran
+
+:root {
+    --bg-color: black;
+    --text-color: whitesmoke;
+}
+
+html[data-theme='light'] {
+    --bg-color: whitesmoke;
+    --text-color: black;
+}
+
+html[data-theme='80s-after-dark'] {
+    --bg-color: #1b1d36;
+    --text-color: #e1e7ec;
+}

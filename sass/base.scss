@@ -6,11 +6,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    background-color: variables.$background-colour;
+    background-color: var(--bg-color);
     max-width: 1750px;
     // transition: all 1s ease;
-
-    &.light-mode {
-        background-color: variables.$background-grey;
-    }
 }

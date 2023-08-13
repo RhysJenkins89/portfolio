@@ -47,6 +47,8 @@ window.onload = function (event) {
         element.style.transition = "all 1s ease";
     });
 };
+// Vim: command, count, motion
+// It would be useful to automatically go to the start of the code whenever I jump to a line
 function darkLightToggle() {
     function toggleTheme() {
         bodyElement.classList.toggle("light-mode");
@@ -56,7 +58,7 @@ function darkLightToggle() {
     }
     var clickDisabled = false;
     function addListeners(elementOne, iconOne, elementTwo, iconTwo) {
-        elementOne.addEventListener('click', function () {
+        elementOne.addEventListener("click", function () {
             if (clickDisabled)
                 return;
             if (elementOne.classList.contains("moved"))
@@ -86,23 +88,31 @@ function darkLightToggle() {
             }, 2000);
         });
     }
-    // If I'm going to add a theme selector, this function will need to be significantly rewritten. Or, probably more likely, scrapped altogether. 
+    // If I'm going to add a theme selector, this function will need to be significantly rewritten. Or, probably more likely, scrapped altogether.
     addListeners(sunContainer, sunIcon, moonContainer, moonIcon);
     addListeners(moonContainer, moonIcon, sunContainer, sunIcon);
 }
-// IIFE 
+// IIFE
 (function themeSelector() {
-    // On hover, show the user a popup with the available themes
-    // On theme click, add the corresponding class to the body
-    // This will talk to the scss, which updates the colour variables available
-    var themeIcon = document.querySelector('.theme-icon');
-    var themeSelector = document.querySelector('.theme-list-container');
-    var themeElements = document.querySelectorAll('.theme-element');
-    themeIcon.addEventListener('click', function () {
-        // Note that themeIcon is the container for the placeholder text
-        // When the user clicks the placeholder show/hide the themeSelector
-        themeSelector.classList.toggle('visible');
-        console.log('theme icon class clicked');
+    var themeSelector = document.querySelector('.theme-container p');
+    var themesContainer = document.querySelector('.theme-list-container');
+    themeSelector.addEventListener('click', function () {
+        themesContainer.classList.toggle('visible');
+    });
+    var themeItems = document.querySelectorAll('.theme-list-container ul li');
+    themeItems.forEach(function (item) {
+        item.addEventListener('click', function (event) {
+            var targetElement = event.target;
+            var themeString = targetElement.innerText.toLowerCase();
+            var rootElement = document.querySelector('html');
+            if (themeString.indexOf(' ') >= 0) {
+                console.log('spaces');
+                var editedString = themeString.replace(/ /g, '-');
+                rootElement.dataset.theme = editedString;
+                return;
+            }
+            rootElement.dataset.theme = themeString;
+        });
     });
 })();
 function renderProjects() {
