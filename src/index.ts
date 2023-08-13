@@ -76,23 +76,29 @@ function darkLightToggle(): void {
 }
 
 // IIFE
-(function themeSelector(): void {
-    const themeSelector = document.querySelector('.theme-container p') as HTMLElement
-    const themesContainer = document.querySelector('.theme-list-container') as HTMLElement
-    themeSelector.addEventListener('click', () => {
-        themesContainer.classList.toggle('visible')
+;(function themeSelector(): void {
+    const themeSelector = document.querySelector(
+        ".theme-container p"
+    ) as HTMLElement
+    const themesContainer = document.querySelector(
+        ".theme-list-container"
+    ) as HTMLElement
+    themeSelector.addEventListener("click", () => {
+        themesContainer.classList.toggle("visible")
     })
-    const themeItems = document.querySelectorAll('.theme-list-container ul li') as NodeListOf<HTMLElement>
+    const themeItems = document.querySelectorAll(
+        ".theme-list-container ul li"
+    ) as NodeListOf<HTMLElement>
     themeItems.forEach((item) => {
-        item.addEventListener('click', (event: Event) => {
+        item.addEventListener("click", (event: Event) => {
             const targetElement = event.target as HTMLElement
             const themeString: string = targetElement.innerText.toLowerCase()
-            const rootElement = document.querySelector('html') as HTMLElement
-            if (themeString.indexOf(' ') >= 0) {
-                console.log('spaces')
-                const editedString: string = themeString.replace(/ /g, '-')
+            const rootElement = document.querySelector("html") as HTMLElement
+            if (themeString.indexOf(" ") >= 0) {
+                console.log("spaces")
+                const editedString: string = themeString.replace(/ /g, "-")
                 rootElement.dataset.theme = editedString
-                return 
+                return
             }
             rootElement.dataset.theme = themeString
         })
