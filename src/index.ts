@@ -90,8 +90,9 @@ function darkLightToggle(): void {
             const rootElement = document.querySelector('html') as HTMLElement
             if (themeString.indexOf(' ') >= 0) {
                 console.log('spaces')
-                themeString.replace('/ /g', '-')
-                console.log(themeString)
+                const editedString: string = themeString.replace(/ /g, '-')
+                rootElement.dataset.theme = editedString
+                return 
             }
             rootElement.dataset.theme = themeString
         })

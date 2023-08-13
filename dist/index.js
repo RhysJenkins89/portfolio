@@ -107,8 +107,9 @@ function darkLightToggle() {
             var rootElement = document.querySelector('html');
             if (themeString.indexOf(' ') >= 0) {
                 console.log('spaces');
-                themeString.replace('/ /g', '-');
-                console.log(themeString);
+                var editedString = themeString.replace(/ /g, '-');
+                rootElement.dataset.theme = editedString;
+                return;
             }
             rootElement.dataset.theme = themeString;
         });
