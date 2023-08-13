@@ -97,6 +97,11 @@ function darkLightToggle(): void {
     })
 })()
 
+// On click, show a list of themes
+// On individual theme click, get the exact theme that the user clicked
+// Get the string data from the user click
+// Add the string to the data-theme attribute on the html element
+
 interface ProjectsData {
     [index: string]: Project
 }
