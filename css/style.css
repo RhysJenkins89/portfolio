@@ -83,20 +83,31 @@ nav .logo {
 nav .theme-container {
   margin: 0 0 0 auto;
   background-color: azure;
+  position: relative;
 }
 nav .theme-container p {
   cursor: pointer;
 }
 nav .theme-container .theme-list-container {
   background-color: aqua;
-  display: none;
-  display: block;
+  transition: all 0.75s ease;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50.5px;
+  right: 0;
+}
+nav .theme-container .theme-list-container.visible {
+  opacity: 1;
+  visibility: visible;
 }
 nav .theme-container .theme-list-container ul {
   display: flex;
+  flex-direction: column;
 }
 nav .theme-container .theme-list-container ul li {
   list-style: none;
+  cursor: pointer;
 }
 
 :root {

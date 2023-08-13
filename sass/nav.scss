@@ -15,6 +15,7 @@ nav {
     .theme-container {
         margin: 0 0 0 auto;
         background-color: azure;
+        position: relative;
 
         p {
             cursor: pointer;
@@ -22,14 +23,25 @@ nav {
 
         .theme-list-container {
             background-color: aqua;
-            display: none;
-            display: block;
-            
+            transition: all .75s ease;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 50.5px; // This is the height of the parent element
+            right: 0;
+
+            &.visible {
+                opacity: 1;
+                visibility: visible;
+            }
+
             ul {
                 display: flex;
+                flex-direction: column;
 
                 li {
                     list-style: none;
+                    cursor: pointer;
                 }
             }
         }

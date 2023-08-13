@@ -77,23 +77,24 @@ function darkLightToggle(): void {
 
 // IIFE
 (function themeSelector(): void {
-    // On click, switch between two themes
-    const themeIcon = document.querySelector(".theme-icon") as HTMLElement
-    const themeSelector = document.querySelector(
-        ".theme-list-container"
-    ) as HTMLElement
-    const themeElements = document.querySelectorAll(
-        ".theme-element"
-    ) as NodeListOf<HTMLElement>
-    themeIcon.addEventListener("click", () => {
-        console.log("theme icon class clicked")
-        if (document.body.classList.contains("80s-after-dark")) {
-            document.body.classList.remove("80s-after-dark")
-            document.body.classList.add("light")
-        } else {
-            document.body.classList.remove('light')
-            document.body.classList.add('80s-after-dark')
-        }
+    const themeSelector = document.querySelector('.theme-container p') as HTMLElement
+    const themesContainer = document.querySelector('.theme-list-container') as HTMLElement
+    themeSelector.addEventListener('click', () => {
+        themesContainer.classList.toggle('visible')
+    })
+    const themeItems = document.querySelectorAll('.theme-list-container ul li') as NodeListOf<HTMLElement>
+    themeItems.forEach((item) => {
+        item.addEventListener('click', (event: Event) => {
+            const targetElement = event.target as HTMLElement
+            const themeString: string = targetElement.innerText.toLowerCase()
+            const rootElement = document.querySelector('html') as HTMLElement
+            if (themeString.indexOf(' ') >= 0) {
+                console.log('spaces')
+                themeString.replace('/ /g', '-')
+                console.log(themeString)
+            }
+            rootElement.dataset.theme = themeString
+        })
     })
 })()
 

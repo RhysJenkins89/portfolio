@@ -94,20 +94,24 @@ function darkLightToggle() {
 }
 // IIFE
 (function themeSelector() {
-    // On click, switch between two themes
-    var themeIcon = document.querySelector(".theme-icon");
-    var themeSelector = document.querySelector(".theme-list-container");
-    var themeElements = document.querySelectorAll(".theme-element");
-    themeIcon.addEventListener("click", function () {
-        console.log("theme icon class clicked");
-        if (document.body.classList.contains("80s-after-dark")) {
-            document.body.classList.remove("80s-after-dark");
-            document.body.classList.add("light");
-        }
-        else {
-            document.body.classList.remove('light');
-            document.body.classList.add('80s-after-dark');
-        }
+    var themeSelector = document.querySelector('.theme-container p');
+    var themesContainer = document.querySelector('.theme-list-container');
+    themeSelector.addEventListener('click', function () {
+        themesContainer.classList.toggle('visible');
+    });
+    var themeItems = document.querySelectorAll('.theme-list-container ul li');
+    themeItems.forEach(function (item) {
+        item.addEventListener('click', function (event) {
+            var targetElement = event.target;
+            var themeString = targetElement.innerText.toLowerCase();
+            var rootElement = document.querySelector('html');
+            if (themeString.indexOf(' ') >= 0) {
+                console.log('spaces');
+                themeString.replace('/ /g', '-');
+                console.log(themeString);
+            }
+            rootElement.dataset.theme = themeString;
+        });
     });
 })();
 function renderProjects() {
