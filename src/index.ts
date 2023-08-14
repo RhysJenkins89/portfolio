@@ -18,7 +18,6 @@
             const themeString: string = targetElement.innerText.toLowerCase()
             const rootElement = document.querySelector("html") as HTMLElement
             if (themeString.indexOf(" ") >= 0) {
-                console.log("spaces")
                 const editedString: string = themeString.replace(/ /g, "-")
                 rootElement.dataset.theme = editedString
                 return
