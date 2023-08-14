@@ -35,85 +35,30 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var moonContainer = document.querySelector(".moon-container");
-var sunContainer = document.querySelector(".sun-container");
-var sunIcon = document.querySelector(".sun-icon");
-var moonIcon = document.querySelector(".moon-icon");
-var bodyElement = document.querySelector("#body");
-var textElements = document.querySelectorAll(".text");
-window.onload = function (event) {
-    bodyElement.style.transition = "all 1s ease";
-    textElements.forEach(function (element) {
-        element.style.transition = "all 1s ease";
-    });
-};
-// Vim: command, count, motion
-// It would be useful to automatically go to the start of the code whenever I jump to a line
-function darkLightToggle() {
-    function toggleTheme() {
-        bodyElement.classList.toggle("light-mode");
-        textElements.forEach(function (element) {
-            return element.classList.toggle("light-mode");
-        });
-    }
-    var clickDisabled = false;
-    function addListeners(elementOne, iconOne, elementTwo, iconTwo) {
-        elementOne.addEventListener("click", function () {
-            if (clickDisabled)
-                return;
-            if (elementOne.classList.contains("moved"))
-                return;
-            clickDisabled = true;
-            elementOne.style.transition = "all 1s ease-out";
-            iconOne.style.transition = "all 1s ease-in";
-            elementOne.classList.add("fade-out");
-            iconOne.classList.add("fade-out");
-            elementTwo.classList.remove("moved");
-            iconTwo.classList.remove("moved");
-            if (elementTwo.classList.contains("fade-out")) {
-                elementTwo.classList.remove("fade-out");
-                iconTwo.classList.remove("fade-out");
-            }
-            iconTwo.style.cursor = "pointer";
-            iconOne.style.cursor = "default";
-            toggleTheme();
-            setTimeout(function () {
-                elementOne.classList.add("moved");
-                iconOne.classList.add("moved");
-                elementOne.style.transition = "all 1s ease-in";
-                iconOne.style.transition = "all 1s ease-out";
-            }, 1000);
-            setTimeout(function () {
-                clickDisabled = false;
-            }, 2000);
-        });
-    }
-    // If I'm going to add a theme selector, this function will need to be significantly rewritten. Or, probably more likely, scrapped altogether.
-    addListeners(sunContainer, sunIcon, moonContainer, moonIcon);
-    addListeners(moonContainer, moonIcon, sunContainer, sunIcon);
-}
-// IIFE
+var overlay = document.querySelector('.overlay');
 (function themeSelector() {
-    var themeSelector = document.querySelector('.theme-container p');
-    var themesContainer = document.querySelector('.theme-list-container');
-    themeSelector.addEventListener('click', function () {
-        themesContainer.classList.toggle('visible');
+    var themeSelector = document.querySelector(".theme-container p");
+    var themesContainer = document.querySelector(".theme-list-container");
+    themeSelector.addEventListener("click", function () {
+        overlay.classList.toggle('visible');
+        themesContainer.classList.toggle("visible");
     });
-    var themeItems = document.querySelectorAll('.theme-list-container ul li');
+    var themeItems = document.querySelectorAll(".theme-list-container ul li");
     themeItems.forEach(function (item) {
-        item.addEventListener('click', function (event) {
+        item.addEventListener("click", function (event) {
             var targetElement = event.target;
             var themeString = targetElement.innerText.toLowerCase();
-            var rootElement = document.querySelector('html');
-            if (themeString.indexOf(' ') >= 0) {
-                console.log('spaces');
-                var editedString = themeString.replace(/ /g, '-');
+            var rootElement = document.querySelector("html");
+            if (themeString.indexOf(" ") >= 0) {
+                var editedString = themeString.replace(/ /g, "-");
                 rootElement.dataset.theme = editedString;
                 return;
             }
             rootElement.dataset.theme = themeString;
         });
     });
+})();
+(function toggleOverlay() {
 })();
 function renderProjects() {
     return __awaiter(this, void 0, void 0, function () {
@@ -136,5 +81,3 @@ function renderProjects() {
         });
     });
 }
-// darkLightToggle()
-// renderProjects()
