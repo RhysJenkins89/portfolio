@@ -8,6 +8,7 @@
     top: 0;
     left: 0;
     transition: all .75s ease;
+    z-index: 100;
 
     &.visible {
         opacity: 1;

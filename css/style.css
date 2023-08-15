@@ -75,27 +75,29 @@ nav {
   display: flex;
   align-items: center;
   padding: 0 5rem;
-  background-color: hotpink;
 }
 nav .logo {
   margin: 0 0;
+  color: var(--text-color);
 }
 nav .theme-container {
   margin: 0 0 0 auto;
-  background-color: azure;
   position: relative;
 }
 nav .theme-container p {
   cursor: pointer;
+  color: var(--text-color);
+  transition: all 0.75s ease;
 }
 nav .theme-container .theme-list-container {
-  background-color: aqua;
+  background-color: indianred;
   transition: all 0.75s ease;
   opacity: 0;
   visibility: hidden;
   position: absolute;
   top: 50.5px;
   right: 0;
+  z-index: 110;
 }
 nav .theme-container .theme-list-container.visible {
   opacity: 1;
@@ -406,6 +408,7 @@ html[data-theme="80s-after-dark"] {
   top: 0;
   left: 0;
   transition: all 0.75s ease;
+  z-index: 100;
 }
 .overlay.visible {
   opacity: 1;

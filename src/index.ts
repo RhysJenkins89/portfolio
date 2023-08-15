@@ -2,6 +2,7 @@ const overlay = document.querySelector('.overlay') as HTMLElement
 
 // IIFE
 ;(function themeSelector(): void {
+    addListenerToOverlay()
     const themeSelector = document.querySelector(
         ".theme-container p"
     ) as HTMLElement
@@ -36,15 +37,14 @@ const overlay = document.querySelector('.overlay') as HTMLElement
     
 function addListenerToOverlay(): void {
     overlay.addEventListener('click', () => {
-        console.log('overlay clicked')
         toggleOverlay()
+        console.log('overlay clicked')
     })
 }
 
 function toggleOverlay(): void {
-    overlay.classList.toggle('.visible')
+    overlay.classList.toggle('visible')
 }
-
 
 // On click, show a list of themes
 // On individual theme click, get the exact theme that the user cLIcked
