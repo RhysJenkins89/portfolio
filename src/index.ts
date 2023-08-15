@@ -44,7 +44,7 @@ function addListenerToOverlay(): void {
 
 function toggleOverlay(): void {
     overlay.classList.toggle("visible")
-    themesContainer.classList.toggle('visible')
+    themesContainer.classList.toggle("visible")
 }
 
 // On click, show a list of themes
