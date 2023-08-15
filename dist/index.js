@@ -35,13 +35,13 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var overlay = document.querySelector('.overlay');
+var overlay = document.querySelector(".overlay");
+var themesContainer = document.querySelector(".theme-list-container");
 (function themeSelector() {
     addListenerToOverlay();
     var themeSelector = document.querySelector(".theme-container p");
-    var themesContainer = document.querySelector(".theme-list-container");
     themeSelector.addEventListener("click", function () {
-        overlay.classList.toggle('visible');
+        overlay.classList.toggle("visible");
         themesContainer.classList.toggle("visible");
     });
     var themeItems = document.querySelectorAll(".theme-list-container ul li");
@@ -53,24 +53,25 @@ var overlay = document.querySelector('.overlay');
             if (themeString.indexOf(" ") >= 0) {
                 var editedString = themeString.replace(/ /g, "-");
                 rootElement.dataset.theme = editedString;
-                overlay.classList.remove('visible');
-                themesContainer.classList.remove('visible');
+                overlay.classList.remove("visible");
+                themesContainer.classList.remove("visible");
                 return;
             }
             rootElement.dataset.theme = themeString;
-            overlay.classList.remove('visible');
-            themesContainer.classList.remove('visible');
+            overlay.classList.remove("visible");
+            themesContainer.classList.remove("visible");
         });
     });
 })();
 function addListenerToOverlay() {
-    overlay.addEventListener('click', function () {
+    overlay.addEventListener("click", function () {
         toggleOverlay();
-        console.log('overlay clicked');
+        console.log("overlay clicked");
     });
 }
 function toggleOverlay() {
-    overlay.classList.toggle('visible');
+    overlay.classList.toggle("visible");
+    themesContainer.classList.toggle('visible');
 }
 function renderProjects() {
     return __awaiter(this, void 0, void 0, function () {

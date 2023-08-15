@@ -1,4 +1,7 @@
-const overlay = document.querySelector('.overlay') as HTMLElement
+const overlay = document.querySelector(".overlay") as HTMLElement
+const themesContainer = document.querySelector(
+    ".theme-list-container"
+) as HTMLElement
 
 // IIFE
 ;(function themeSelector(): void {
@@ -6,11 +9,8 @@ const overlay = document.querySelector('.overlay') as HTMLElement
     const themeSelector = document.querySelector(
         ".theme-container p"
     ) as HTMLElement
-    const themesContainer = document.querySelector(
-        ".theme-list-container"
-    ) as HTMLElement
     themeSelector.addEventListener("click", () => {
-        overlay.classList.toggle('visible')
+        overlay.classList.toggle("visible")
         themesContainer.classList.toggle("visible")
     })
     const themeItems = document.querySelectorAll(
@@ -24,26 +24,27 @@ const overlay = document.querySelector('.overlay') as HTMLElement
             if (themeString.indexOf(" ") >= 0) {
                 const editedString: string = themeString.replace(/ /g, "-")
                 rootElement.dataset.theme = editedString
-                overlay.classList.remove('visible')
-                themesContainer.classList.remove('visible')
+                overlay.classList.remove("visible")
+                themesContainer.classList.remove("visible")
                 return
             }
             rootElement.dataset.theme = themeString
-            overlay.classList.remove('visible')
-            themesContainer.classList.remove('visible')
+            overlay.classList.remove("visible")
+            themesContainer.classList.remove("visible")
         })
     })
-})();
-    
+})()
+
 function addListenerToOverlay(): void {
-    overlay.addEventListener('click', () => {
+    overlay.addEventListener("click", () => {
         toggleOverlay()
-        console.log('overlay clicked')
+        console.log("overlay clicked")
     })
 }
 
 function toggleOverlay(): void {
-    overlay.classList.toggle('visible')
+    overlay.classList.toggle("visible")
+    themesContainer.classList.toggle('visible')
 }
 
 // On click, show a list of themes
