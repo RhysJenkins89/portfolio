@@ -23,17 +23,27 @@ const overlay = document.querySelector('.overlay') as HTMLElement
             if (themeString.indexOf(" ") >= 0) {
                 const editedString: string = themeString.replace(/ /g, "-")
                 rootElement.dataset.theme = editedString
+                overlay.classList.remove('visible')
+                themesContainer.classList.remove('visible')
                 return
             }
             rootElement.dataset.theme = themeString
+            overlay.classList.remove('visible')
+            themesContainer.classList.remove('visible')
         })
     })
 })();
+    
+function addListenerToOverlay(): void {
+    overlay.addEventListener('click', () => {
+        console.log('overlay clicked')
+        toggleOverlay()
+    })
+}
 
-(function toggleOverlay(): void {
-    
-    
-})()
+function toggleOverlay(): void {
+    overlay.classList.toggle('.visible')
+}
 
 
 // On click, show a list of themes

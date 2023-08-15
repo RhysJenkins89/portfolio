@@ -52,14 +52,25 @@ var overlay = document.querySelector('.overlay');
             if (themeString.indexOf(" ") >= 0) {
                 var editedString = themeString.replace(/ /g, "-");
                 rootElement.dataset.theme = editedString;
+                overlay.classList.remove('visible');
+                themesContainer.classList.remove('visible');
                 return;
             }
             rootElement.dataset.theme = themeString;
+            overlay.classList.remove('visible');
+            themesContainer.classList.remove('visible');
         });
     });
 })();
-(function toggleOverlay() {
-})();
+function addListenerToOverlay() {
+    overlay.addEventListener('click', function () {
+        console.log('overlay clicked');
+        toggleOverlay();
+    });
+}
+function toggleOverlay() {
+    overlay.classList.toggle('.visible');
+}
 function renderProjects() {
     return __awaiter(this, void 0, void 0, function () {
         var cardsContainer, response, projectData, project;
