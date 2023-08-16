@@ -3,6 +3,10 @@ const themesContainer = document.querySelector(
     ".theme-list-container"
 ) as HTMLElement
 
+(function addTransitionsToElements(): void {
+    themesContainer.style.transition = 'all .75s ease'
+})()
+
 // IIFE
 ;(function themeSelector(): void {
     addListenerToOverlay()
@@ -38,7 +42,6 @@ const themesContainer = document.querySelector(
 function addListenerToOverlay(): void {
     overlay.addEventListener("click", () => {
         toggleOverlay()
-        console.log("overlay clicked")
     })
 }
 

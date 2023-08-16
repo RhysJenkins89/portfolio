@@ -37,6 +37,9 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 var overlay = document.querySelector(".overlay");
 var themesContainer = document.querySelector(".theme-list-container");
+(function addTransitionsToElements() {
+    themesContainer.style.transition = 'all .75s ease';
+})();
 (function themeSelector() {
     addListenerToOverlay();
     var themeSelector = document.querySelector(".theme-container p");
@@ -66,7 +69,6 @@ var themesContainer = document.querySelector(".theme-list-container");
 function addListenerToOverlay() {
     overlay.addEventListener("click", function () {
         toggleOverlay();
-        console.log("overlay clicked");
     });
 }
 function toggleOverlay() {
