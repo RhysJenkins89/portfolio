@@ -1,8 +1,8 @@
 // Colours
-$dark-grey: #121212;
-$main-text: #f5f5f5;
-$background-grey: #f5f5f5; // Change this in the near future 
-$main-text-dark: #121212; 
+// $dark-grey: #121212;
+// $main-text: #f5f5f5;
+// $background-grey: #f5f5f5; // Change this in the near future 
+// $main-text-dark: #121212; 
 
 // Breakpoints
 $desktop-small: 1100px;
@@ -33,11 +33,13 @@ $main-text: #e1e7ec;
 :root {
     --bg-color: black;
     --text-color: whitesmoke;
+    // --modal-background-colour: dark-grey;
 }
 
 html[data-theme='light'] {
     --bg-color: whitesmoke;
     --text-color: black;
+    // --modal-background-colour:
 }
 
 html[data-theme='80s-after-dark'] {

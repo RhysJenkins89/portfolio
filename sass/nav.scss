@@ -23,13 +23,17 @@ nav {
         }
 
         .theme-list-container {
+            height: 50vh;
+            width: 50vw;
+            border-radius: .5rem;
             background-color: indianred;
             transition: all .75s ease;
             opacity: 0;
             visibility: hidden;
-            position: absolute;
-            top: 50.5px; // This is the height of the parent element
-            right: 0;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             z-index: 110;
 
             &.visible {

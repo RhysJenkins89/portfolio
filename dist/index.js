@@ -71,7 +71,7 @@ function addListenerToOverlay() {
 }
 function toggleOverlay() {
     overlay.classList.toggle("visible");
-    themesContainer.classList.toggle('visible');
+    themesContainer.classList.toggle("visible");
 }
 function renderProjects() {
     return __awaiter(this, void 0, void 0, function () {
