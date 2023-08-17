@@ -1,7 +1,5 @@
 const overlay = document.querySelector(".overlay") as HTMLElement
-const themesContainer = document.querySelector(
-    ".theme-list-container"
-) as HTMLElement
+const themesContainer = document.querySelector(".theme-list-container") as HTMLElement
 
 (function addTransitionsToElements(): void {
     themesContainer.style.transition = 'all .75s ease'
