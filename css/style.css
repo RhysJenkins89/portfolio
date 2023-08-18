@@ -3,46 +3,55 @@
 :root {
   --bg-color: black;
   --text-color: whitesmoke;
+  --overlay-colour: darkslategrey;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: black;
+  --overlay-colour: lightslategrey;
 }
 
 html[data-theme="80s-after-dark"] {
   --bg-color: #1b1d36;
   --text-color: #e1e7ec;
+  --overlay-colour: #99d6ea;
 }
 
 :root {
   --bg-color: black;
   --text-color: whitesmoke;
+  --overlay-colour: darkslategrey;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: black;
+  --overlay-colour: lightslategrey;
 }
 
 html[data-theme="80s-after-dark"] {
   --bg-color: #1b1d36;
   --text-color: #e1e7ec;
+  --overlay-colour: #99d6ea;
 }
 
 :root {
   --bg-color: black;
   --text-color: whitesmoke;
+  --overlay-colour: darkslategrey;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: black;
+  --overlay-colour: lightslategrey;
 }
 
 html[data-theme="80s-after-dark"] {
   --bg-color: #1b1d36;
   --text-color: #e1e7ec;
+  --overlay-colour: #99d6ea;
 }
 
 body {
@@ -57,16 +66,19 @@ body {
 :root {
   --bg-color: black;
   --text-color: whitesmoke;
+  --overlay-colour: darkslategrey;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: black;
+  --overlay-colour: lightslategrey;
 }
 
 html[data-theme="80s-after-dark"] {
   --bg-color: #1b1d36;
   --text-color: #e1e7ec;
+  --overlay-colour: #99d6ea;
 }
 
 nav {
@@ -93,7 +105,7 @@ nav .theme-container .theme-list-container {
   height: 50vh;
   width: 50vw;
   border-radius: 0.5rem;
-  background-color: indianred;
+  background-color: var(--overlay-colour);
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -118,16 +130,19 @@ nav .theme-container .theme-list-container ul li {
 :root {
   --bg-color: black;
   --text-color: whitesmoke;
+  --overlay-colour: darkslategrey;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: black;
+  --overlay-colour: lightslategrey;
 }
 
 html[data-theme="80s-after-dark"] {
   --bg-color: #1b1d36;
   --text-color: #e1e7ec;
+  --overlay-colour: #99d6ea;
 }
 
 .main-landing {
@@ -236,16 +251,19 @@ html[data-theme="80s-after-dark"] {
 :root {
   --bg-color: black;
   --text-color: whitesmoke;
+  --overlay-colour: darkslategrey;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: black;
+  --overlay-colour: lightslategrey;
 }
 
 html[data-theme="80s-after-dark"] {
   --bg-color: #1b1d36;
   --text-color: #e1e7ec;
+  --overlay-colour: #99d6ea;
 }
 
 .projects-section {
