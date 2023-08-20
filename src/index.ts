@@ -56,16 +56,6 @@ function checkUserThemePreference(): void {
     rootElement.dataset.theme = window.localStorage.getItem("theme-selection")!
 }
 
-// Add the user's theme preference to local storage
-function saveUserThemePreference(userTheme: string): void {
-    // Check local storage for the user's theme choice
-    // If no theme exists, save the user's theme when it changes
-    // If the theme exists, update the data-theme attribute on the html tag
-    const userHasSelectedTheme: boolean = Boolean(window.localStorage.getItem("theme-selection"))
-    console.log(userHasSelectedTheme)
-    window.localStorage.setItem("theme-selection", userTheme)
-}
-
 interface ProjectsData {
     [index: string]: Project
 }

@@ -84,15 +84,6 @@ function checkUserThemePreference() {
         return;
     rootElement.dataset.theme = window.localStorage.getItem("theme-selection");
 }
-// Add the user's theme preference to local storage
-function saveUserThemePreference(userTheme) {
-    // Check local storage for the user's theme choice
-    // If no theme exists, save the user's theme when it changes
-    // If the theme exists, update the data-theme attribute on the html tag
-    var userHasSelectedTheme = Boolean(window.localStorage.getItem("theme-selection"));
-    console.log(userHasSelectedTheme);
-    window.localStorage.setItem("theme-selection", userTheme);
-}
 function renderProjects() {
     return __awaiter(this, void 0, void 0, function () {
         var cardsContainer, response, projectData, project;

@@ -15,7 +15,7 @@ html[data-theme=light] {
 html[data-theme="80s-after-dark"] {
   --bg-color: #1b1d36;
   --text-color: #e1e7ec;
-  --modal-colour: #99d6ea;
+  --modal-colour: #1b1d36;
 }
 
 :root {
@@ -33,7 +33,7 @@ html[data-theme=light] {
 html[data-theme="80s-after-dark"] {
   --bg-color: #1b1d36;
   --text-color: #e1e7ec;
-  --modal-colour: #99d6ea;
+  --modal-colour: #1b1d36;
 }
 
 :root {
@@ -51,7 +51,7 @@ html[data-theme=light] {
 html[data-theme="80s-after-dark"] {
   --bg-color: #1b1d36;
   --text-color: #e1e7ec;
-  --modal-colour: #99d6ea;
+  --modal-colour: #1b1d36;
 }
 
 body {
@@ -78,7 +78,7 @@ html[data-theme=light] {
 html[data-theme="80s-after-dark"] {
   --bg-color: #1b1d36;
   --text-color: #e1e7ec;
-  --modal-colour: #99d6ea;
+  --modal-colour: #1b1d36;
 }
 
 nav {
@@ -142,7 +142,7 @@ html[data-theme=light] {
 html[data-theme="80s-after-dark"] {
   --bg-color: #1b1d36;
   --text-color: #e1e7ec;
-  --modal-colour: #99d6ea;
+  --modal-colour: #1b1d36;
 }
 
 .main-landing {
@@ -263,7 +263,7 @@ html[data-theme=light] {
 html[data-theme="80s-after-dark"] {
   --bg-color: #1b1d36;
   --text-color: #e1e7ec;
-  --modal-colour: #99d6ea;
+  --modal-colour: #1b1d36;
 }
 
 .projects-section {

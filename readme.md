@@ -4,7 +4,6 @@ I'm currently redesigning and rebuilding my portfolio site.
 
 ## To do
 
-* Save the user's theme preference
 * Build project cards, loop over data
 * Add a footer
 * Write new/better copy
