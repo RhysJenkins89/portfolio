@@ -1,11 +1,10 @@
 # Portfolio
 
-I'm currently redesigning and rebuilding my portfolio site. Come back soon!
+I'm currently redesigning and rebuilding my portfolio site.
 
 ## To do
 
-* Add theme selector/themes
-* Sort TypeScript config/building
+* Save the user's theme preference
 * Build project cards, loop over data
 * Add a footer
 * Write new/better copy

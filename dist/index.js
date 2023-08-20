@@ -38,7 +38,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var overlay = document.querySelector(".overlay");
 var themesContainer = document.querySelector(".theme-list-container");
 (function addTransitionsToElements() {
-    themesContainer.style.transition = 'all .75s ease';
+    themesContainer.style.transition = "all .75s ease";
 })();
 (function themeSelector() {
     addListenerToOverlay();
@@ -75,6 +75,26 @@ function toggleOverlay() {
     overlay.classList.toggle("visible");
     themesContainer.classList.toggle("visible");
 }
+function checkUserThemePreference() {
+    var userHasSelectedTheme = Boolean(window.localStorage.getItem("theme-selection"));
+    if (!userHasSelectedTheme) {
+        return;
+    }
+    else {
+        var rootElement = document.querySelector("html");
+        rootElement.dataset.theme = window.localStorage.getItem("theme-selection");
+    }
+}
+// Add the user's theme preference to local storage
+function saveUserThemePreference(userTheme) {
+    // Check local storage for the user's theme choice
+    // If no theme exists, save the user's theme when it changes
+    // If the theme exists, update the data-theme attribute on the html tag
+    var userHasSelectedTheme = Boolean(window.localStorage.getItem("theme-selection"));
+    console.log(userHasSelectedTheme);
+    window.localStorage.setItem("theme-selection", userTheme);
+}
+saveUserThemePreference("theme");
 function renderProjects() {
     return __awaiter(this, void 0, void 0, function () {
         var cardsContainer, response, projectData, project;
