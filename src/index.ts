@@ -1,5 +1,8 @@
+const rootElement = document.querySelector('html') as HTMLElement
 const overlay = document.querySelector(".overlay") as HTMLElement
 const themesContainer = document.querySelector(".theme-list-container") as HTMLElement
+
+checkUserThemePreference()
 
 ;(function addTransitionsToElements(): void {
     themesContainer.style.transition = "all .75s ease"
@@ -20,17 +23,18 @@ const themesContainer = document.querySelector(".theme-list-container") as HTMLE
         item.addEventListener("click", (event: Event) => {
             const targetElement = event.target as HTMLElement
             const themeString: string = targetElement.innerText.toLowerCase()
-            const rootElement = document.querySelector("html") as HTMLElement
             if (themeString.indexOf(" ") >= 0) {
                 const editedString: string = themeString.replace(/ /g, "-")
                 rootElement.dataset.theme = editedString
                 overlay.classList.remove("visible")
                 themesContainer.classList.remove("visible")
+                window.localStorage.setItem('theme-selection', editedString)
                 return
             }
             rootElement.dataset.theme = themeString
             overlay.classList.remove("visible")
             themesContainer.classList.remove("visible")
+            window.localStorage.setItem('theme-selection', themeString)
         })
     })
 })()
@@ -48,12 +52,8 @@ function toggleOverlay(): void {
 
 function checkUserThemePreference(): void {
     const userHasSelectedTheme: boolean = Boolean(window.localStorage.getItem("theme-selection"))
-    if (!userHasSelectedTheme) {
-        return
-    } else {
-        const rootElement = document.querySelector("html") as HTMLElement
-        rootElement.dataset.theme = window.localStorage.getItem("theme-selection")!
-    }
+    if (!userHasSelectedTheme) return
+    rootElement.dataset.theme = window.localStorage.getItem("theme-selection")!
 }
 
 // Add the user's theme preference to local storage
@@ -65,8 +65,6 @@ function saveUserThemePreference(userTheme: string): void {
     console.log(userHasSelectedTheme)
     window.localStorage.setItem("theme-selection", userTheme)
 }
-
-saveUserThemePreference("theme")
 
 interface ProjectsData {
     [index: string]: Project

@@ -35,8 +35,10 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var rootElement = document.querySelector('html');
 var overlay = document.querySelector(".overlay");
 var themesContainer = document.querySelector(".theme-list-container");
+checkUserThemePreference();
 (function addTransitionsToElements() {
     themesContainer.style.transition = "all .75s ease";
 })();
@@ -52,17 +54,18 @@ var themesContainer = document.querySelector(".theme-list-container");
         item.addEventListener("click", function (event) {
             var targetElement = event.target;
             var themeString = targetElement.innerText.toLowerCase();
-            var rootElement = document.querySelector("html");
             if (themeString.indexOf(" ") >= 0) {
                 var editedString = themeString.replace(/ /g, "-");
                 rootElement.dataset.theme = editedString;
                 overlay.classList.remove("visible");
                 themesContainer.classList.remove("visible");
+                window.localStorage.setItem('theme-selection', editedString);
                 return;
             }
             rootElement.dataset.theme = themeString;
             overlay.classList.remove("visible");
             themesContainer.classList.remove("visible");
+            window.localStorage.setItem('theme-selection', themeString);
         });
     });
 })();
@@ -77,13 +80,9 @@ function toggleOverlay() {
 }
 function checkUserThemePreference() {
     var userHasSelectedTheme = Boolean(window.localStorage.getItem("theme-selection"));
-    if (!userHasSelectedTheme) {
+    if (!userHasSelectedTheme)
         return;
-    }
-    else {
-        var rootElement = document.querySelector("html");
-        rootElement.dataset.theme = window.localStorage.getItem("theme-selection");
-    }
+    rootElement.dataset.theme = window.localStorage.getItem("theme-selection");
 }
 // Add the user's theme preference to local storage
 function saveUserThemePreference(userTheme) {
@@ -94,7 +93,6 @@ function saveUserThemePreference(userTheme) {
     console.log(userHasSelectedTheme);
     window.localStorage.setItem("theme-selection", userTheme);
 }
-saveUserThemePreference("theme");
 function renderProjects() {
     return __awaiter(this, void 0, void 0, function () {
         var cardsContainer, response, projectData, project;
