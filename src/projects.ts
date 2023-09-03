@@ -1,19 +1,19 @@
 interface ProjectsData {
-    [index: string]: Project
+    [index: string]: Project;
 }
 
 interface Project {
-    title: string
-    image: string
-    subheading: string
-    bodyText: string
+    title: string;
+    image: string;
+    subheading: string;
+    bodyText: string;
 }
 
 async function renderProjects(): Promise<void> {
-    const cardsContainer = document.querySelector(".projects-container") as HTMLElement
+    const cardsContainer = document.querySelector(".projects-container") as HTMLElement;
 
-    const response: Response = await fetch("./data/projects.json")
-    const projectData: ProjectsData = await response.json()
+    const response: Response = await fetch("./data/projects.json");
+    const projectData: ProjectsData = await response.json();
 
     for (const project in projectData) {
         cardsContainer.insertAdjacentHTML(
@@ -25,6 +25,8 @@ async function renderProjects(): Promise<void> {
                     <p class="text project-text">${projectData[project].bodyText}</p>
                 </div>
             `
-        )
+        );
     }
 }
+
+console.log("Hello there!");
