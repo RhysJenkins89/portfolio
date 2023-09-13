@@ -1,13 +1,9 @@
 {
     "compilerOptions": {
       "noImplicitAny": true,
-      // "module": "commonjs",                                /* Specify what module code is generated. */
-      "outDir": "./dist",                                   /* Specify an output folder for all emitted files. '__extends' in compiled output. */
-      "rootDir": "./src",                                  /* Specify the root folder within your source files. */
-      "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
-      "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
-      "strict": true,                                      /* Enable all strict type-checking options. */
-      "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
+      "outDir": "./dist",                                   
+      "rootDir": "./src",                                  
+      "strict": true,                                      
       "lib": [
         "dom",
         "es6",
@@ -23,14 +19,3 @@
     ]  
   }
   
-  // {
-    // "compilerOptions": {
-       // "target": "ES2015",
-       // "outFile": "out/bundle.js",
-       // "module": "amd",
-       // "sourceMap": true,
-    // },
-    // "include": [
-       // "src/**/*.ts"
-    // ]
-  // }
