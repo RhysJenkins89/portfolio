@@ -2,6 +2,8 @@ import testFunc from "./theme";
 
 testFunc();
 
+console.log("Hello Webpack!");
+
 const rootElement = document.querySelector("html") as HTMLElement;
 const overlay = document.querySelector(".overlay") as HTMLElement;
 const themesContainer = document.querySelector(".theme-list-container") as HTMLElement;
