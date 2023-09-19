@@ -6,7 +6,7 @@
         "strict": true,
         "lib": ["dom", "es6", "dom.iterable", "scripthost"],
         "target": "ES2015",
-        "module": "CommonJS",
+        "module": "ES6",
         "sourceMap": false
     },
     "include": ["src/**/*.ts"]
