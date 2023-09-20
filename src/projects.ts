@@ -10,7 +10,7 @@ interface Project {
 }
 
 async function renderProjects(): Promise<void> {
-    const cardsContainer = document.querySelector(".projects-container") as HTMLElement;
+    const cardsContainer = document.querySelector(".main-projects-container") as HTMLElement;
 
     const response: Response = await fetch("./data/projects.json");
     const projectData: ProjectsData = await response.json();
@@ -29,4 +29,4 @@ async function renderProjects(): Promise<void> {
     }
 }
 
-console.log("Hello there!");
+export default renderProjects;

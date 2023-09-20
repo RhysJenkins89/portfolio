@@ -1,7 +1,7 @@
 @use "./variables.scss";
 @use "./mixins.scss";
 
-.projects-section {
+.main-projects-container {
     @include section-layout;
 
     h1 {
@@ -11,31 +11,17 @@
     h2 {
         @include heading-two;
     }
+    .project {
+        &-heading {
+            @include heading-three;
+        }
 
-    .text-container {
-        margin: 2.5rem 0 0 0;
-        max-width: 1000px;
-
-        p {
+        &-subheading {
             @include paragraph;
         }
-    }
 
-    .projects-container {
-        width: 100%;
-
-        .project {
-            &-heading {
-                @include heading-three;
-            }
-
-            &-subheading {
-                @include paragraph;
-            }
-
-            &-text {
-                @include paragraph;
-            }
+        &-text {
+            @include paragraph;
         }
     }
 }

@@ -266,7 +266,7 @@ html[data-theme="80s-after-dark"] {
   --modal-colour: #1b1d36;
 }
 
-.projects-section {
+.main-projects-container {
   height: 110vh;
   width: 60vw;
   margin: 0 auto;
@@ -276,122 +276,97 @@ html[data-theme="80s-after-dark"] {
   justify-content: flex-start;
 }
 @media (max-width: 1100px) {
-  .projects-section {
+  .main-projects-container {
     width: 80vw;
   }
 }
 @media (max-width: 500px) {
-  .projects-section {
+  .main-projects-container {
     width: 90vw;
   }
 }
-.projects-section h1 {
+.main-projects-container h1 {
   font-size: 5rem;
   color: var(--text-color);
   margin: 0 0 1rem 0;
 }
 @media (max-width: 500px) {
-  .projects-section h1 {
+  .main-projects-container h1 {
     font-size: 3.25rem;
   }
 }
 @media (max-width: 325px) {
-  .projects-section h1 {
+  .main-projects-container h1 {
     font-size: 2.75rem;
   }
 }
-.projects-section h2 {
+.main-projects-container h2 {
   font-size: 2.5rem;
   color: var(--text-color);
   margin: 0 0 1rem 0;
 }
 @media (max-width: 500px) {
-  .projects-section h2 {
+  .main-projects-container h2 {
     font-size: 2rem;
   }
 }
 @media (max-width: 325px) {
-  .projects-section h2 {
+  .main-projects-container h2 {
     font-size: 1.75rem;
   }
 }
-.projects-section .text-container {
-  margin: 2.5rem 0 0 0;
-  max-width: 1000px;
-}
-.projects-section .text-container p {
-  font-size: 1.75rem;
-  line-height: 1.5;
-  color: var(--text-color);
-}
-@media (max-width: 500px) {
-  .projects-section .text-container p {
-    font-size: 1.25rem;
-  }
-}
-@media (max-width: 325px) {
-  .projects-section .text-container p {
-    font-size: 1.2rem;
-  }
-}
-.projects-section .text-container p a {
-  color: #ea3788;
-}
-.projects-section .projects-container {
-  width: 100%;
-}
-.projects-section .projects-container .project-heading {
+.main-projects-container .project-heading {
   font-size: 2.25rem;
   color: var(--text-color);
   margin: 0 0 1rem 0;
 }
 @media (max-width: 500px) {
-  .projects-section .projects-container .project-heading {
+  .main-projects-container .project-heading {
     font-size: 1.75rem;
   }
 }
 @media (max-width: 325px) {
-  .projects-section .projects-container .project-heading {
+  .main-projects-container .project-heading {
     font-size: 1.5rem;
   }
 }
-.projects-section .projects-container .project-heading.light-mode {
+.main-projects-container .project-heading.light-mode {
   color: var(--text-color);
 }
-.projects-section .projects-container .project-subheading {
+.main-projects-container .project-subheading {
   font-size: 1.75rem;
   line-height: 1.5;
   color: var(--text-color);
 }
 @media (max-width: 500px) {
-  .projects-section .projects-container .project-subheading {
+  .main-projects-container .project-subheading {
     font-size: 1.25rem;
   }
 }
 @media (max-width: 325px) {
-  .projects-section .projects-container .project-subheading {
+  .main-projects-container .project-subheading {
     font-size: 1.2rem;
   }
 }
-.projects-section .projects-container .project-subheading a {
+.main-projects-container .project-subheading a {
   color: #ea3788;
 }
-.projects-section .projects-container .project-text {
+.main-projects-container .project-text {
   font-size: 1.75rem;
   line-height: 1.5;
   color: var(--text-color);
 }
 @media (max-width: 500px) {
-  .projects-section .projects-container .project-text {
+  .main-projects-container .project-text {
     font-size: 1.25rem;
   }
 }
 @media (max-width: 325px) {
-  .projects-section .projects-container .project-text {
+  .main-projects-container .project-text {
     font-size: 1.2rem;
   }
 }
-.projects-section .projects-container .project-text a {
+.main-projects-container .project-text a {
   color: #ea3788;
 }
 
