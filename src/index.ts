@@ -1,5 +1,5 @@
 import themeSelector from "./theme";
-import renderProjects from "./projects";
+// import renderProjects from "./projects";
 
 themeSelector();
-renderProjects();
+// renderProjects();
