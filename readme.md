@@ -2,10 +2,13 @@
 
 I'm currently redesigning and rebuilding my portfolio site.
 
+## Doing
+
+-   Add a footer
+
 ## To do
 
 -   Build project cards, loop over data
--   Add a footer
 -   Write new/better copy
 -   Add a projects/what I'm doing section
 -   Add a form, which when submitted sends the user's data to a database
