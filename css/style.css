@@ -387,4 +387,17 @@ html[data-theme="80s-after-dark"] {
   visibility: visible;
 }
 
+footer {
+  height: 5rem;
+  width: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+footer .logo {
+  margin: 0 0;
+  color: var(--text-color);
+}
+
 /*# sourceMappingURL=style.css.map */
