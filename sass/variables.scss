@@ -1,8 +1,8 @@
 // Colours
 // $dark-grey: #121212;
 // $main-text: #f5f5f5;
-// $background-grey: #f5f5f5; // Change this in the near future 
-// $main-text-dark: #121212; 
+// $background-grey: #f5f5f5; // Change this in the near future
+// $main-text-dark: #121212;
 
 // Breakpoints
 $desktop-small: 1100px;
@@ -11,41 +11,20 @@ $mobile-large: 500px;
 $mobile-standard: 400px;
 $mobile-small: 325px;
 
-// 80s After Dark
-$background-colour: #1b1d36;
-$main-text: #e1e7ec;
-    
-// :root {
-//     --bg-color: #1b1d36;
-//     --main-color: #fca6d1;
-//     --caret-color: #99d6ea;
-//     --sub-color: #99d6ea;
-//     --sub-alt-color: #17182c;
-//     --text-color: #e1e7ec;
-//     --error-color: #fffb85;
-//     --error-extra-color: #fffb85;
-//     --colorful-error-color: #fffb85;
-//     --colorful-error-extra-color: #fffb85;
-// }
-
-// Simran
-
 :root {
     --bg-color: black;
     --text-color: whitesmoke;
     --modal-colour: darkslategrey;
-    // --modal-background-colour: dark-grey;
 }
 
-html[data-theme='light'] {
+html[data-theme="dark"] {
+    --bg-color: black;
+    --text-color: whitesmoke;
+    --modal-colour: darkslategrey;
+}
+
+html[data-theme="light"] {
     --bg-color: whitesmoke;
     --text-color: black;
     ---modal-colour: lightslategrey;
-    // --modal-background-colour:
-}
-
-html[data-theme='80s-after-dark'] {
-    --bg-color: #1b1d36;
-    --text-color: #e1e7ec;
-    --modal-colour: #1b1d36;
 }

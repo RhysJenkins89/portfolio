@@ -6,19 +6,7 @@
   --modal-colour: darkslategrey;
 }
 
-html[data-theme=light] {
-  --bg-color: whitesmoke;
-  --text-color: black;
-  ---modal-colour: lightslategrey;
-}
-
-html[data-theme="80s-after-dark"] {
-  --bg-color: #1b1d36;
-  --text-color: #e1e7ec;
-  --modal-colour: #1b1d36;
-}
-
-:root {
+html[data-theme=dark] {
   --bg-color: black;
   --text-color: whitesmoke;
   --modal-colour: darkslategrey;
@@ -30,13 +18,13 @@ html[data-theme=light] {
   ---modal-colour: lightslategrey;
 }
 
-html[data-theme="80s-after-dark"] {
-  --bg-color: #1b1d36;
-  --text-color: #e1e7ec;
-  --modal-colour: #1b1d36;
+:root {
+  --bg-color: black;
+  --text-color: whitesmoke;
+  --modal-colour: darkslategrey;
 }
 
-:root {
+html[data-theme=dark] {
   --bg-color: black;
   --text-color: whitesmoke;
   --modal-colour: darkslategrey;
@@ -48,10 +36,22 @@ html[data-theme=light] {
   ---modal-colour: lightslategrey;
 }
 
-html[data-theme="80s-after-dark"] {
-  --bg-color: #1b1d36;
-  --text-color: #e1e7ec;
-  --modal-colour: #1b1d36;
+:root {
+  --bg-color: black;
+  --text-color: whitesmoke;
+  --modal-colour: darkslategrey;
+}
+
+html[data-theme=dark] {
+  --bg-color: black;
+  --text-color: whitesmoke;
+  --modal-colour: darkslategrey;
+}
+
+html[data-theme=light] {
+  --bg-color: whitesmoke;
+  --text-color: black;
+  ---modal-colour: lightslategrey;
 }
 
 body {
@@ -69,16 +69,16 @@ body {
   --modal-colour: darkslategrey;
 }
 
+html[data-theme=dark] {
+  --bg-color: black;
+  --text-color: whitesmoke;
+  --modal-colour: darkslategrey;
+}
+
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: black;
   ---modal-colour: lightslategrey;
-}
-
-html[data-theme="80s-after-dark"] {
-  --bg-color: #1b1d36;
-  --text-color: #e1e7ec;
-  --modal-colour: #1b1d36;
 }
 
 nav {
@@ -91,6 +91,11 @@ nav {
 nav .logo {
   margin: 0 0;
   color: var(--text-color);
+}
+nav p {
+  color: var(--text-color);
+  margin-left: auto;
+  cursor: pointer;
 }
 nav .theme-container {
   margin: 0 0 0 auto;
@@ -133,16 +138,16 @@ nav .theme-container .theme-list-container ul li {
   --modal-colour: darkslategrey;
 }
 
+html[data-theme=dark] {
+  --bg-color: black;
+  --text-color: whitesmoke;
+  --modal-colour: darkslategrey;
+}
+
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: black;
   ---modal-colour: lightslategrey;
-}
-
-html[data-theme="80s-after-dark"] {
-  --bg-color: #1b1d36;
-  --text-color: #e1e7ec;
-  --modal-colour: #1b1d36;
 }
 
 .main-landing {
@@ -254,16 +259,16 @@ html[data-theme="80s-after-dark"] {
   --modal-colour: darkslategrey;
 }
 
+html[data-theme=dark] {
+  --bg-color: black;
+  --text-color: whitesmoke;
+  --modal-colour: darkslategrey;
+}
+
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: black;
   ---modal-colour: lightslategrey;
-}
-
-html[data-theme="80s-after-dark"] {
-  --bg-color: #1b1d36;
-  --text-color: #e1e7ec;
-  --modal-colour: #1b1d36;
 }
 
 .main-projects-container {

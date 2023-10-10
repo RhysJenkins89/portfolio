@@ -1,5 +1,5 @@
-import themeSelector from "./theme";
+import themeToggle from "./theme";
 // import renderProjects from "./projects";
 
-themeSelector();
+themeToggle();
 // renderProjects();

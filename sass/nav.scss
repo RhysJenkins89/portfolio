@@ -12,6 +12,12 @@ nav {
         color: var(--text-color);
     }
 
+    p {
+        color: var(--text-color);
+        margin-left: auto;
+        cursor: pointer;
+    }
+
     .theme-container {
         margin: 0 0 0 auto;
         position: relative;
