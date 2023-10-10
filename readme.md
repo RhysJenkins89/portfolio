@@ -4,7 +4,7 @@ I'm currently redesigning and rebuilding my portfolio site.
 
 ## Doing
 
--   Add a footer
+-   Revert to two themes only because what even is life
 
 ## To do
 
