@@ -6,6 +6,10 @@ let isDarkMode: boolean;
 function themeToggle(): void {
     checkUserThemePreference();
 
+    // document.body.style.transition = "all 1s ease";
+    // The initial theme is dark, so if the user has previously selected a light theme, the JS will kick in
+    // and change the colour over the course of a second if the above transition property is active.
+
     themeSelector.addEventListener("click", () => {
         if (isDarkMode) {
             rootElement.dataset.theme = "light";
