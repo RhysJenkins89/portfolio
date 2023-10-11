@@ -1,18 +1,18 @@
 const rootElement = document.querySelector("html") as HTMLElement;
 const themeSelector = document.querySelector(".theme-text") as HTMLElement;
 const userHasSelectedTheme: boolean = Boolean(window.localStorage.getItem("themeSelection"));
-let isDarkMode: boolean;
+let isDarkMode: boolean = true;
+
+window.onload = () => {
+    document.body.style.transition = "all 1s ease";
+    const allTextElements: NodeListOf<HTMLElement> = document.querySelectorAll(".text");
+    allTextElements.forEach((element) => {
+        element.style.transition = "all 1s ease";
+    });
+};
 
 function themeToggle(): void {
     checkUserThemePreference();
-
-    window.onload = () => {
-        document.body.style.transition = "all 1s ease";
-        const allTextElements: NodeListOf<HTMLElement> = document.querySelectorAll(".text");
-        allTextElements.forEach((element) => {
-            element.style.transition = "all 1s ease";
-        });
-    };
 
     themeSelector.addEventListener("click", () => {
         if (isDarkMode) {
@@ -30,6 +30,11 @@ function themeToggle(): void {
 function checkUserThemePreference(): void {
     if (!userHasSelectedTheme) return;
     rootElement.dataset.theme = window.localStorage.getItem("themeSelection")!;
+    if (window.localStorage.getItem("themeSelection") === "dark") {
+        return;
+    } else {
+        isDarkMode = false;
+    }
 }
 
 export default themeToggle;
