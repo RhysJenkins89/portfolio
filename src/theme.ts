@@ -15,6 +15,9 @@ function themeToggle(): void {
     checkUserThemePreference();
 
     themeSelector.addEventListener("click", () => {
+        // Get the svg elements
+        // Absolutely position them on top of each other
+        // On click, fade one in and fade the other out
         if (isDarkMode) {
             rootElement.dataset.theme = "light";
             window.localStorage.setItem("themeSelection", "light");
