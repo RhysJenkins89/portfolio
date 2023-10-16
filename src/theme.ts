@@ -1,5 +1,6 @@
 const rootElement = document.querySelector("html") as HTMLElement;
 const themeSelector = document.querySelector(".theme-text") as HTMLElement;
+const themeImages = document.querySelectorAll("[data-theme-toggle]") as NodeListOf<HTMLElement>;
 const userHasSelectedTheme: boolean = Boolean(window.localStorage.getItem("themeSelection"));
 let isDarkMode: boolean = true;
 
@@ -14,10 +15,24 @@ window.onload = () => {
 function themeToggle(): void {
     checkUserThemePreference();
 
+    themeImages.forEach((image) => {
+        image.addEventListener("click", () => {
+            // Put this code into its own function
+            if (isDarkMode) {
+                document.querySelector(".sun")!.classList.add("hidden"); // Potentially guard here, but we're sorted
+                rootElement.dataset.theme = "light";
+                window.localStorage.setItem("themeSelection", "light");
+                isDarkMode = false;
+            } else {
+                rootElement.dataset.theme = "dark";
+                window.localStorage.setItem("themeSelection", "dark");
+                isDarkMode = true;
+            }
+        });
+    });
+
     themeSelector.addEventListener("click", () => {
-        // Get the svg elements
-        // Absolutely position them on top of each other
-        // On click, fade one in and fade the other out
+        // Put this code into its own function
         if (isDarkMode) {
             rootElement.dataset.theme = "light";
             window.localStorage.setItem("themeSelection", "light");

@@ -87,6 +87,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 0 5rem;
+  position: relative;
 }
 nav .logo {
   margin: 0 0;
@@ -96,6 +97,24 @@ nav p {
   color: var(--text-color);
   margin-left: auto;
   cursor: pointer;
+}
+nav img {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 5rem;
+  transform: translateY(-50%);
+}
+nav .sun {
+  transition: all 1s ease;
+}
+nav .sun.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+nav .moon {
+  opacity: 0;
+  visibility: hidden;
 }
 nav .theme-container {
   margin: 0 0 0 auto;
