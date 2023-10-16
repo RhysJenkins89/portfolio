@@ -1,6 +1,6 @@
 const rootElement = document.querySelector("html") as HTMLElement;
 const themeSelector = document.querySelector(".theme-text") as HTMLElement;
-const themeImages = document.querySelectorAll("[data-theme-toggle]") as NodeListOf<HTMLElement>;
+const themeImages = document.querySelectorAll("[data-theme-toggle]") as NodeListOf<HTMLElement>; // themeIcons
 const userHasSelectedTheme: boolean = Boolean(window.localStorage.getItem("themeSelection"));
 let isDarkMode: boolean = true;
 
