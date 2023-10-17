@@ -20,19 +20,15 @@ nav {
     }
 
     img {
-        // background-color: red;
         cursor: pointer;
         position: absolute;
         top: 50%;
         right: 5rem;
         transform: translateY(-50%);
+        transition: all 1s ease;
     }
 
     .sun {
-        // opacity: 0;
-        // visibility: hidden;
-        transition: all 1s ease;
-
         &.hidden {
             opacity: 0;
             visibility: hidden;
@@ -40,8 +36,6 @@ nav {
     }
 
     .moon {
-        transition: all 1s ease;
-
         &.hidden {
             opacity: 0;
             visibility: hidden;
@@ -89,57 +83,3 @@ nav {
         }
     }
 }
-
-// nav {
-//     height: 5rem;
-//     width: auto;
-//     display: flex;
-//     align-items: center;
-//     padding: 0 5rem;
-// }
-
-// nav .logo {
-//     margin: 0 0;
-//     color: var(--text-color);
-// }
-
-// nav .theme-container {
-//     margin: 0 0 0 auto;
-//     position: relative;
-// }
-
-// nav .theme-container p {
-//     cursor: pointer;
-//     color: var(--text-color);
-//     transition: all 0.75s ease;
-// }
-
-// nav .theme-container .theme-list-container {
-//     height: 50vh;
-//     width: 50vw;
-//     border-radius: 0.5rem;
-//     background-color: var(--modal-colour);
-//     // transition: all .75s ease;
-//     opacity: 0;
-//     visibility: hidden;
-//     position: fixed;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     z-index: 110;
-// }
-
-// nav .theme-container .theme-list-container.visible {
-//     opacity: 1;
-//     visibility: visible;
-// }
-
-// nav .theme-container .theme-list-container.visible ul {
-//     display: flex;
-//     flex-direction: column;
-// }
-
-// nav .theme-container .theme-list-container.visible ul li {
-//     list-style: none;
-//     cursor: pointer;
-// }

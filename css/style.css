@@ -104,16 +104,11 @@ nav img {
   top: 50%;
   right: 5rem;
   transform: translateY(-50%);
-}
-nav .sun {
   transition: all 1s ease;
 }
 nav .sun.hidden {
   opacity: 0;
   visibility: hidden;
-}
-nav .moon {
-  transition: all 1s ease;
 }
 nav .moon.hidden {
   opacity: 0;
