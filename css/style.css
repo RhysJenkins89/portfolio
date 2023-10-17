@@ -113,6 +113,9 @@ nav .sun.hidden {
   visibility: hidden;
 }
 nav .moon {
+  transition: all 1s ease;
+}
+nav .moon.hidden {
   opacity: 0;
   visibility: hidden;
 }
