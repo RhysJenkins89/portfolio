@@ -8,5 +8,16 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: var(--bg-color);
     max-width: 1750px;
-    // transition: all 1s ease;
+}
+
+h1 {
+    @include heading-one;
+}
+
+h2 {
+    @include heading-two;
+}
+
+p {
+    @include paragraph;
 }

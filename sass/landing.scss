@@ -8,13 +8,18 @@
     .heading-container {
         margin: 5rem 0 0 0;
 
-        h1 {
-            @include heading-one;
-        }
+        // These styles should be applied accros the project -- not just with the above class and data attribute.
+        // h1 {
+        //     @include heading-one;
+        // }
 
-        h2 {
-            @include heading-two;
-        }
+        // h2 {
+        //     @include heading-two;
+        // }
+
+        // p {
+        //     @include paragraph;
+        // }
     }
 
     .text-container {
