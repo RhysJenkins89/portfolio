@@ -16,35 +16,33 @@
     @media (max-width: variables.$mobile-large) {
         width: 90vw;
     }
-} 
+}
 
 @mixin heading-one {
-    font-size: 5rem;
+    font-size: 2.5rem;
     color: var(--text-color);
     margin: 0 0 1rem 0;
-    // transition: color 1s ease;
 
     @media (max-width: variables.$mobile-large) {
-        font-size: 3.25rem;
+        font-size: 2.25rem;
     }
 
     @media (max-width: variables.$mobile-small) {
-        font-size: 2.75rem;
+        font-size: 2rem;
     }
 }
 
 @mixin heading-two {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--text-color);
     margin: 0 0 1rem 0;
-    // transition: color 1s ease;
 
     @media (max-width: variables.$mobile-large) {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     @media (max-width: variables.$mobile-small) {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -52,7 +50,6 @@
     font-size: 2.25rem;
     color: var(--text-color);
     margin: 0 0 1rem 0;
-    // transition: color 1s ease;
 
     @media (max-width: variables.$mobile-large) {
         font-size: 1.75rem;
@@ -64,14 +61,13 @@
 
     &.light-mode {
         color: var(--text-color);
-    }   
+    }
 }
 
 @mixin paragraph {
     font-size: 1.75rem;
     line-height: 1.5;
-    color: var(--text-color); 
-    // transition: color 1s ease;
+    color: var(--text-color);
 
     @media (max-width: variables.$mobile-large) {
         font-size: 1.25rem;

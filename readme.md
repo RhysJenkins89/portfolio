@@ -4,7 +4,7 @@ I'm currently redesigning and rebuilding my portfolio site.
 
 ## Doing
 
--   Revert to two themes only because what even is life
+-   Add the scss to the webpack build
 
 ## To do
 
@@ -15,3 +15,7 @@ I'm currently redesigning and rebuilding my portfolio site.
 -   Build a backend with email/text submission functionality
 -   Build/find a system for the correct font-size values across devices
 -   Change the browser tab icon colour depending on the browser theme
+
+## General notes
+
+The `text` class allows any text that it's applied to to transition from light to dark with the theme.

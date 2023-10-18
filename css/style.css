@@ -167,7 +167,7 @@ html[data-theme=light] {
   ---modal-colour: lightslategrey;
 }
 
-.main-landing {
+[data-section-main-landing] {
   height: 110vh;
   width: 60vw;
   margin: 0 auto;
@@ -177,81 +177,81 @@ html[data-theme=light] {
   justify-content: flex-start;
 }
 @media (max-width: 1100px) {
-  .main-landing {
+  [data-section-main-landing] {
     width: 80vw;
   }
 }
 @media (max-width: 500px) {
-  .main-landing {
+  [data-section-main-landing] {
     width: 90vw;
   }
 }
-.main-landing .heading-container {
+[data-section-main-landing] .heading-container {
   margin: 5rem 0 0 0;
 }
-.main-landing .heading-container h1 {
-  font-size: 5rem;
-  color: var(--text-color);
-  margin: 0 0 1rem 0;
-}
-@media (max-width: 500px) {
-  .main-landing .heading-container h1 {
-    font-size: 3.25rem;
-  }
-}
-@media (max-width: 325px) {
-  .main-landing .heading-container h1 {
-    font-size: 2.75rem;
-  }
-}
-.main-landing .heading-container h2 {
+[data-section-main-landing] .heading-container h1 {
   font-size: 2.5rem;
   color: var(--text-color);
   margin: 0 0 1rem 0;
 }
 @media (max-width: 500px) {
-  .main-landing .heading-container h2 {
-    font-size: 2rem;
+  [data-section-main-landing] .heading-container h1 {
+    font-size: 2.25rem;
   }
 }
 @media (max-width: 325px) {
-  .main-landing .heading-container h2 {
+  [data-section-main-landing] .heading-container h1 {
+    font-size: 2rem;
+  }
+}
+[data-section-main-landing] .heading-container h2 {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin: 0 0 1rem 0;
+}
+@media (max-width: 500px) {
+  [data-section-main-landing] .heading-container h2 {
     font-size: 1.75rem;
   }
 }
-.main-landing .text-container {
+@media (max-width: 325px) {
+  [data-section-main-landing] .heading-container h2 {
+    font-size: 1.5rem;
+  }
+}
+[data-section-main-landing] .text-container {
   margin: 2.5rem 0 0 0;
   max-width: 1000px;
 }
-.main-landing .text-container p {
+[data-section-main-landing] .text-container p {
   font-size: 1.75rem;
   line-height: 1.5;
   color: var(--text-color);
 }
 @media (max-width: 500px) {
-  .main-landing .text-container p {
+  [data-section-main-landing] .text-container p {
     font-size: 1.25rem;
   }
 }
 @media (max-width: 325px) {
-  .main-landing .text-container p {
+  [data-section-main-landing] .text-container p {
     font-size: 1.2rem;
   }
 }
-.main-landing .text-container p a {
+[data-section-main-landing] .text-container p a {
   color: #ea3788;
 }
-.main-landing .buttons-container {
+[data-section-main-landing] .buttons-container {
   margin: auto 0 5rem 0;
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .main-landing .buttons-container {
+  [data-section-main-landing] .buttons-container {
     flex-direction: column;
   }
 }
-.main-landing .buttons-container button {
+[data-section-main-landing] .buttons-container button {
   background-color: lightgrey;
   height: 3rem;
   width: 10rem;
@@ -263,10 +263,10 @@ html[data-theme=light] {
   margin-right: 2.5rem;
   margin-bottom: 1rem;
 }
-.main-landing .buttons-container button:hover {
+[data-section-main-landing] .buttons-container button:hover {
   background-color: lightgray;
 }
-.main-landing .buttons-container button a {
+[data-section-main-landing] .buttons-container button a {
   text-decoration: none;
 }
 
@@ -308,33 +308,33 @@ html[data-theme=light] {
   }
 }
 .main-projects-container h1 {
-  font-size: 5rem;
-  color: var(--text-color);
-  margin: 0 0 1rem 0;
-}
-@media (max-width: 500px) {
-  .main-projects-container h1 {
-    font-size: 3.25rem;
-  }
-}
-@media (max-width: 325px) {
-  .main-projects-container h1 {
-    font-size: 2.75rem;
-  }
-}
-.main-projects-container h2 {
   font-size: 2.5rem;
   color: var(--text-color);
   margin: 0 0 1rem 0;
 }
 @media (max-width: 500px) {
-  .main-projects-container h2 {
+  .main-projects-container h1 {
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 325px) {
+  .main-projects-container h1 {
     font-size: 2rem;
+  }
+}
+.main-projects-container h2 {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin: 0 0 1rem 0;
+}
+@media (max-width: 500px) {
+  .main-projects-container h2 {
+    font-size: 1.75rem;
   }
 }
 @media (max-width: 325px) {
   .main-projects-container h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 }
 .main-projects-container .project-heading {
