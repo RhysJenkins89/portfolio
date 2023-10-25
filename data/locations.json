@@ -1,0 +1,20 @@
+{
+    "paris": {
+        "coordinates": {
+            "latitude": 123,
+            "longtitude": 456
+        }
+    },
+    "berlin": {
+        "coordinates": {
+            "latitude": 123,
+            "longtitude": 456
+        }
+    },
+    "madrid": {
+        "coordinates": {
+            "latitude": 123,
+            "longtitude": 456
+        }
+    }
+}

@@ -7,6 +7,13 @@ async function initMap(): Promise<void> {
         center: { lat: -34.397, lng: 150.644 },
         zoom: 8,
     });
+    getMapData();
+}
+
+async function getMapData(): Promise<void> {
+    const response = await fetch("./data/locations.json"); // Type the response
+    const mapData = await response.json();
+    console.log(mapData);
 }
 
 export default initMap;
