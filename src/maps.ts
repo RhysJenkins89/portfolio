@@ -16,10 +16,18 @@ async function getMapData(): Promise<void> {
     plotLocations(mapData);
 }
 
-function plotLocations(mapData: {}): void {
-    console.log(mapData.length);
+interface locationData {
+    coordinates: {
+        latitude: number;
+        longitude: number;
+    };
+}
+
+function plotLocations(mapData: any): void {
+    // this argument needs typing u r geh
+    console.log(mapData);
     // for (const location in mapData) {
-    //     console.log(location);
+    //     console.log(location[coordinates]);
     // }
 }
 
