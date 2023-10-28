@@ -13,7 +13,14 @@ async function initMap(): Promise<void> {
 async function getMapData(): Promise<void> {
     const response = await fetch("./data/locations.json"); // Type the response
     const mapData = await response.json();
-    console.log(mapData);
+    plotLocations(mapData);
+}
+
+function plotLocations(mapData: {}): void {
+    console.log(mapData.length);
+    // for (const location in mapData) {
+    //     console.log(location);
+    // }
 }
 
 export default initMap;
