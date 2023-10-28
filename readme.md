@@ -8,6 +8,7 @@ I'm currently redesigning and rebuilding my portfolio site.
 
 ## To do
 
+-   Add a prefers theme check in theme.ts
 -   Build project cards, loop over data
 -   Write new/better copy
 -   Add a projects/what I'm doing section
