@@ -8,3 +8,4 @@ themeToggle();
 
 // Get lat/long data for a handful of locations
 // Read the advanced marker Google api
+// Sort out the api token issue
