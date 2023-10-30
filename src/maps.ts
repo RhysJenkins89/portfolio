@@ -4,8 +4,8 @@ const mapElement = document.querySelector(".main-maps-container") as HTMLElement
 async function initMap(): Promise<void> {
     const { Map } = (await google.maps.importLibrary("maps")) as google.maps.MapsLibrary;
     map = new Map(mapElement, {
-        center: { lat: -34.397, lng: 150.644 },
-        zoom: 8,
+        center: { lat: 48.5734, lng: 7.75 },
+        zoom: 6,
     });
     getMapData();
 }
@@ -28,14 +28,11 @@ async function getMapData(): Promise<void> {
 }
 
 function plotLocations(mapData: LocationData): void {
-    console.log(mapData);
     for (const location in mapData) {
-        console.log(mapData[location].coordinates.latitude);
-        console.log(mapData[location].coordinates.longitude);
         new google.maps.Marker({
             position: { lat: mapData[location].coordinates.latitude, lng: mapData[location].coordinates.longitude },
             map,
-            // title: mapData[location]
+            title: location.charAt(0).toUpperCase() + location.slice(1),
         });
     }
 }
