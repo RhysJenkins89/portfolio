@@ -10,25 +10,34 @@ async function initMap(): Promise<void> {
     getMapData();
 }
 
-async function getMapData(): Promise<void> {
-    const response = await fetch("./data/locations.json"); // Type the response
-    const mapData = await response.json();
-    plotLocations(mapData);
+interface LocationData {
+    [index: string]: Location;
 }
 
-interface locationData {
+interface Location {
     coordinates: {
         latitude: number;
         longitude: number;
     };
 }
 
-function plotLocations(mapData: any): void {
-    // this argument needs typing u r geh
+async function getMapData(): Promise<void> {
+    const response: Response = await fetch("./data/locations.json");
+    const mapData: LocationData = await response.json();
+    plotLocations(mapData);
+}
+
+function plotLocations(mapData: LocationData): void {
     console.log(mapData);
-    // for (const location in mapData) {
-    //     console.log(location[coordinates]);
-    // }
+    for (const location in mapData) {
+        console.log(mapData[location].coordinates.latitude);
+        console.log(mapData[location].coordinates.longitude);
+        new google.maps.Marker({
+            position: { lat: mapData[location].coordinates.latitude, lng: mapData[location].coordinates.longitude },
+            map,
+            // title: mapData[location]
+        });
+    }
 }
 
 export default initMap;
