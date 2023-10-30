@@ -37,6 +37,11 @@ function plotLocations(mapData: LocationData): void {
     }
 }
 
+// function zoomToPlottedBounds(): void {
+//     map.panToBounds( , 10)
+
+// }
+
 export default initMap;
 
 // Remove the text from the map, leaving only the country borders. The user is given a country, and he must guess where the country is on the map. After the user guesses, the country is then revealed.
