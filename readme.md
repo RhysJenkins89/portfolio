@@ -4,14 +4,14 @@ I'm currently redesigning and rebuilding my portfolio site.
 
 ## Doing
 
--   Add the scss to the webpack build
+-   Writing and updating copy
 
 ## To do
 
 -   Add a prefers theme check in theme.ts
--   Build project cards, loop over data
+-   Add the scss to the webpack build
 -   Write new/better copy
--   Add a projects/what I'm doing section
+-   Add a What I'm working on section
 -   Add a form, which when submitted sends the user's data to a database
 -   Build a backend with email/text submission functionality
 -   Build/find a system for the correct font-size values across devices
@@ -20,3 +20,7 @@ I'm currently redesigning and rebuilding my portfolio site.
 ## General notes
 
 The `text` class allows any text that it's applied to to transition from light to dark with the theme.
+
+To build the TypeScript, run `npm run dev`. This command will run Webpack, building the TyepScript, and watch for updates.
+
+To build the SCSS, run `npm run sass`. This command will build the SCSS and watch for updates.
