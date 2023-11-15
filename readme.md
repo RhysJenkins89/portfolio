@@ -24,3 +24,5 @@ The `text` class allows any text that it's applied to to transition from light t
 To build the TypeScript, run `npm run dev`. This command will run Webpack, building the TyepScript, and watch for updates.
 
 To build the SCSS, run `npm run sass`. This command will build the SCSS and watch for updates.
+
+Before doing something specific with the map, I should turn this site into an actual portfolio page that represents me at least reasonably well. It's the copy that I have to write, and I want to include a form that submits data that I can read.
