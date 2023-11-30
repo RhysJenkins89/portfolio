@@ -11,9 +11,15 @@ interface Project {
 
 async function renderProjects(): Promise<void> {
     const cardsContainer = document.querySelector(".main-projects-container") as HTMLElement;
-
     const response: Response = await fetch("./data/projects.json");
     const projectData: ProjectsData = await response.json();
+    // There's no error handling here. Look up error handling in TypeScript. Try/catch, etc.
+
+    // try {
+
+    // } catch(error) {
+
+    // }
 
     for (const project in projectData) {
         cardsContainer.insertAdjacentHTML(
