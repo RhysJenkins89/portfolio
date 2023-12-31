@@ -8,6 +8,7 @@ I'm currently redesigning and rebuilding my portfolio site.
 
 ## To do
 
+-   Remove the maps Node modules
 -   Add a prefers theme check in theme.ts
 -   Add the scss to the webpack build
 -   Write new/better copy
