@@ -45,7 +45,6 @@ function checkUserThemePreference(): void {
     if (window.localStorage.getItem("themeSelection") === "dark") {
         sunIcon.classList.remove("hidden");
         moonIcon.classList.add("hidden");
-        return;
     } else {
         sunIcon.classList.add("hidden");
         moonIcon.classList.remove("hidden");
