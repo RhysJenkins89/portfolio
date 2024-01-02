@@ -5,8 +5,6 @@ const moonIcon = document.querySelector(".moon") as HTMLElement;
 const userHasSelectedTheme: boolean = Boolean(window.localStorage.getItem("themeSelection"));
 let isDarkMode: boolean = true;
 
-// Add the scss to the webpack build
-
 window.onload = () => {
     document.body.style.transition = "all 1s ease";
     const allTextElements: NodeListOf<HTMLElement> = document.querySelectorAll(".text");
