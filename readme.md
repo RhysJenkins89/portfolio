@@ -17,6 +17,7 @@ I'm currently redesigning and rebuilding my portfolio site.
 -   Build a backend with email/text submission functionality
 -   Build/find a system for the correct font-size values across devices
 -   Change the browser tab icon colour depending on the browser theme
+-   Sticky header
 
 ## General notes
 
