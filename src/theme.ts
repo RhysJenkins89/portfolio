@@ -14,7 +14,8 @@ window.onload = () => {
 };
 
 function themeToggle(): void {
-    checkUserThemePreference();
+    checkPreviousTheme();
+    checkUserSystemThemePreference();
 
     themeIcons.forEach((icons) => {
         icons.addEventListener("click", () => {
@@ -39,7 +40,7 @@ function updateTheme(): void {
     }
 }
 
-function checkUserThemePreference(): void {
+function checkPreviousTheme(): void {
     if (!userHasSelectedTheme) return;
     rootElement.dataset.theme = window.localStorage.getItem("themeSelection")!;
     if (window.localStorage.getItem("themeSelection") === "dark") {
@@ -50,6 +51,11 @@ function checkUserThemePreference(): void {
         moonIcon.classList.remove("hidden");
         isDarkMode = false;
     }
+}
+
+function checkUserSystemThemePreference(): void {
+    const systemSettingDark: MediaQueryList = window.matchMedia("(prefers-color-scheme: dark)");
+    console.log("system setting:", systemSettingDark);
 }
 
 export default themeToggle;
