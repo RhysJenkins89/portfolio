@@ -14,17 +14,6 @@ window.onload = () => {
 };
 
 function themeToggle(): void {
-    // const systemDarkMode: boolean = checkUserSystemThemePreference();
-    // if (systemDarkMode) {
-    //     sunIcon.classList.remove("hidden");
-    //     moonIcon.classList.add("hidden");
-    //     rootElement.dataset.theme = "dark";
-    //     window.localStorage.setItem("themeSelection", "dark");
-    //     isDarkMode = true;
-    // } else {
-    //     checkPreviousTheme();
-    // }
-
     checkPreviousTheme();
 
     themeIcons.forEach((icons) => {
@@ -62,12 +51,5 @@ function checkPreviousTheme(): void {
         isDarkMode = false;
     }
 }
-
-// function checkUserSystemThemePreference(): boolean {
-//     // Prefer user's system preference over user's previous choice
-//     const userSystemSettings: MediaQueryList = window.matchMedia("(prefers-color-scheme: dark)");
-//     console.log("system setting:", userSystemSettings);
-//     return userSystemSettings.matches === true ? true : false;
-// }
 
 export default themeToggle;

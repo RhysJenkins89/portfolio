@@ -34,3 +34,5 @@ The `text` class allows any text to which it is applied to transition from light
 Before doing something specific with the map, I should turn this site into an actual portfolio page that represents me at least reasonably well. It's the copy that I have to write, and I want to include a form that submits data that I can read.
 
 The idea: build an app with React Native and a website with React. Both can fetch data from the same database, which could easilly be Google Firebase. Using Firebase would give me login/authentication functionality.
+
+There's no need to save theme preference in local storage and check the user's system theme preference. It gets tricky because they could conflict.
