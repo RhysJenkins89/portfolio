@@ -3,55 +3,46 @@
 :root {
   --bg-color: black;
   --text-color: whitesmoke;
-  --modal-colour: darkslategrey;
 }
 
 html[data-theme=dark] {
   --bg-color: black;
   --text-color: whitesmoke;
-  --modal-colour: darkslategrey;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: black;
-  ---modal-colour: lightslategrey;
 }
 
 :root {
   --bg-color: black;
   --text-color: whitesmoke;
-  --modal-colour: darkslategrey;
 }
 
 html[data-theme=dark] {
   --bg-color: black;
   --text-color: whitesmoke;
-  --modal-colour: darkslategrey;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: black;
-  ---modal-colour: lightslategrey;
 }
 
 :root {
   --bg-color: black;
   --text-color: whitesmoke;
-  --modal-colour: darkslategrey;
 }
 
 html[data-theme=dark] {
   --bg-color: black;
   --text-color: whitesmoke;
-  --modal-colour: darkslategrey;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: black;
-  ---modal-colour: lightslategrey;
 }
 
 body {
@@ -64,18 +55,18 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   color: var(--text-color);
   margin: 0 0 1rem 0;
 }
 @media (max-width: 500px) {
   h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 325px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -117,19 +108,16 @@ p a {
 :root {
   --bg-color: black;
   --text-color: whitesmoke;
-  --modal-colour: darkslategrey;
 }
 
 html[data-theme=dark] {
   --bg-color: black;
   --text-color: whitesmoke;
-  --modal-colour: darkslategrey;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: black;
-  ---modal-colour: lightslategrey;
 }
 
 nav {
@@ -174,19 +162,16 @@ nav .moon.hidden {
 :root {
   --bg-color: black;
   --text-color: whitesmoke;
-  --modal-colour: darkslategrey;
 }
 
 html[data-theme=dark] {
   --bg-color: black;
   --text-color: whitesmoke;
-  --modal-colour: darkslategrey;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: black;
-  ---modal-colour: lightslategrey;
 }
 
 [data-section-main-landing] {
@@ -265,19 +250,16 @@ html[data-theme=light] {
 :root {
   --bg-color: black;
   --text-color: whitesmoke;
-  --modal-colour: darkslategrey;
 }
 
 html[data-theme=dark] {
   --bg-color: black;
   --text-color: whitesmoke;
-  --modal-colour: darkslategrey;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: black;
-  ---modal-colour: lightslategrey;
 }
 
 .main-projects-container {
@@ -300,18 +282,18 @@ html[data-theme=light] {
   }
 }
 .main-projects-container h1 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   color: var(--text-color);
   margin: 0 0 1rem 0;
 }
 @media (max-width: 500px) {
   .main-projects-container h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 325px) {
   .main-projects-container h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 .main-projects-container h2 {
