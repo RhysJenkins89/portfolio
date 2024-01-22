@@ -26,6 +26,10 @@ nav {
         right: 5rem;
         transform: translateY(-50%);
         transition: all 1s ease;
+
+        @media (max-width: variables.$mobile-large) {
+            right: 1.5rem;
+        }
     }
 
     .sun {
@@ -39,47 +43,6 @@ nav {
         &.hidden {
             opacity: 0;
             visibility: hidden;
-        }
-    }
-
-    .theme-container {
-        margin: 0 0 0 auto;
-        position: relative;
-
-        p {
-            cursor: pointer;
-            color: var(--text-color);
-            transition: all 0.75s ease;
-        }
-
-        .theme-list-container {
-            height: 50vh;
-            width: 50vw;
-            border-radius: 0.5rem;
-            background-color: var(--modal-colour);
-            // transition: all .75s ease;
-            opacity: 0;
-            visibility: hidden;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 110;
-
-            &.visible {
-                opacity: 1;
-                visibility: visible;
-            }
-
-            ul {
-                display: flex;
-                flex-direction: column;
-
-                li {
-                    list-style: none;
-                    cursor: pointer;
-                }
-            }
         }
     }
 }

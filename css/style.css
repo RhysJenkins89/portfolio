@@ -157,6 +157,11 @@ nav img {
   transform: translateY(-50%);
   transition: all 1s ease;
 }
+@media (max-width: 500px) {
+  nav img {
+    right: 1.5rem;
+  }
+}
 nav .sun.hidden {
   opacity: 0;
   visibility: hidden;
@@ -164,40 +169,6 @@ nav .sun.hidden {
 nav .moon.hidden {
   opacity: 0;
   visibility: hidden;
-}
-nav .theme-container {
-  margin: 0 0 0 auto;
-  position: relative;
-}
-nav .theme-container p {
-  cursor: pointer;
-  color: var(--text-color);
-  transition: all 0.75s ease;
-}
-nav .theme-container .theme-list-container {
-  height: 50vh;
-  width: 50vw;
-  border-radius: 0.5rem;
-  background-color: var(--modal-colour);
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 110;
-}
-nav .theme-container .theme-list-container.visible {
-  opacity: 1;
-  visibility: visible;
-}
-nav .theme-container .theme-list-container ul {
-  display: flex;
-  flex-direction: column;
-}
-nav .theme-container .theme-list-container ul li {
-  list-style: none;
-  cursor: pointer;
 }
 
 :root {
