@@ -1,13 +1,4 @@
-interface ProjectsData {
-    [index: string]: Project;
-}
-
-interface Project {
-    title: string;
-    image: string;
-    subheading: string;
-    bodyText: string;
-}
+import { ProjectsData } from "./types/projects-types";
 
 const cardsContainer = document.querySelector(".main-projects-container") as HTMLElement;
 
