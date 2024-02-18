@@ -8,6 +8,7 @@ I'm currently redesigning and rebuilding my portfolio site.
 
 ## To do
 
+-   Update the light/dark theme colours
 -   Remove the maps Node modules
 -   Add a prefers theme check in theme.ts
 -   Add the scss to the webpack build
@@ -23,7 +24,7 @@ I'm currently redesigning and rebuilding my portfolio site.
 
 ### How to run the site
 
-To build the TypeScript, run `npm run dev`. This command will run Webpack, building the TyepScript, and watch for updates.
+To build the TypeScript, run `npm run dev`. This command will run Webpack, which will build the TyepScript and watch for updates.
 
 To build the CSS, run `npm run sass`. This command will build the SCSS and watch for updates.
 
