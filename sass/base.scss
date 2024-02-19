@@ -3,6 +3,7 @@
 
 html {
     font-size: 62.5%;
+    // We use 62.5 percent because the default font size across browsers is 16px. Setting the font-size property to 62.5 percent, then, translates the default 16px to 10px, which makes using em or rem easier. 1rem will now equal 10px. 1.8rem will equal 18px, and so on.
 }
 
 body {
