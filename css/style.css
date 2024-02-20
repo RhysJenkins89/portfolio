@@ -65,12 +65,7 @@ h1 {
 }
 @media (max-width: 500px) {
   h1 {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 325px) {
-  h1 {
-    font-size: 1.75rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -97,16 +92,8 @@ p {
 }
 @media (max-width: 500px) {
   p {
-    font-size: 0.75rem;
+    font-size: 1.6rem;
   }
-}
-@media (max-width: 325px) {
-  p {
-    font-size: 0.5rem;
-  }
-}
-p a {
-  color: #ea3788;
 }
 
 :root {
@@ -211,16 +198,8 @@ html[data-theme=light] {
 }
 @media (max-width: 500px) {
   [data-section-main-landing] .text-container p {
-    font-size: 0.75rem;
+    font-size: 1.6rem;
   }
-}
-@media (max-width: 325px) {
-  [data-section-main-landing] .text-container p {
-    font-size: 0.5rem;
-  }
-}
-[data-section-main-landing] .text-container p a {
-  color: #ea3788;
 }
 [data-section-main-landing] .buttons-container {
   margin: auto 0 5rem 0;
@@ -292,12 +271,7 @@ html[data-theme=light] {
 }
 @media (max-width: 500px) {
   .main-projects-container h1 {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 325px) {
-  .main-projects-container h1 {
-    font-size: 1.75rem;
+    font-size: 2.4rem;
   }
 }
 .main-projects-container h2 {
@@ -340,16 +314,8 @@ html[data-theme=light] {
 }
 @media (max-width: 500px) {
   .main-projects-container .project-subheading {
-    font-size: 0.75rem;
+    font-size: 1.6rem;
   }
-}
-@media (max-width: 325px) {
-  .main-projects-container .project-subheading {
-    font-size: 0.5rem;
-  }
-}
-.main-projects-container .project-subheading a {
-  color: #ea3788;
 }
 .main-projects-container .project-text {
   font-size: 1.8rem;
@@ -358,16 +324,8 @@ html[data-theme=light] {
 }
 @media (max-width: 500px) {
   .main-projects-container .project-text {
-    font-size: 0.75rem;
+    font-size: 1.6rem;
   }
-}
-@media (max-width: 325px) {
-  .main-projects-container .project-text {
-    font-size: 0.5rem;
-  }
-}
-.main-projects-container .project-text a {
-  color: #ea3788;
 }
 
 .overlay {

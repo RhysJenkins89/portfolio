@@ -34,3 +34,7 @@ Before doing something specific with the map, I should turn this site into an ac
 The idea: build an app with React Native and a website with React. Both can fetch data from the same database, which could easilly be Google Firebase. Using Firebase would give me login/authentication functionality.
 
 There's no need to save theme preference in local storage and check the user's system theme preference. It gets tricky because they could conflict.
+
+### Resources
+
+-   https://www.wix.com/studio/blog/font-size
