@@ -10,15 +10,12 @@ I'm currently redesigning and rebuilding my portfolio site.
 
 -   Update the light/dark theme colours
 -   Remove the maps Node modules
--   Add a prefers theme check in theme.ts
 -   Add the scss to the webpack build
--   Write new/better copy
 -   Add a What I'm working on section
 -   Add a form, which when submitted sends the user's data to a database
 -   Build a backend with email/text submission functionality
 -   Build/find a system for the correct font-size values across devices
 -   Change the browser tab icon colour depending on the browser theme
--   Sticky header
 
 ## General notes
 
