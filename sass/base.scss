@@ -26,3 +26,7 @@ h2 {
 p {
     @include paragraph;
 }
+
+a {
+    text-decoration: none;
+}

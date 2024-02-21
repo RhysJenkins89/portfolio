@@ -96,6 +96,10 @@ p {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   --bg-color: black;
   --text-color: whitesmoke;
