@@ -170,7 +170,7 @@ html[data-theme=light] {
 }
 
 [data-section-main-landing] {
-  height: 210vh;
+  height: auto;
   width: 60vw;
   max-width: 2000px;
   margin: 0 auto;
@@ -251,7 +251,7 @@ html[data-theme=light] {
 }
 
 .main-projects-container {
-  height: 210vh;
+  height: auto;
   width: 60vw;
   max-width: 2000px;
   margin: 0 auto;
