@@ -8,6 +8,7 @@ I'm currently redesigning and rebuilding my portfolio site.
 
 ## To do
 
+-   Add route error handling
 -   Update the light/dark theme colours
 -   Remove the maps Node modules
 -   Add the scss to the webpack build
