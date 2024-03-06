@@ -33,3 +33,4 @@ The `text` class allows any text to which it is applied to transition from light
 ### Resources
 
 -   https://www.wix.com/studio/blog/font-size
+-   Heading font: https://thecritic.co.uk/
