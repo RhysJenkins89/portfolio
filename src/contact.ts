@@ -1,7 +1,7 @@
-const form = document.querySelector("[data-form-submit]") as HTMLElement;
+const form = document.querySelector("[data-form-submit]") as HTMLFormElement;
 
 function handleFormSubmit(): void {
-    console.log("Test");
+    // form.onsubmit();
 }
 
 export default handleFormSubmit;
