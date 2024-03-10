@@ -1,2 +1,14 @@
 [data-section-contact] {
+    @include section-layout;
+
+    .main-contact-container {
+        form {
+            background-color: indianred;
+            input {
+            }
+
+            button {
+            }
+        }
+    }
 }
