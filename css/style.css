@@ -385,7 +385,8 @@ footer .logo {
   }
 }
 [data-section-contact] .main-contact-container form {
-  background-color: indianred;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

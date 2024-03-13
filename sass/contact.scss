@@ -3,7 +3,9 @@
 
     .main-contact-container {
         form {
-            background-color: indianred;
+            display: flex;
+            flex-direction: column;
+
             input {
             }
 
