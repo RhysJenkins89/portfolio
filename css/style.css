@@ -388,5 +388,35 @@ footer .logo {
   display: flex;
   flex-direction: column;
 }
+[data-section-contact] .main-contact-container form input {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: solid 1px darkgrey;
+  border-radius: 0.25rem;
+  outline: none;
+}
+[data-section-contact] .main-contact-container form input:focus {
+  border: solid 1px aquamarine;
+}
+[data-section-contact] .main-contact-container form textarea {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: solid 1px darkgrey;
+  border-radius: 0.25rem;
+  outline: none;
+}
+[data-section-contact] .main-contact-container form textarea:focus {
+  border: solid 1px aquamarine;
+}
+[data-section-contact] .main-contact-container form button {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: solid 1px darkgrey;
+  border-radius: 0.25rem;
+  outline: none;
+}
+[data-section-contact] .main-contact-container form button:focus {
+  border: solid 1px aquamarine;
+}
 
 /*# sourceMappingURL=style.css.map */

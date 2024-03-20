@@ -7,9 +7,15 @@
             flex-direction: column;
 
             input {
+                @include form-input;
+            }
+
+            textarea {
+                @include form-input;
             }
 
             button {
+                @include form-input;
             }
         }
     }

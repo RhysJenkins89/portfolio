@@ -70,3 +70,15 @@
         font-size: 1.6rem;
     }
 }
+
+@mixin form-input {
+    background-color: var(--bg-color); // These will need to be variables
+    color: var(--text-color);
+    border: solid 1px darkgrey;
+    border-radius: 0.25rem;
+    outline: none;
+
+    &:focus {
+        border: solid 1px aquamarine;
+    }
+}

@@ -43,21 +43,20 @@
                 <h2 class="text">Contact</h2>
                 <p class="text">Get in touch.</p>
                 <form class="" name="contact" data-form-submit>
-                    <ul>
-                        <li>
-                            <label for="name"><p class="text">Name</p></label>
-                            <input id="name" type="text" />
-                        </li>
-                        <li>
-                            <label for="email"><p class="text">Email</p></label>
-                            <input id="email" type="email" />
-                        </li>
-                        <li>
-                            <label for="message"><p class="text">Message</p></label>
-                            <textarea id="message"></textarea>
-                        </li>
-                        <button type="submit">Send</button>
-                    </ul>
+                    <div>
+                        <label for="name"><p class="text">Name</p></label>
+                        <input id="name" type="text" required data-form-input />
+                    </div>
+                    <div>
+                        <label for="email"><p class="text">Email</p></label>
+                        <input id="email" type="email" required data-form-input />
+                    </div>
+                    <div>
+                        <label for="message"><p class="text">Message</p></label>
+                        <textarea id="message" required data-form-input></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                    <!-- This form will need a recaptcha -->
                 </form>
             </div>
         </section>
