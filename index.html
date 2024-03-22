@@ -41,21 +41,20 @@
         <section data-section-contact>
             <div class="main-contact-container">
                 <h2 class="text">Contact</h2>
-                <p class="text">Get in touch.</p>
                 <form class="" name="contact" data-form-submit>
                     <div>
                         <label for="name"><p class="text">Name</p></label>
-                        <input id="name" type="text" required data-form-input />
+                        <input id="name" type="text" required data-form-element />
                     </div>
                     <div>
                         <label for="email"><p class="text">Email</p></label>
-                        <input id="email" type="email" required data-form-input />
+                        <input id="email" type="email" required data-form-element />
                     </div>
                     <div>
                         <label for="message"><p class="text">Message</p></label>
-                        <textarea id="message" required data-form-input></textarea>
+                        <textarea id="message" required data-form-element></textarea>
                     </div>
-                    <button type="submit">Send</button>
+                    <button type="submit" data-form-element>Send</button>
                     <!-- This form will need a recaptcha -->
                 </form>
             </div>

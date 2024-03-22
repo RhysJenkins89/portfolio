@@ -3,7 +3,7 @@ const themeIcons = document.querySelectorAll("[data-theme-toggle]") as NodeListO
 const sunIcon = document.querySelector(".sun") as HTMLElement;
 const moonIcon = document.querySelector(".moon") as HTMLElement;
 const allTextElements: NodeListOf<HTMLElement> = document.querySelectorAll(".text");
-const allInputElements: NodeListOf<HTMLInputElement> = document.querySelectorAll("[data-form-input]");
+const allFormElements: NodeListOf<HTMLInputElement> = document.querySelectorAll("[data-form-element]");
 const userHasSelectedTheme: boolean = Boolean(window.localStorage.getItem("themeSelection"));
 let isDarkMode: boolean = true;
 
@@ -13,7 +13,7 @@ window.onload = () => {
     allTextElements.forEach((element) => {
         element.style.transition = transitionAllOneSecond;
     });
-    allInputElements.forEach((element) => {
+    allFormElements.forEach((element) => {
         element.style.transition = transitionAllOneSecond;
     });
 };

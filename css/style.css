@@ -384,9 +384,18 @@ footer .logo {
     width: 90vw;
   }
 }
+[data-section-contact] .main-contact-container {
+  width: 100%;
+  height: 100vh;
+}
 [data-section-contact] .main-contact-container form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+[data-section-contact] .main-contact-container form label p {
+  margin: 2.5rem 0 0.5rem 0;
+  padding: 0;
 }
 [data-section-contact] .main-contact-container form input {
   background-color: var(--bg-color);
@@ -394,6 +403,10 @@ footer .logo {
   border: solid 1px darkgrey;
   border-radius: 0.25rem;
   outline: none;
+  width: 40%;
+  height: 4rem;
+  font-size: 1.8rem;
+  padding-left: 1rem;
 }
 [data-section-contact] .main-contact-container form input:focus {
   border: solid 1px aquamarine;
@@ -404,6 +417,14 @@ footer .logo {
   border: solid 1px darkgrey;
   border-radius: 0.25rem;
   outline: none;
+  width: 40%;
+  height: 4rem;
+  font-size: 1.8rem;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  resize: none;
+  height: 10rem;
+  padding-top: 1rem;
 }
 [data-section-contact] .main-contact-container form textarea:focus {
   border: solid 1px aquamarine;
@@ -414,6 +435,14 @@ footer .logo {
   border: solid 1px darkgrey;
   border-radius: 0.25rem;
   outline: none;
+  width: 40%;
+  height: 4rem;
+  font-size: 1.8rem;
+  padding-left: 1rem;
+  padding: 0;
+  width: calc(40% + 1.5rem);
+  margin-top: 4rem;
+  cursor: pointer;
 }
 [data-section-contact] .main-contact-container form button:focus {
   border: solid 1px aquamarine;

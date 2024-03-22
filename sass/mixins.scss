@@ -72,11 +72,15 @@
 }
 
 @mixin form-input {
-    background-color: var(--bg-color); // These will need to be variables
+    background-color: var(--bg-color);
     color: var(--text-color);
     border: solid 1px darkgrey;
     border-radius: 0.25rem;
     outline: none;
+    width: 40%;
+    height: 4rem;
+    font-size: 1.8rem;
+    padding-left: 1rem;
 
     &:focus {
         border: solid 1px aquamarine;
