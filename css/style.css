@@ -364,6 +364,21 @@ footer .logo {
   color: var(--text-color);
 }
 
+:root {
+  --bg-color: black;
+  --text-color: whitesmoke;
+}
+
+html[data-theme=dark] {
+  --bg-color: black;
+  --text-color: whitesmoke;
+}
+
+html[data-theme=light] {
+  --bg-color: whitesmoke;
+  --text-color: black;
+}
+
 [data-section-contact] {
   height: auto;
   width: 60vw;
@@ -408,6 +423,11 @@ footer .logo {
   font-size: 1.8rem;
   padding-left: 1rem;
 }
+@media (max-width: 800px) {
+  [data-section-contact] .main-contact-container form input {
+    width: calc(100% - 1.5rem);
+  }
+}
 [data-section-contact] .main-contact-container form input:focus {
   border: solid 1px aquamarine;
 }
@@ -425,6 +445,11 @@ footer .logo {
   resize: none;
   height: 10rem;
   padding-top: 1rem;
+}
+@media (max-width: 800px) {
+  [data-section-contact] .main-contact-container form textarea {
+    width: calc(100% - 1.5rem);
+  }
 }
 [data-section-contact] .main-contact-container form textarea:focus {
   border: solid 1px aquamarine;
@@ -444,8 +469,18 @@ footer .logo {
   margin-top: 4rem;
   cursor: pointer;
 }
+@media (max-width: 800px) {
+  [data-section-contact] .main-contact-container form button {
+    width: calc(100% - 1.5rem);
+  }
+}
 [data-section-contact] .main-contact-container form button:focus {
   border: solid 1px aquamarine;
+}
+@media (max-width: 800px) {
+  [data-section-contact] .main-contact-container form button {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

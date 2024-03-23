@@ -82,6 +82,10 @@
     font-size: 1.8rem;
     padding-left: 1rem;
 
+    @media (max-width: variables.$tablet) {
+        width: calc(100% - 1.5rem); // Idk
+    }
+
     &:focus {
         border: solid 1px aquamarine;
     }
