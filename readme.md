@@ -4,11 +4,10 @@ I'm currently redesigning and rebuilding my portfolio site.
 
 ## Doing
 
--   Writing and updating copy
+-   Add route error handling
 
 ## To do
 
--   Add route error handling
 -   Update the light/dark theme colours
 -   Remove the maps Node modules
 -   Add the scss to the webpack build
@@ -17,6 +16,8 @@ I'm currently redesigning and rebuilding my portfolio site.
 -   Build a backend with email/text submission functionality
 -   Build/find a system for the correct font-size values across devices
 -   Change the browser tab icon colour depending on the browser theme
+-   Accessibility throughout the site
+-   Add a recaptcha to the form
 
 ## General notes
 

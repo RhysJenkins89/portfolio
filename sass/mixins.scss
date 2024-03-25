@@ -70,3 +70,23 @@
         font-size: 1.6rem;
     }
 }
+
+@mixin form-input {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: solid 1px darkgrey;
+    border-radius: 0.25rem;
+    outline: none;
+    width: 40%;
+    height: 4rem;
+    font-size: 1.8rem;
+    padding-left: 1rem;
+
+    @media (max-width: variables.$tablet) {
+        width: calc(100% - 1.5rem); // Idk
+    }
+
+    &:focus {
+        border: solid 1px aquamarine;
+    }
+}
