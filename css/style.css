@@ -1,48 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 :root {
-  --bg-color: black;
+  --bg-color: #121212;
   --text-color: whitesmoke;
 }
 
 html[data-theme=dark] {
-  --bg-color: black;
+  --bg-color: #121212;
   --text-color: whitesmoke;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
-  --text-color: black;
+  --text-color: #121212;
 }
 
 :root {
-  --bg-color: black;
+  --bg-color: #121212;
   --text-color: whitesmoke;
 }
 
 html[data-theme=dark] {
-  --bg-color: black;
+  --bg-color: #121212;
   --text-color: whitesmoke;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
-  --text-color: black;
+  --text-color: #121212;
 }
 
 :root {
-  --bg-color: black;
+  --bg-color: #121212;
   --text-color: whitesmoke;
 }
 
 html[data-theme=dark] {
-  --bg-color: black;
+  --bg-color: #121212;
   --text-color: whitesmoke;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
-  --text-color: black;
+  --text-color: #121212;
 }
 
 html {
@@ -101,18 +101,18 @@ a {
 }
 
 :root {
-  --bg-color: black;
+  --bg-color: #121212;
   --text-color: whitesmoke;
 }
 
 html[data-theme=dark] {
-  --bg-color: black;
+  --bg-color: #121212;
   --text-color: whitesmoke;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
-  --text-color: black;
+  --text-color: #121212;
 }
 
 nav {
@@ -155,18 +155,18 @@ nav .moon.hidden {
 }
 
 :root {
-  --bg-color: black;
+  --bg-color: #121212;
   --text-color: whitesmoke;
 }
 
 html[data-theme=dark] {
-  --bg-color: black;
+  --bg-color: #121212;
   --text-color: whitesmoke;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
-  --text-color: black;
+  --text-color: #121212;
 }
 
 [data-section-main-landing] {
@@ -236,18 +236,18 @@ html[data-theme=light] {
 }
 
 :root {
-  --bg-color: black;
+  --bg-color: #121212;
   --text-color: whitesmoke;
 }
 
 html[data-theme=dark] {
-  --bg-color: black;
+  --bg-color: #121212;
   --text-color: whitesmoke;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
-  --text-color: black;
+  --text-color: #121212;
 }
 
 .main-projects-container {
@@ -365,18 +365,18 @@ footer .logo {
 }
 
 :root {
-  --bg-color: black;
+  --bg-color: #121212;
   --text-color: whitesmoke;
 }
 
 html[data-theme=dark] {
-  --bg-color: black;
+  --bg-color: #121212;
   --text-color: whitesmoke;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
-  --text-color: black;
+  --text-color: #121212;
 }
 
 [data-section-contact] {

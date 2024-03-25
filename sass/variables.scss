@@ -6,16 +6,16 @@ $mobile-standard: 400px;
 $mobile-small: 325px;
 
 :root {
-    --bg-color: black;
+    --bg-color: #121212;
     --text-color: whitesmoke;
 }
 
 html[data-theme="dark"] {
-    --bg-color: black;
+    --bg-color: #121212;
     --text-color: whitesmoke;
 }
 
 html[data-theme="light"] {
     --bg-color: whitesmoke;
-    --text-color: black;
+    --text-color: #121212;
 }
