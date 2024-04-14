@@ -8,7 +8,6 @@ I'm currently redesigning and rebuilding my portfolio site.
 
 ## To do
 
--   Commit test
 -   Build a backend service in Node to handle the form
 -   Update the light/dark theme colours
 -   Remove the maps Node modules
