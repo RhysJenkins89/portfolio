@@ -89,4 +89,10 @@
     &:focus {
         border: solid 1px aquamarine;
     }
+
+    &:valid {
+    }
+
+    &:invalid {
+    }
 }

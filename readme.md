@@ -4,6 +4,8 @@ I'm currently redesigning and rebuilding my portfolio site.
 
 ## Doing
 
+-   Form validation
+
 ## To do
 
 -   Build a backend service in Node to handle the form
