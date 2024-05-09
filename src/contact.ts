@@ -4,8 +4,9 @@ const emailInput = document.querySelector("#email") as HTMLInputElement;
 if (emailInput) {
     emailInput.addEventListener("input", (event: Event) => {
         if (emailInput.validity.typeMismatch) {
-            console.log("typeMismatch is true");
-            // Add the invalid styles here
+            emailInput.classList.add("invalid");
+        } else {
+            emailInput.classList.remove("invalid");
         }
     });
 }
@@ -15,6 +16,7 @@ function handleFormSubmit(): void {
         form.addEventListener("submit", (event: Event) => {
             event.preventDefault();
             console.log("Submit event handler");
+            // Check if the email field is valid
         });
     }
 }

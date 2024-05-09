@@ -90,9 +90,7 @@
         border: solid 1px aquamarine;
     }
 
-    &:valid {
-    }
-
-    &:invalid {
+    &.invalid {
+        border: solid 1px red;
     }
 }

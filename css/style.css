@@ -431,6 +431,9 @@ html[data-theme=light] {
 [data-section-contact] .main-contact-container form input:focus {
   border: solid 1px aquamarine;
 }
+[data-section-contact] .main-contact-container form input.invalid {
+  border: solid 1px red;
+}
 [data-section-contact] .main-contact-container form textarea {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -454,6 +457,9 @@ html[data-theme=light] {
 [data-section-contact] .main-contact-container form textarea:focus {
   border: solid 1px aquamarine;
 }
+[data-section-contact] .main-contact-container form textarea.invalid {
+  border: solid 1px red;
+}
 [data-section-contact] .main-contact-container form button {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -476,6 +482,9 @@ html[data-theme=light] {
 }
 [data-section-contact] .main-contact-container form button:focus {
   border: solid 1px aquamarine;
+}
+[data-section-contact] .main-contact-container form button.invalid {
+  border: solid 1px red;
 }
 @media (max-width: 800px) {
   [data-section-contact] .main-contact-container form button {
