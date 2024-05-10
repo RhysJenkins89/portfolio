@@ -31,6 +31,12 @@
                 padding-top: 1rem;
             }
 
+            .error-text {
+                font-size: 1.25rem;
+                color: red;
+                margin: 0.5rem 0 0 0;
+            }
+
             button {
                 @include form-input;
                 padding: 0;

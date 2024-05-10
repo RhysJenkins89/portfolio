@@ -3,19 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <!-- CSS and JS links -->
         <link rel="stylesheet" href="css/style.css" />
         <script src="dist/bundle.js" defer></script>
-
         <title>Rhys Jenkins | Portfolio</title>
     </head>
 
     <body>
-        <!-- Overlay -->
         <div class="overlay"></div>
 
-        <!-- Nav -->
         <nav>
             <img data-theme-toggle class="sun" src="./images/sun.svg" />
             <img data-theme-toggle class="moon hidden" src="./images/moon.svg" />
@@ -26,7 +21,6 @@
             <div class="heading-container">
                 <h1 class="text">Rhys Jenkins</h1>
                 <p class="text">I'm a web developer specialising in TypeScript, React, and Next.</p>
-                <p class="text">I'm currently rebuilding this site.</p>
                 <a href="https://github.com/RhysJenkins89" target="_blank">
                     <p class="text">Check out my Github.</p>
                 </a>
@@ -49,6 +43,7 @@
                     <div>
                         <label for="email"><p class="text">Email</p></label>
                         <input id="email" type="email" required data-form-element />
+                        <p class="error-text">Please enter a valid email.</p>
                     </div>
                     <div>
                         <label for="message"><p class="text">Message</p></label>

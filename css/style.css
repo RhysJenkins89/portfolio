@@ -100,6 +100,10 @@ a {
   text-decoration: none;
 }
 
+.hidden {
+  display: none;
+}
+
 :root {
   --bg-color: #121212;
   --text-color: whitesmoke;
@@ -459,6 +463,11 @@ html[data-theme=light] {
 }
 [data-section-contact] .main-contact-container form textarea.invalid {
   border: solid 1px red;
+}
+[data-section-contact] .main-contact-container form .error-text {
+  font-size: 1.25rem;
+  color: red;
+  margin: 0.5rem 0 0 0;
 }
 [data-section-contact] .main-contact-container form button {
   background-color: var(--bg-color);
