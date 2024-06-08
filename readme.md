@@ -4,18 +4,16 @@ I'm currently redesigning and rebuilding my portfolio site.
 
 ## Doing
 
--   Form validation
+-   Build the landing intro section
 
 ## To do
 
--   Build a backend service in Node to handle the form
+-   Create a logo for the browser tab
 -   Add the scss to the webpack build
 -   Add a What I'm working on section
--   Build a backend with email/text submission functionality
 -   Build/find a system for the correct font-size values across devices
 -   Change the browser tab icon colour depending on the browser theme
 -   Accessibility throughout the site
--   Add a recaptcha to the form
 
 ## General notes
 
@@ -33,3 +31,4 @@ The `text` class allows any text to which it is applied to transition from light
 
 -   https://www.wix.com/studio/blog/font-size
 -   Heading font: https://thecritic.co.uk/
+-   https://brittanychiang.com/

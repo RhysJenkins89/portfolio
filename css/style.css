@@ -59,7 +59,7 @@ body {
 }
 
 h1 {
-  font-size: 3.6rem;
+  font-size: 4rem;
   color: var(--text-color);
   margin: 0 0 1rem 0;
 }
@@ -194,6 +194,11 @@ html[data-theme=light] {
   }
 }
 [data-section-main-landing] .heading-container {
+  position: sticky;
+  top: 100px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
   margin: 5rem 0 0 0;
 }
 [data-section-main-landing] .text-container {
@@ -210,33 +215,13 @@ html[data-theme=light] {
     font-size: 1.6rem;
   }
 }
-[data-section-main-landing] .buttons-container {
-  margin: auto 0 5rem 0;
+[data-section-main-landing] .links-container {
+  width: fit-content;
   display: flex;
-  justify-content: space-between;
+  margin-top: auto;
 }
-@media (max-width: 500px) {
-  [data-section-main-landing] .buttons-container {
-    flex-direction: column;
-  }
-}
-[data-section-main-landing] .buttons-container button {
-  background-color: lightgrey;
-  height: 3rem;
-  width: 10rem;
-  border-radius: 0.25rem;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  overflow: hidden;
-  margin-right: 2.5rem;
-  margin-bottom: 1rem;
-}
-[data-section-main-landing] .buttons-container button:hover {
-  background-color: lightgray;
-}
-[data-section-main-landing] .buttons-container button a {
-  text-decoration: none;
+[data-section-main-landing] .links-container p:first-of-type {
+  margin-right: 4rem;
 }
 
 :root {
@@ -275,7 +260,7 @@ html[data-theme=light] {
   }
 }
 .main-projects-container h1 {
-  font-size: 3.6rem;
+  font-size: 4rem;
   color: var(--text-color);
   margin: 0 0 1rem 0;
 }
@@ -366,146 +351,6 @@ footer {
 footer .logo {
   margin: 0 0;
   color: var(--text-color);
-}
-
-:root {
-  --bg-color: #121212;
-  --text-color: whitesmoke;
-}
-
-html[data-theme=dark] {
-  --bg-color: #121212;
-  --text-color: whitesmoke;
-}
-
-html[data-theme=light] {
-  --bg-color: whitesmoke;
-  --text-color: #121212;
-}
-
-[data-section-contact] {
-  height: auto;
-  width: 60vw;
-  max-width: 2000px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-@media (max-width: 1100px) {
-  [data-section-contact] {
-    width: 80vw;
-  }
-}
-@media (max-width: 500px) {
-  [data-section-contact] {
-    width: 90vw;
-  }
-}
-[data-section-contact] .main-contact-container {
-  width: 100%;
-  height: 100vh;
-}
-[data-section-contact] .main-contact-container form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-[data-section-contact] .main-contact-container form label p {
-  margin: 2.5rem 0 0.5rem 0;
-  padding: 0;
-}
-[data-section-contact] .main-contact-container form input {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  border: solid 1px darkgrey;
-  border-radius: 0.25rem;
-  outline: none;
-  width: 40%;
-  height: 4rem;
-  font-size: 1.8rem;
-  padding-left: 1rem;
-}
-@media (max-width: 800px) {
-  [data-section-contact] .main-contact-container form input {
-    width: calc(100% - 1.5rem);
-  }
-}
-[data-section-contact] .main-contact-container form input:focus {
-  border: solid 1px aquamarine;
-}
-[data-section-contact] .main-contact-container form input.invalid {
-  border: solid 1px red;
-}
-[data-section-contact] .main-contact-container form textarea {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  border: solid 1px darkgrey;
-  border-radius: 0.25rem;
-  outline: none;
-  width: 40%;
-  height: 4rem;
-  font-size: 1.8rem;
-  padding-left: 1rem;
-  font-size: 1.5rem;
-  resize: none;
-  height: 10rem;
-  padding-top: 1rem;
-}
-@media (max-width: 800px) {
-  [data-section-contact] .main-contact-container form textarea {
-    width: calc(100% - 1.5rem);
-  }
-}
-[data-section-contact] .main-contact-container form textarea:focus {
-  border: solid 1px aquamarine;
-}
-[data-section-contact] .main-contact-container form textarea.invalid {
-  border: solid 1px red;
-}
-[data-section-contact] .main-contact-container form .error-text {
-  font-size: 1.25rem;
-  color: red;
-  margin: 0.5rem 0 0 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.75s ease;
-}
-[data-section-contact] .main-contact-container form .error-text.visible {
-  opacity: 1;
-  visibility: visible;
-}
-[data-section-contact] .main-contact-container form button {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  border: solid 1px darkgrey;
-  border-radius: 0.25rem;
-  outline: none;
-  width: 40%;
-  height: 4rem;
-  font-size: 1.8rem;
-  padding-left: 1rem;
-  padding: 0;
-  width: calc(40% + 1.5rem);
-  margin-top: 4rem;
-  cursor: pointer;
-}
-@media (max-width: 800px) {
-  [data-section-contact] .main-contact-container form button {
-    width: calc(100% - 1.5rem);
-  }
-}
-[data-section-contact] .main-contact-container form button:focus {
-  border: solid 1px aquamarine;
-}
-[data-section-contact] .main-contact-container form button.invalid {
-  border: solid 1px red;
-}
-@media (max-width: 800px) {
-  [data-section-contact] .main-contact-container form button {
-    width: 100%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

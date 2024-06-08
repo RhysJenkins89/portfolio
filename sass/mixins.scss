@@ -1,7 +1,7 @@
 @use "./variables.scss";
 
 @mixin section-layout {
-    height: auto; // Update later
+    height: auto; // To change. Previously 200vh.
     width: 60vw;
     max-width: 2000px;
     margin: 0 auto;
@@ -20,7 +20,7 @@
 }
 
 @mixin heading-one {
-    font-size: 3.6rem; // Twice as big as body text
+    font-size: 4rem; // Twice as big as body text
     color: var(--text-color);
     margin: 0 0 1rem 0;
 
