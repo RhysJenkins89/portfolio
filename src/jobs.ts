@@ -3,12 +3,12 @@ import { JobsData } from "./types/jobs-types";
 const jobsContainer = document.querySelector(".main-jobs-container") as HTMLElement;
 
 async function renderJobs(): Promise<void> {
+    // Note: json orders number-like keys are ordered differently from string-like keys. This is why 5874 is 'fiveeightsevenfour'.
+    // See this reddit post: https://www.reddit.com/r/node/comments/tcr7kn/why_does_jsonstringify_reorder_keys/
     try {
         const response: Response = await fetch("./data/jobs.json");
         const jobsData: JobsData = await response.json();
-        console.log("Jobs data:", jobsData);
         for (const job in jobsData) {
-            // console.log("job:", job);
             jobsContainer.insertAdjacentHTML(
                 "beforeend",
                 `
