@@ -1,0 +1,34 @@
+{
+    "dialaflight": {
+        "title": "Dial a Flight",
+        "subheading": "This is a subheading",
+        "started": "July 2023",
+        "finshed": null,
+        "description": "At DialAFlight, I build robust, reusable class components for use across the website. Aliqua ex elit irure irure dolore adipisicing adipisicing veniam quis ullamco ipsum nostrud occaecat. Voluptate ullamco laboris cillum aute sunt adipisicing pariatur incididunt nostrud dolor. Anim labore magna aliquip cupidatat sint officia magna voluptate ut laborum non incididunt mollit labore.",
+        "technologies": ["html", "sass", "typescript"]
+    },
+    "5874": {
+        "title": "5874 Commerce",
+        "subheading": "This is a subheading",
+        "started": "June 2022",
+        "finshed": "June 2023",
+        "description": "Aliqua ex elit irure irure dolore adipisicing adipisicing veniam quis ullamco ipsum nostrud occaecat. Voluptate ullamco laboris cillum aute sunt adipisicing pariatur incididunt nostrud dolor. Anim labore magna aliquip cupidatat sint officia magna voluptate ut laborum non incididunt mollit labore.",
+        "technologies": ["html", "sass", "javascript", "typescript", "react", "next"]
+    },
+    "distinction": {
+        "title": "Distinction",
+        "subheading": "This is a subheading",
+        "started": "January 2022",
+        "finshed": "April 2022",
+        "description": "Aliqua ex elit irure irure dolore adipisicing adipisicing veniam quis ullamco ipsum nostrud occaecat. Voluptate ullamco laboris cillum aute sunt adipisicing pariatur incididunt nostrud dolor. Anim labore magna aliquip cupidatat sint officia magna voluptate ut laborum non incididunt mollit labore.",
+        "technologies": ["html", "sass", "javascript", "typescript", "react", "next"]
+    },
+    "mybalance": {
+        "title": "MyBalance",
+        "subheading": "This is a subheading",
+        "started": "March 2021",
+        "finshed": "December 2021",
+        "description": "Aliqua ex elit irure irure dolore adipisicing adipisicing veniam quis ullamco ipsum nostrud occaecat. Voluptate ullamco laboris cillum aute sunt adipisicing pariatur incididunt nostrud dolor. Anim labore magna aliquip cupidatat sint officia magna voluptate ut laborum non incididunt mollit labore.",
+        "technologies": ["html", "sass", "javascript", "react", "react native", "next"]
+    }
+}

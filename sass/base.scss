@@ -23,6 +23,10 @@ h2 {
     @include heading-two;
 }
 
+h3 {
+    @include heading-three;
+}
+
 p {
     @include paragraph;
 }

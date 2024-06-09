@@ -1,0 +1,6 @@
+@use "./variables.scss";
+@use "./mixins.scss";
+
+.main-jobs-container {
+    @include section-layout;
+}
