@@ -213,9 +213,9 @@ html[data-theme=light] {
   }
 }
 [data-section-main-landing] .heading-container {
-  position: sticky;
+  position: fixed;
   top: 100px;
-  height: 40%;
+  height: calc(100vh - 200px);
   display: flex;
   flex-direction: column;
   margin: 5rem 0 0 0;
