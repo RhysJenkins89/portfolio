@@ -14,6 +14,7 @@ I'm currently redesigning and rebuilding my portfolio site.
 -   Build/find a system for the correct font-size values across devices
 -   Change the browser tab icon colour depending on the browser theme
 -   Accessibility throughout the site
+-   Cursor spotlight effect
 
 ## General notes
 
