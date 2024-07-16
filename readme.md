@@ -1,6 +1,6 @@
 # Portfolio
 
-I'm currently redesigning and rebuilding my portfolio site.
+I'm currently redesigning and rebuilding my portfolio site. Commit test.
 
 ## Doing
 
