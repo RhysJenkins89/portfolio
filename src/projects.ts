@@ -1,6 +1,8 @@
 import { ProjectsData } from "./types/projects-types";
 
-const cardsContainer = document.querySelector(".main-projects-container") as HTMLElement;
+const cardsContainer = document.querySelector(
+    ".main-projects-container"
+) as HTMLElement;
 
 async function renderProjects(): Promise<void> {
     if (cardsContainer) {
@@ -21,7 +23,10 @@ async function renderProjects(): Promise<void> {
             }
         } catch (error) {
             console.error(error);
-            cardsContainer.insertAdjacentHTML("beforeend", "<p>No data found.</p>");
+            cardsContainer.insertAdjacentHTML(
+                "beforeend",
+                "<p>No data found.</p>"
+            );
         }
     }
 }
