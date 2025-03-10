@@ -8,6 +8,7 @@ I'm currently redesigning and rebuilding my portfolio site.
 
 ## To do
 
+-   Add 404 page
 -   Create a logo for the browser tab
 -   Add the scss to the webpack build
 -   Add a What I'm working on section
