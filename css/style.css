@@ -8,11 +8,17 @@
 html[data-theme=dark] {
   --bg-color: #121212;
   --text-color: whitesmoke;
+  --link-color: #4ea8de;
+  --link-visited-color: #b39ddb;
+  --link-hover-color: #72c1ff;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: #121212;
+  --link-color: #007bff;
+  --link-visited-color: #551a8b;
+  --link-hover-color: #0056b3;
 }
 
 :root {
@@ -23,11 +29,17 @@ html[data-theme=light] {
 html[data-theme=dark] {
   --bg-color: #121212;
   --text-color: whitesmoke;
+  --link-color: #4ea8de;
+  --link-visited-color: #b39ddb;
+  --link-hover-color: #72c1ff;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: #121212;
+  --link-color: #007bff;
+  --link-visited-color: #551a8b;
+  --link-hover-color: #0056b3;
 }
 
 :root {
@@ -38,11 +50,17 @@ html[data-theme=light] {
 html[data-theme=dark] {
   --bg-color: #121212;
   --text-color: whitesmoke;
+  --link-color: #4ea8de;
+  --link-visited-color: #b39ddb;
+  --link-hover-color: #72c1ff;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: #121212;
+  --link-color: #007bff;
+  --link-visited-color: #551a8b;
+  --link-hover-color: #0056b3;
 }
 
 html {
@@ -108,6 +126,7 @@ p {
   font-size: 1.8rem;
   line-height: 1.5;
   color: var(--text-color);
+  margin-block: 0.5rem 0;
 }
 @media (max-width: 500px) {
   p {
@@ -117,6 +136,13 @@ p {
 
 a {
   text-decoration: none;
+  color: var(--link-color);
+}
+a:visited {
+  color: var(--link-visited-color);
+}
+a:hover {
+  color: var(--link-hover-color);
 }
 
 .hidden {
@@ -131,11 +157,17 @@ a {
 html[data-theme=dark] {
   --bg-color: #121212;
   --text-color: whitesmoke;
+  --link-color: #4ea8de;
+  --link-visited-color: #b39ddb;
+  --link-hover-color: #72c1ff;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: #121212;
+  --link-color: #007bff;
+  --link-visited-color: #551a8b;
+  --link-hover-color: #0056b3;
 }
 
 nav {
@@ -185,11 +217,17 @@ nav .moon.hidden {
 html[data-theme=dark] {
   --bg-color: #121212;
   --text-color: whitesmoke;
+  --link-color: #4ea8de;
+  --link-visited-color: #b39ddb;
+  --link-hover-color: #72c1ff;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: #121212;
+  --link-color: #007bff;
+  --link-visited-color: #551a8b;
+  --link-hover-color: #0056b3;
 }
 
 [data-section-main-landing] {
@@ -213,12 +251,10 @@ html[data-theme=light] {
   }
 }
 [data-section-main-landing] .heading-container {
-  position: fixed;
-  top: 100px;
   height: calc(100vh - 200px);
   display: flex;
   flex-direction: column;
-  margin: 5rem 0 0 0;
+  margin: 10rem 0 auto auto;
 }
 [data-section-main-landing] .text-container {
   margin: 2.5rem 0 0 0;
@@ -228,6 +264,7 @@ html[data-theme=light] {
   font-size: 1.8rem;
   line-height: 1.5;
   color: var(--text-color);
+  margin-block: 0.5rem 0;
 }
 @media (max-width: 500px) {
   [data-section-main-landing] .text-container p {
@@ -251,11 +288,17 @@ html[data-theme=light] {
 html[data-theme=dark] {
   --bg-color: #121212;
   --text-color: whitesmoke;
+  --link-color: #4ea8de;
+  --link-visited-color: #b39ddb;
+  --link-hover-color: #72c1ff;
 }
 
 html[data-theme=light] {
   --bg-color: whitesmoke;
   --text-color: #121212;
+  --link-color: #007bff;
+  --link-visited-color: #551a8b;
+  --link-hover-color: #0056b3;
 }
 
 .main-projects-container {
@@ -325,6 +368,7 @@ html[data-theme=light] {
   font-size: 1.8rem;
   line-height: 1.5;
   color: var(--text-color);
+  margin-block: 0.5rem 0;
 }
 @media (max-width: 500px) {
   .main-projects-container .project-subheading {
@@ -335,6 +379,7 @@ html[data-theme=light] {
   font-size: 1.8rem;
   line-height: 1.5;
   color: var(--text-color);
+  margin-block: 0.5rem 0;
 }
 @media (max-width: 500px) {
   .main-projects-container .project-text {

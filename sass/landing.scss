@@ -6,12 +6,12 @@
     @include section-layout;
 
     .heading-container {
-        position: fixed;
-        top: 100px;
+        // position: fixed;
+        // top: 100px;
         height: calc(100vh - 200px);
         display: flex;
         flex-direction: column;
-        margin: 5rem 0 0 0;
+        margin: 10rem 0 auto auto;
     }
 
     .text-container {

@@ -65,6 +65,7 @@
     font-size: 1.8rem;
     line-height: 1.5;
     color: var(--text-color);
+    margin-block: 0.5rem 0;
 
     @media (max-width: variables.$mobile-large) {
         font-size: 1.6rem;

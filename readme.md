@@ -19,7 +19,7 @@ I'm currently redesigning and rebuilding my portfolio site.
 
 ## General notes
 
-The site is deployed from the `master` branch. Pushing to this branch will trigger a deployment. At the moment, I also have two feature branches, the content of which should be merged into one branch in order to build the site on that branch. Feature branches don't seem appropriate given that the site isn't finished in any meaningful sense.
+The site is deployed from the `github-pages-deploy` branch. Pushing to this branch will trigger a deployment.
 
 ### How to run the site
 
