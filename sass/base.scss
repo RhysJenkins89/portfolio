@@ -36,6 +36,7 @@ a {
     color: var(--link-color);
 
     &:visited {
+        // These pseudo classes might be causing the problem. It could be worth removing them and writing custom css.
         color: var(--link-visited-color);
     }
 
