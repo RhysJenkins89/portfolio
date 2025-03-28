@@ -35,14 +35,13 @@ a {
     text-decoration: none;
     color: var(--link-color);
 
-    &:visited {
-        // These pseudo classes might be causing the problem. It could be worth removing them and writing custom css.
-        color: var(--link-visited-color);
-    }
+    // &:visited {
+    //     color: var(--link-visited-color);
+    // }
 
-    &:hover {
-        color: var(--link-hover-color);
-    }
+    // &:hover {
+    //     color: var(--link-hover-color);
+    // }
 }
 
 .hidden {
