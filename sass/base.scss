@@ -35,13 +35,13 @@ a {
     text-decoration: none;
     color: var(--link-color);
 
-    &:visited {
-        color: var(--link-visited-color);
-    }
+    // &:visited {
+    //     color: var(--link-visited-color);
+    // }
 
-    &:hover {
-        color: var(--link-hover-color);
-    }
+    // &:hover {
+    //     color: var(--link-hover-color);
+    // }
 }
 
 .hidden {
