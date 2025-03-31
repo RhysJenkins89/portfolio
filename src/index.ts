@@ -5,5 +5,5 @@ import themeToggle from "./theme";
 
 themeToggle();
 // renderJobs();
-//renderProjects();
+// renderProjects();
 // cursorSpotlight();
