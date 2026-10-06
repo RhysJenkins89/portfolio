@@ -4,14 +4,15 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "sass": "sass --watch sass/main.scss css/style.css",
-        "dev": "webpack --watch",
-        "build": "webpack"
+        "dev": "astro dev",
+    	"build": "astro build",
+    	"preview": "astro preview"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
         "@types/google.maps": "^3.54.4",
+        "astro": "^7.3.6",
         "sass": "^1.62.1",
         "sass-loader": "^14.1.1",
         "ts-loader": "^9.4.4",
